@@ -1,53 +1,65 @@
-// App complète avec formulaire en haut, navigation, stats, filtres, affichage galerie
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
-export default function App() {
+export default function TimbresPage() {
+  const { albumId } = useParams();
   const [timbres, setTimbres] = useState([]);
+  const [excelPages, setExcelPages] = useState([]);
+  const [pageCourante, setPageCourante] = useState(0);
   const [form, setForm] = useState({
     nom: "",
     pays: "",
     annee: "",
     statut: "",
-    album: "",
     classement: "",
     cote: "",
     oblitération: "",
     notes: "",
     image: "",
-    etatCodes: [],
     ME: false,
   });
-  const [filters, setFilters] = useState({ pays: "", annee: "", statut: "", album: "" });
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    const saved = localStorage.getItem("collection-timbres");
-    if (saved) {
-      setTimbres(JSON.parse(saved));
-    } else {
-      fetch("/timbres_france_1849_1899_all_pages.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const pages = Object.values(data).flat();
-          setTimbres(pages);
-          localStorage.setItem("collection-timbres", JSON.stringify(pages));
-        });
-    }
-  }, []);
+    const all = JSON.parse(localStorage.getItem("collection-timbres")) || [];
+    const filtered = all.filter((t) => t.album === albumId);
+    setTimbres(filtered);
+  }, [albumId]);
 
   useEffect(() => {
-    localStorage.setItem("collection-timbres", JSON.stringify(timbres));
-  }, [timbres]);
+    // Génère dynamiquement le nom du fichier JSON à charger
+    const filename = albumId
+      .toLowerCase()
+      .replace(/[\s/()]+/g, "_")
+      .replace(/_+/g, "_")
+      .replace(/^_+|_+$/g, "") + ".json";
+  
+    fetch(`/data/${filename}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const pagesArray = Object.keys(data).map((key) => ({
+          nom: key,
+          timbres: data[key],
+        }));
+        setExcelPages(pagesArray);
+      })
+      .catch((err) => {
+        console.error(`❌ Impossible de charger /data/${filename}`, err);
+        setExcelPages([]);
+      });
+  }, [albumId]);
+
+  const saveToLocal = (newList) => {
+    const all = JSON.parse(localStorage.getItem("collection-timbres")) || [];
+    const others = all.filter((t) => t.album !== albumId);
+    const updated = [...others, ...newList];
+    localStorage.setItem("collection-timbres", JSON.stringify(updated));
+  };
 
   const handleInput = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
-  };
-
-  const handleFilter = (e) => {
-    const { name, value } = e.target;
-    setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleImage = (e) => {
@@ -61,139 +73,119 @@ export default function App() {
   };
 
   const addTimbre = () => {
-    const newTimbre = { ...form, id: uuidv4() };
-    setTimbres([...timbres, newTimbre]);
+    const newTimbre = { ...form, id: uuidv4(), album: albumId };
+    const updated = [...timbres, newTimbre];
+    setTimbres(updated);
+    saveToLocal(updated);
     setForm({
       nom: "",
       pays: "",
       annee: "",
       statut: "",
-      album: "",
       classement: "",
       cote: "",
       oblitération: "",
       notes: "",
       image: "",
-      etatCodes: [],
       ME: false,
     });
   };
 
   const deleteTimbre = (id) => {
-    setTimbres(timbres.filter((t) => t.id !== id));
+    const updated = timbres.filter((t) => t.id !== id);
+    setTimbres(updated);
+    saveToLocal(updated);
   };
 
-  const exportJSON = () => {
-    const dataStr = JSON.stringify(timbres, null, 2);
-    const blob = new Blob([dataStr], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "ma_collection_timbres.json";
-    link.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const filtered = timbres.filter((t) => {
-    return (
-      (!filters.pays || t.pays?.toLowerCase().includes(filters.pays.toLowerCase())) &&
-      (!filters.annee || String(t.annee).includes(filters.annee)) &&
-      (!filters.statut || t.statut === filters.statut) &&
-      (!filters.album || t.album?.toLowerCase().includes(filters.album.toLowerCase())) &&
-      (!search || t.nom?.toLowerCase().includes(search.toLowerCase()) || t.notes?.toLowerCase().includes(search.toLowerCase()))
-    );
-  });
-
-  const stats = {
-    total: timbres.length,
-    oblitérés: timbres.filter((t) => t.statut === "oblitéré").length,
-    neufs: timbres.filter((t) => t.statut === "neuf").length,
-    variétés: timbres.filter((t) => t.statut === "variété").length,
-    auto: timbres.filter((t) => t.statut === "auto-adhésif").length,
-    mauvaisEtat: timbres.filter((t) => t.ME).length,
-  };
-
-  const albumsDisponibles = [...new Set(timbres.map((t) => t.album).filter(Boolean))];
+  const filtered = timbres.filter((t) =>
+    t.nom.toLowerCase().includes(search.toLowerCase()) ||
+    t.notes?.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
-    <div className="p-6 max-w-6xl mx-auto font-sans">
-      <h1 className="text-3xl font-bold mb-4">📚 Collection de Timbres</h1>
+    <div className="max-w-6xl mx-auto p-6 font-sans">
+      <h1 className="text-2xl font-bold mb-4">📘 Album : {albumId.replace(/_/g, " ")}</h1>
 
-      <div className="mb-4 flex flex-wrap gap-2">
-        <input className="border p-1" placeholder="🔍 Rechercher..." value={search} onChange={(e) => setSearch(e.target.value)} />
-        <input className="border p-1" placeholder="Pays" name="pays" value={filters.pays} onChange={handleFilter} />
-        <input className="border p-1" placeholder="Année" name="annee" value={filters.annee} onChange={handleFilter} />
-        <select className="border p-1" name="statut" value={filters.statut} onChange={handleFilter}>
-          <option value="">-- Statut --</option>
-          <option value="neuf">Neuf</option>
-          <option value="oblitéré">Oblitéré</option>
-          <option value="variété">Variété</option>
-          <option value="auto-adhésif">Auto-adhésif</option>
-        </select>
-        <select className="border p-1" name="album" value={filters.album} onChange={handleFilter}>
-          <option value="">-- Album --</option>
-          {albumsDisponibles.map((album) => (
-            <option key={album} value={album}>{album}</option>
-          ))}
-        </select>
-        <button className="bg-blue-500 text-white px-4 py-1 rounded" onClick={exportJSON}>📤 Exporter JSON</button>
+      <input
+        className="border px-3 py-2 mb-4 w-full"
+        placeholder="🔍 Rechercher un timbre..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <input className="border p-2" placeholder="Nom" name="nom" value={form.nom} onChange={handleInput} />
+        <input className="border p-2" placeholder="Pays" name="pays" value={form.pays} onChange={handleInput} />
+        <input className="border p-2" placeholder="Année" name="annee" value={form.annee} onChange={handleInput} />
+        <input className="border p-2" placeholder="Classement" name="classement" value={form.classement} onChange={handleInput} />
+        <input className="border p-2" placeholder="Cote (€)" name="cote" value={form.cote} onChange={handleInput} />
+        <input className="border p-2" placeholder="Oblitération" name="oblitération" value={form.oblitération} onChange={handleInput} />
+        <textarea className="border p-2 col-span-2" placeholder="Notes" name="notes" value={form.notes} onChange={handleInput}></textarea>
+        <input type="file" accept="image/*" onChange={handleImage} />
+        <label className="flex items-center gap-2">
+          <input type="checkbox" name="ME" checked={form.ME} onChange={handleInput} /> Mauvais état ?
+        </label>
+        <button onClick={addTimbre} className="bg-green-600 text-white px-4 py-2 rounded col-span-2">Ajouter</button>
       </div>
 
-      <div className="bg-gray-100 p-4 rounded mb-4">
-        <h2 className="font-semibold">📊 Statistiques</h2>
-        <ul className="text-sm">
-          <li>Total : {stats.total}</li>
-          <li>Oblitérés : {stats.oblitérés}</li>
-          <li>Neufs : {stats.neufs}</li>
-          <li>Variétés : {stats.variétés}</li>
-          <li>Auto-adhésifs : {stats.auto}</li>
-          <li>Mauvais état : {stats.mauvaisEtat}</li>
-        </ul>
-      </div>
-
-      <div className="mb-10 bg-white p-6 rounded shadow border">
-        <h2 className="text-xl font-bold mb-4">➕ Ajouter un nouveau timbre</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input className="border p-2" placeholder="Nom" name="nom" value={form.nom} onChange={handleInput} />
-          <input className="border p-2" placeholder="Pays" name="pays" value={form.pays} onChange={handleInput} />
-          <input className="border p-2" placeholder="Année" name="annee" value={form.annee} onChange={handleInput} />
-          <select className="border p-2" name="statut" value={form.statut} onChange={handleInput}>
-            <option value="">-- Statut --</option>
-            <option value="neuf">Neuf</option>
-            <option value="oblitéré">Oblitéré</option>
-            <option value="variété">Variété</option>
-            <option value="auto-adhésif">Auto-adhésif</option>
-          </select>
-          <input className="border p-2" placeholder="Album" name="album" value={form.album} onChange={handleInput} />
-          <input className="border p-2" placeholder="Classement" name="classement" value={form.classement} onChange={handleInput} />
-          <input className="border p-2" placeholder="Cote (€)" name="cote" value={form.cote} onChange={handleInput} />
-          <input className="border p-2" placeholder="Oblitération" name="oblitération" value={form.oblitération} onChange={handleInput} />
-          <textarea className="border p-2 md:col-span-2" placeholder="Notes" name="notes" value={form.notes} onChange={handleInput}></textarea>
-          <input type="file" accept="image/*" onChange={handleImage} className="md:col-span-2" />
-          <label className="flex items-center gap-2">
-            <input type="checkbox" name="ME" checked={form.ME} onChange={handleInput} /> Mauvais état ?
-          </label>
-          <button onClick={addTimbre} className="bg-green-600 text-white px-4 py-2 rounded">Ajouter</button>
-        </div>
-      </div>
-
-      <h2 className="text-xl font-semibold mb-2">Liste des Timbres ({filtered.length})</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filtered.map((timbre) => (
-          <div key={timbre.id} className="border rounded shadow p-4 bg-white">
-            {timbre.image && <img src={timbre.image} alt="timbre" className="w-full h-40 object-cover rounded" />}
-            <h3 className="text-lg font-bold mt-2">{timbre.nom}</h3>
-            <p className="text-sm">{timbre.pays} - {timbre.annee}</p>
-            <p className="text-sm italic">Statut : {timbre.statut}</p>
-            <p className="text-sm">Cote : {timbre.cote} €</p>
-            <p className="text-sm">Classement : {timbre.classement}</p>
-            <p className="text-sm">Album : {timbre.album}</p>
-            <p className="text-sm">Oblitération : {timbre.oblitération}</p>
-            <p className="text-sm">Notes : {timbre.notes}</p>
-            {timbre.ME && <p className="text-red-600 font-bold">⚠️ Mauvais état</p>}
-            <button onClick={() => deleteTimbre(timbre.id)} className="mt-2 text-sm bg-red-500 text-white px-2 py-1 rounded">Supprimer</button>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filtered.map((t) => (
+          <div key={t.id} className="bg-white border rounded shadow p-4">
+            {t.image && <img src={t.image} alt="timbre" className="w-full h-48 object-cover mb-2" />}
+            <h3 className="font-bold text-lg">{t.nom}</h3>
+            <p className="text-sm text-gray-600">{t.pays} - {t.annee}</p>
+            <p className="text-sm italic">Statut : {t.statut}</p>
+            <p className="text-sm">Classement : {t.classement}</p>
+            <p className="text-sm">Cote : {t.cote} €</p>
+            <p className="text-sm">Oblitération : {t.oblitération}</p>
+            <p className="text-sm">Notes : {t.notes}</p>
+            {t.ME && <p className="text-red-600 font-bold">⚠️ Mauvais état</p>}
+            <button onClick={() => deleteTimbre(t.id)} className="mt-2 text-sm bg-red-500 text-white px-2 py-1 rounded">Supprimer</button>
           </div>
         ))}
+      </div>
+
+      <div className="overflow-x-auto mt-16">
+        <h2 className="text-xl font-bold mb-4">📄 Timbres depuis Excel (page {pageCourante + 1})</h2>
+        {excelPages.length > 0 && (
+          <>
+            <table className="min-w-full bg-white border border-gray-200 text-sm">
+              <thead className="bg-gray-100 text-left">
+                <tr>
+                  <th className="border px-4 py-2">Nom</th>
+                  <th className="border px-4 py-2">Pays</th>
+                  <th className="border px-4 py-2">Année</th>
+                  <th className="border px-4 py-2">Statut</th>
+                  <th className="border px-4 py-2">Classement</th>
+                  <th className="border px-4 py-2">Cote (€)</th>
+                  <th className="border px-4 py-2">Oblitération</th>
+                  <th className="border px-4 py-2">Notes</th>
+                  <th className="border px-4 py-2">M.E.</th>
+                </tr>
+              </thead>
+              <tbody>
+                {excelPages[pageCourante].timbres.map((t, i) => (
+                  <tr key={i} className="hover:bg-gray-50">
+                    <td className="border px-4 py-2">{t.nom}</td>
+                    <td className="border px-4 py-2">{t.pays}</td>
+                    <td className="border px-4 py-2">{t.annee}</td>
+                    <td className="border px-4 py-2">{t.statut}</td>
+                    <td className="border px-4 py-2">{t.classement}</td>
+                    <td className="border px-4 py-2">{t.cote}</td>
+                    <td className="border px-4 py-2">{t.oblitération}</td>
+                    <td className="border px-4 py-2">{t.notes}</td>
+                    <td className="border px-4 py-2">{t.ME ? "✅" : ""}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="flex justify-between items-center mt-4">
+              <button onClick={() => setPageCourante((p) => Math.max(p - 1, 0))} disabled={pageCourante === 0} className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50">⬅ Précédent</button>
+              <span className="text-sm text-gray-600">Page {pageCourante + 1} / {excelPages.length}</span>
+              <button onClick={() => setPageCourante((p) => Math.min(p + 1, excelPages.length - 1))} disabled={pageCourante === excelPages.length - 1} className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50">Suivant ➡</button>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
