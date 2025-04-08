@@ -1,0 +1,165 @@
+/* Style général */
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 span {
+    color: #1d3557;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #1d3557;
+  }
+  
+  /* Intro */
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    background: #fff;
+  }
+  
+  .intro-section figure {
+    flex: 1 1 300px;
+    margin: 0;
+  }
+  
+  .intro-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .intro-section article {
+    flex: 2 1 400px;
+  }
+  
+  /* Section Accès */
+  .collection-preview {
+    text-align: center;
+    background: #1d3557;
+    color: white;
+    padding: 3rem 2rem;
+  }
+  
+  .enter-app-button {
+    background-color: #fcbf49;
+    color: #1d3557;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .enter-app-button:hover {
+    background-color: #f77f00;
+    color: white;
+  }
+  
+  /* Contact */
+  #contact {
+    padding: 3rem 2rem;
+    background: #fff;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form .envoyer {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form .envoyer:hover {
+    background-color: #457b9d;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  }
