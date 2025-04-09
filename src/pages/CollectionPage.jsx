@@ -17,29 +17,25 @@ function flattenTree(tree, cheminBase = "") {
     const chemin = cheminBase ? `${cheminBase}/${item.name}` : item.name;
 
     if (item.type === "folder") {
-      // Récupère les enfants récursivement
       const enfants = flattenTree(item.children || [], chemin);
-
       const images = (item.children || []).filter((c) => c.type === "image");
 
-      // Ajoute un album si images OU si le dossier a des sous-dossiers
-      if (images.length > 0 || enfants.length > 0) {
-        result.push({
-          id: chemin.replace(/\//g, "_"),
-          titre: item.name,
-          dossier: chemin,
-          continent: cheminBase.split("/")[0].toUpperCase(),
-          pages:
-            images.length > 0
-              ? [
-                  {
-                    nom: "page 1",
-                    images: images.map((img) => img.name),
-                  },
-                ]
-              : [], // s’il n’y a pas d’image, on garde quand même l’album
-        });
-      }
+      // ✅ inclure tous les dossiers, même sans image, s’ils ont des enfants ou pas
+      result.push({
+        id: chemin.replace(/\//g, "_"),
+        titre: item.name,
+        dossier: chemin,
+        continent: chemin.split("/")[0],
+        pages:
+          images.length > 0
+            ? [
+                {
+                  nom: "page 1",
+                  images: images.map((img) => img.name),
+                },
+              ]
+            : [],
+      });
 
       result = [...result, ...enfants];
     }
