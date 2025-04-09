@@ -33,7 +33,8 @@
             "type": "folder",
             "name": "photos pages clsr Afrique_OM",
             "path": "AFRIQUE/Af_P.Outre-Mer/photos pages clsr Afrique_OM",
-            "children": []
+            "children": [],
+            "json": null
           },
           {
             "type": "folder",
@@ -55,9 +56,11 @@
                 "name": "Var Af_Rwanda_YT 780.jpg",
                 "path": "AFRIQUE/Af_P.Outre-Mer/scan var clsr Afrique_OM/Var Af_Rwanda_YT 780.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -74,7 +77,8 @@
                 "name": "Classeur Af_PEF_Algérie_1962 à 20xx.jpg",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF _Algérie_indépendance 1962 à 20xx/Classeur Af_PEF_Algérie_1962 à 20xx.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -116,7 +120,8 @@
                 "name": "var_Gabon_YT 540.jpg",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_1980 à 1999/var_Gabon_YT 540.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -398,7 +403,8 @@
                 "name": "var_Tunisie_YT 76-839.jpg",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_19xx à 1979/var_Tunisie_YT 76-839.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -460,7 +466,8 @@
                 "name": "var_Tunisie_YT 97-1325.jpg",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_2000 à 20xx/var_Tunisie_YT 97-1325.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "image",
@@ -472,9 +479,11 @@
             "name": "var_Algérie_YT 70-529.jpg",
             "path": "AFRIQUE/Af_PEF_indépendants/var_Algérie_YT 70-529.jpg"
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   },
   {
     "type": "folder",
@@ -501,7 +510,8 @@
                 "name": "var Canada 78,-1,-2,-3.jpg",
                 "path": "AMERIQUE/AMERIQUE NORD/Canada/var Canada 78,-1,-2,-3.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -513,7 +523,8 @@
                 "name": "Clsr USA_PO.jpg",
                 "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_PO/Clsr USA_PO.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -590,9 +601,11 @@
                 "name": "var USA Eddie Rickenbacker -2.jpg",
                 "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_Terre Neuve_New Brunswick/var USA Eddie Rickenbacker -2.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -699,7 +712,8 @@
                 "name": "Var Mexique YT 617a-1.jpg",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/A.S. 18xx à 1959/Var Mexique YT 617a-1.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -711,7 +725,8 @@
                 "name": "100_5274.jpg",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Cuba_1959_20xx/100_5274.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -723,7 +738,8 @@
                 "name": "Clsr_Amérique Centrale_Mer des Antilles_AS_AN_ 1960 à 1979.JPG",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Mer des Antilles_1960-1979/Clsr_Amérique Centrale_Mer des Antilles_AS_AN_ 1960 à 1979.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -735,7 +751,8 @@
                 "name": "Clsr_Amérique AS_1960 à 1999.JPG",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. du Sud 1960 à 1999/Clsr_Amérique AS_1960 à 1999.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -747,11 +764,14 @@
                 "name": "Classeur Am S et C.JPG",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Amérique Sud Centrale Nord_1980 à 20xx/Classeur Am S et C.JPG"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   },
   {
     "type": "folder",
@@ -863,9 +883,11 @@
                 "name": "var_Yemen 1968-192.jpg",
                 "path": "ASIE/Asie_A à Z_1960-20xx/scan var clsr Asie_A-Z/var_Yemen 1968-192.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -962,7 +984,8 @@
             "name": "var Chine_Or. YT 55-1.jpg",
             "path": "ASIE/Asie_Chine_18xx-20xx/var Chine_Or. YT 55-1.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -974,7 +997,8 @@
             "name": "Clr _Asie_Corée du Nord.JPG",
             "path": "ASIE/Asie_Corée du Nord_1970-20xx/Clr _Asie_Corée du Nord.JPG"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -996,7 +1020,8 @@
             "name": "EPI_Travancore_YT 2 et 7.jpg",
             "path": "ASIE/Asie_Empire des Indes_1867-1947/EPI_Travancore_YT 2 et 7.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1008,7 +1033,8 @@
             "name": "Classeur Asie_Pays indépendants de l'Ex Empire des Indes_1960 à 20xx.jpg",
             "path": "ASIE/Asie_Ex Empire. des Indes_Pays indépendants_1960-20xx/Classeur Asie_Pays indépendants de l'Ex Empire des Indes_1960 à 20xx.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1030,7 +1056,8 @@
             "name": "JPN_YT 837a.JPG",
             "path": "ASIE/Asie_Japon_1960-20xx/JPN_YT 837a.JPG"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1062,9 +1089,11 @@
                 "name": "var_Yemen 1968-192.jpg",
                 "path": "ASIE/Asie_Moyen-Orient_1960-20xx/scan var clsr Asie_MO/var_Yemen 1968-192.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1076,7 +1105,8 @@
             "name": "Album As-OM_origines à 1959-indépendance.JPG",
             "path": "ASIE/Asie_origines à 1959/Album As-OM_origines à 1959-indépendance.JPG"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1168,7 +1198,8 @@
                 "name": "PEF_As_page 9.JPG",
                 "path": "ASIE/As_PEF_Indépendants/PEF_indp_Asie_Cambodge_Laos/PEF_As_page 9.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1190,11 +1221,14 @@
                 "name": "var_Vietnam_Emp_YT 51- 8_nuances.jpg",
                 "path": "ASIE/As_PEF_Indépendants/PEF_indp_Asie_Vietnam/var_Vietnam_Emp_YT 51- 8_nuances.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   },
   {
     "type": "folder",
@@ -1651,7 +1685,8 @@
             "name": "Yougoslavie_BF.jpg",
             "path": "EUROPE/EUROPE Blocs-Feuillets/Yougoslavie_BF.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -1673,7 +1708,8 @@
                 "name": "H_YT 1090_1200dpi.jpg",
                 "path": "EUROPE/EUROPE EST/Europe_Est_187x à 1959/H_YT 1090_1200dpi.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1685,7 +1721,8 @@
                 "name": "Clr EE_1960 à  1969.JPG",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1969/Clr EE_1960 à  1969.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1707,7 +1744,8 @@
                 "name": "POL_YT A 58.jpg",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1999_PA_et autres rubriques/POL_YT A 58.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1718,7 +1756,8 @@
                 "type": "folder",
                 "name": "Bulgarie",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Bulgarie",
-                "children": []
+                "children": [],
+                "json": null
               },
               {
                 "type": "image",
@@ -1729,27 +1768,32 @@
                 "type": "folder",
                 "name": "Hongrie",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Hongrie",
-                "children": []
+                "children": [],
+                "json": null
               },
               {
                 "type": "folder",
                 "name": "Pologne",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Pologne",
-                "children": []
+                "children": [],
+                "json": null
               },
               {
                 "type": "folder",
                 "name": "Roumanie",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Roumanie",
-                "children": []
+                "children": [],
+                "json": null
               },
               {
                 "type": "folder",
                 "name": "Tchécoslovaquie",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Tchécoslovaquie",
-                "children": []
+                "children": [],
+                "json": null
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1766,7 +1810,8 @@
                     "name": "Clr EE_1970-20xx_Al_EE_LV_LT_SK_CZ_UK_moldavie_Crimée_Bielrussie.jpg",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu/Clr EE_1970-20xx_Al_EE_LV_LT_SK_CZ_UK_moldavie_Crimée_Bielrussie.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -1778,7 +1823,8 @@
                     "name": "Classeur Bulgarie.JPG",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Bulgarie/Classeur Bulgarie.JPG"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -1790,7 +1836,8 @@
                     "name": "Classeur Hongrie.jpg",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Hongrie/Classeur Hongrie.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -1807,7 +1854,8 @@
                     "name": "PL_var YT 82-2644.jpg",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Pologne/PL_var YT 82-2644.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -1819,7 +1867,8 @@
                     "name": "Clr CPR_Roumanie_1970_201x.jpg",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Roumanie/Clr CPR_Roumanie_1970_201x.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -1831,9 +1880,11 @@
                     "name": "Classeur Tchécoslovaquie.JPG",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Tchécoslovaquie/Classeur Tchécoslovaquie.JPG"
                   }
-                ]
+                ],
+                "json": null
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1850,7 +1901,8 @@
                 "name": "Clr EE_PA avant 1960_F17,5x24,5.jpg",
                 "path": "EUROPE/EUROPE EST/Europe_Est_Origines à 1959_PA_et autres rubriques/Clr EE_PA avant 1960_F17,5x24,5.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -1992,7 +2044,8 @@
                 "name": "URSS_YT 75.jpg",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1865 à 1959/URSS_YT 75.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2014,7 +2067,8 @@
                 "name": "var_URSS YT 77-4412-2.jpg",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1960 à 1980/var_URSS YT 77-4412-2.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2026,9 +2080,11 @@
                 "name": "Clr EE_URSS_1981 à  201x.JPG",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1981 à 20xx/Clr EE_URSS_1981 à  201x.JPG"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -2060,7 +2116,8 @@
                 "name": "vue DK _ YT 34 et 37.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_184x à 1918/vue DK _ YT 34 et 37.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2107,7 +2164,8 @@
                 "name": "var Grece YT 558A-1.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1919 à 1959/var Grece YT 558A-1.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2124,7 +2182,8 @@
                 "name": "Ecosse_Ile de Pabay_Crustacés 1965 europa.png",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1960 à 1979/Ecosse_Ile de Pabay_Crustacés 1965 europa.png"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2136,7 +2195,8 @@
                 "name": "Clsr_E-O_1980-99.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1980 à 1999/Clsr_E-O_1980-99.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2153,7 +2213,8 @@
                 "name": "Norvège_YT 1-1329.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_2000 à 2009/Norvège_YT 1-1329.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2165,7 +2226,8 @@
                 "name": "Clr Europe Ouest _2010 à 20xx.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_2010 à 20xx/Clr Europe Ouest _2010 à 20xx.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2182,7 +2244,8 @@
                 "name": "Clsr_E-O_DDR_1950 à 1990.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne DDR_1950 à 1990/Clsr_E-O_DDR_1950 à 1990.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2224,7 +2287,8 @@
                 "name": "Page garde 4.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne_18xx à 201x/Page garde 4.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2236,7 +2300,8 @@
                 "name": "Album Allemagne ZSO_Sarre_RFA Berlin.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne_ZSO_Sarre_RFA-Berlin/Album Allemagne ZSO_Sarre_RFA Berlin.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2248,7 +2313,8 @@
                 "name": "Clsr_Andorre F.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Andorre_1931 à 20xx/Clsr_Andorre F.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2260,7 +2326,8 @@
                 "name": "Classeur P 50_Europe Ouest_And à Nations Unies.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_And_St Marin_Nations Unies_19xx à 20xx_/Classeur P 50_Europe Ouest_And à Nations Unies.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2307,7 +2374,8 @@
                 "name": "Clsr_E-O_Belgique_1960 à 1999.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Belgique_1919 à 1999/Clsr_E-O_Belgique_1960 à 1999.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2329,7 +2397,8 @@
                 "name": "E_YT N° 172.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_1850 à 1922/E_YT N° 172.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2391,7 +2460,8 @@
                 "name": "var E_YT 77-2053.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_1922 à 1999/var E_YT 77-2053.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2403,7 +2473,8 @@
                 "name": "Clr Espagne_2000 à 202x.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_2000 à 202x/Clr Espagne_2000 à 202x.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2425,7 +2496,8 @@
                 "name": "lien 2.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne - type aq_1967 à 1999/lien 2.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2447,7 +2519,8 @@
                 "name": "lien 2.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne - type aq_2000 à 20xx/lien 2.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2479,7 +2552,8 @@
                 "name": "GB_1997_YT 1998 à 2001.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne_1840 à 201x/GB_1997_YT 1998 à 2001.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2501,7 +2575,8 @@
                 "name": "liste des types GB ar, as, at, au.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Guernsey_Jersey_Alderney_Man/liste des types GB ar, as, at, au.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2543,7 +2618,8 @@
                 "name": "I_YT 80-1435.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Italie_1852 à 201x/I_YT 80-1435.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2555,7 +2631,8 @@
                 "name": "Clsr_Luxembourg.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Luxembourg_1882 à 20xx/Clsr_Luxembourg.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2612,7 +2689,8 @@
                 "name": "var_Monaco_YT 411.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Monaco_18xx à 201x/var_Monaco_YT 411.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2644,7 +2722,8 @@
                 "name": "Wurtemberg_fiscaux 1906.png",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Origines à 20xx_PA_TS_TX_TG_CPx_Jnx_Tgf_Fisc_Bfe/Wurtemberg_fiscaux 1906.png"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2656,7 +2735,8 @@
                 "name": "Classeur Europe Ouest_Scandinavie_1960 à 1999.JPG",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Scandinavie_1960 à 1999/Classeur Europe Ouest_Scandinavie_1960 à 1999.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2673,7 +2753,8 @@
                 "name": "var CH_YT 482.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Suisse 1919 à 202x/var CH_YT 482.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -2685,9 +2766,11 @@
                 "name": "classeur Vatican_1929-1999.jpg",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Vatican_1958 à 1999/classeur Vatican_1929-1999.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -2723,9 +2806,11 @@
                     "type": "folder",
                     "name": "F_AA_carnets 2023",
                     "path": "EUROPE/France/France_autres rubriques/F_AA/F_AA_carnets 2023",
-                    "children": []
+                    "children": [],
+                    "json": null
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -2747,7 +2832,8 @@
                     "name": "F_1999_BF 23  (1c).jpg",
                     "path": "EUROPE/France/France_autres rubriques/F_Blocs et Feuillets/F_1999_BF 23  (1c).jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -2914,9 +3000,11 @@
                         "name": "var F_YT A 71.jpg",
                         "path": "EUROPE/France/France_autres rubriques/F_PA/photos var PA/var F_YT A 71.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -3138,9 +3226,11 @@
                         "name": "var F_YT TX 99.jpg",
                         "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/photos var _PO et autres rubriques/var F_YT TX 99.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "image",
@@ -3197,7 +3287,8 @@
                 "name": "page 16.JPG",
                 "path": "EUROPE/France/France_autres rubriques/page 16.JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -3208,15 +3299,18 @@
                 "type": "folder",
                 "name": "France_Neufs_1900-1959",
                 "path": "EUROPE/France/France_Neufs/France_Neufs_1900-1959",
-                "children": []
+                "children": [],
+                "json": null
               },
               {
                 "type": "folder",
                 "name": "France_Neufs_1960 à 1999",
                 "path": "EUROPE/France/France_Neufs/France_Neufs_1960 à 1999",
-                "children": []
+                "children": [],
+                "json": null
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -3273,7 +3367,8 @@
                     "name": "F_YT 39C-R3-1E.jpg",
                     "path": "EUROPE/France/France_Oblitérés/France _Oblitérés_1849-1899/F_YT 39C-R3-1E.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -3325,7 +3420,8 @@
                     "name": "F_YT 733b.jpg",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1900-1959/F_YT 733b.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -3362,7 +3458,8 @@
                     "name": "var F_YT 2404a.jpg",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1960-1999/var F_YT 2404a.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -3379,9 +3476,11 @@
                     "name": "Clsr F_2023 à 20xx.jpg",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_2000-20xx/Clsr F_2023 à 20xx.jpg"
                   }
-                ]
+                ],
+                "json": null
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -3783,7 +3882,8 @@
                         "name": "img 01-10-009.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 1/img 01-10-009.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4025,7 +4125,8 @@
                         "name": "img 10-10 (1).jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 10/img 10-10 (1).jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4237,7 +4338,8 @@
                         "name": "img 11-10-001.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 11/img 11-10-001.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4409,7 +4511,8 @@
                         "name": "img 12-10-007.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 12/img 12-10-007.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4541,7 +4644,8 @@
                         "name": "img 13-10-001.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 13/img 13-10-001.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4703,7 +4807,8 @@
                         "name": "img 14-11-003.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 14/img 14-11-003.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4830,7 +4935,8 @@
                         "name": "img 15-10-003.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 15/img 15-10-003.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -4922,7 +5028,8 @@
                         "name": "img 16-10-001.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 16/img 16-10-001.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5029,7 +5136,8 @@
                         "name": "img 17-10-002.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 17/img 17-10-002.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5191,7 +5299,8 @@
                         "name": "img 18-10-004.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 18/img 18-10-004.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5303,7 +5412,8 @@
                         "name": "img 19-10-002.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 19/img 19-10-002.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5560,7 +5670,8 @@
                         "name": "img 2-10-.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 2/img 2-10-.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5682,7 +5793,8 @@
                         "name": "img 21-10-003.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 21/img 21-10-003.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5779,7 +5891,8 @@
                         "name": "img 22-10-010.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 22/img 22-10-010.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -5846,7 +5959,8 @@
                         "name": "img 23-09- 003.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 23/img 23-09- 003.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6088,21 +6202,25 @@
                             "name": "img 20-10-002.jpg",
                             "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 24/page 20/img 20-10-002.jpg"
                           }
-                        ]
+                        ],
+                        "json": null
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
                     "name": "page 25",
                     "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 25",
-                    "children": []
+                    "children": [],
+                    "json": null
                   },
                   {
                     "type": "folder",
                     "name": "page 27",
                     "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 27",
-                    "children": []
+                    "children": [],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6114,7 +6232,8 @@
                         "name": "img 21-10-365.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 28/img 21-10-365.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6336,7 +6455,8 @@
                         "name": "img 3-9-004.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 3/img 3-9-004.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6348,7 +6468,8 @@
                         "name": "img 36-08-002.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 36/img 36-08-002.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6360,7 +6481,8 @@
                         "name": "img006.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 37/img006.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6372,7 +6494,8 @@
                         "name": "img 38-06-001.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 38/img 38-06-001.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6694,7 +6817,8 @@
                         "name": "img 4-10-007.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 4/img 4-10-007.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6766,7 +6890,8 @@
                         "name": "img 47-05-005.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 47/img 47-05-005.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -6833,7 +6958,8 @@
                         "name": "img 48-09-01.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 48/img 48-09-01.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -7090,7 +7216,8 @@
                         "name": "img 5-10 (1).jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 5/img 5-10 (1).jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -7392,7 +7519,8 @@
                         "name": "img 6-10-002.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 6/img 6-10-002.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -7649,7 +7777,8 @@
                         "name": "img 7-10-007.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 7/img 7-10-007.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -7961,7 +8090,8 @@
                         "name": "img 8-10-006.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 8/img 8-10-006.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   },
                   {
                     "type": "folder",
@@ -8228,9 +8358,11 @@
                         "name": "img 9-09-001.jpg",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 9/img 9-09-001.jpg"
                       }
-                    ]
+                    ],
+                    "json": null
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -8372,7 +8504,8 @@
                     "name": "F_2023_AA 2294-var.jpg",
                     "path": "EUROPE/France/France_Variétés/France_Variétés (2) 2000-20xx/F_2023_AA 2294-var.jpg"
                   }
-                ]
+                ],
+                "json": null
               },
               {
                 "type": "folder",
@@ -8384,18 +8517,22 @@
                     "name": "2019-08-30 002 001.jpg",
                     "path": "EUROPE/France/France_Variétés/larme à l'oeil_mêches liées/2019-08-30 002 001.jpg"
                   }
-                ]
+                ],
+                "json": null
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "image",
             "name": "F_YT 810, 810a.jpg",
             "path": "EUROPE/France/F_YT 810, 810a.jpg"
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   },
   {
     "type": "folder",
@@ -8422,7 +8559,8 @@
             "name": "page 00.JPG",
             "path": "Monde/Afrique _ Asie _ PA & autres rubriques/page 00.JPG"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8444,7 +8582,8 @@
             "name": "var_Yemen_YT 68-192.jpg",
             "path": "Monde/Monde A à Z_Blocs et Feuillets (BF)/var_Yemen_YT 68-192.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8501,7 +8640,8 @@
             "name": "var Argentine_YT S 345.jpg",
             "path": "Monde/Océanie_Amérique _ PA & autres rubriques/var Argentine_YT S 345.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8548,7 +8688,8 @@
                 "name": "PEF_Col Fr avant indépendance (1).JPG",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 1/PEF_Col Fr avant indépendance (1).JPG"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8575,7 +8716,8 @@
                 "name": "Maroc_YT 45-231B.jpg",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 2/Maroc_YT 45-231B.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8602,13 +8744,15 @@
                 "name": "var_MTQ_YT TX 27.jpg",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 3/var_MTQ_YT TX 27.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
             "name": "SPM",
             "path": "Monde/PEF_Colonies Françaises/SPM",
-            "children": []
+            "children": [],
+            "json": null
           },
           {
             "type": "folder",
@@ -8620,9 +8764,11 @@
                 "name": "Clsr_TOM_TAAF.jpg",
                 "path": "Monde/PEF_Colonies Françaises/TAAF/Clsr_TOM_TAAF.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8674,9 +8820,11 @@
             "name": "var_Sénégal_YT A77-158A.jpg",
             "path": "Monde/PEF_PA_TX_TS & autres/var_Sénégal_YT A77-158A.jpg"
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   },
   {
     "type": "folder",
@@ -8718,7 +8866,8 @@
             "name": "var_PF_YT A 64-7.jpg",
             "path": "OCEANIE/Ets de l'Océanie_Polynésie Française/var_PF_YT A 64-7.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8765,7 +8914,8 @@
             "name": "var_NC_YT 83-468.jpg",
             "path": "OCEANIE/Nvelle Calédonie_Wallis et Futuna/var_NC_YT 83-468.jpg"
           }
-        ]
+        ],
+        "json": null
       },
       {
         "type": "folder",
@@ -8787,7 +8937,8 @@
                 "name": "Clsr_Océanie _OM 1_Australie_2000 à 202x.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Australie/Clsr_Océanie _OM 1_Australie_2000 à 202x.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8809,7 +8960,8 @@
                 "name": "var NZ_ YT 546.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Nouvelle Zélande et Terre de Ross_1960 à 2xxx/var NZ_ YT 546.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8821,7 +8973,8 @@
                 "name": "Clsr Océanie_OM_1960 à 1999.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 1999/Clsr Océanie_OM_1960 à 1999.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8833,7 +8986,8 @@
                 "name": "Clsr_Océanie_OM PA-TS-TX_1960 à 20xx.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 20xx_PA & autres rubriques/Clsr_Océanie_OM PA-TS-TX_1960 à 20xx.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8845,7 +8999,8 @@
                 "name": "Océanie-OM_2000 à 20xx.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_2000 à 20xx/Océanie-OM_2000 à 20xx.jpg"
               }
-            ]
+            ],
+            "json": null
           },
           {
             "type": "folder",
@@ -8857,10 +9012,13 @@
                 "name": "Clsr_Océanie_OM_avant 1960.jpg",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_origines à 1959/Clsr_Océanie_OM_avant 1960.jpg"
               }
-            ]
+            ],
+            "json": null
           }
-        ]
+        ],
+        "json": null
       }
-    ]
+    ],
+    "json": null
   }
 ]

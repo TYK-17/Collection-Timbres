@@ -20,9 +20,14 @@ function flattenTree(tree, cheminBase = "") {
       const enfants = flattenTree(item.children || [], chemin);
       const images = (item.children || []).filter((c) => c.type === "image");
 
-      // ✅ inclure tous les dossiers, même sans image, s’ils ont des enfants ou pas
+      // 🔍 Trouve un fichier JSON s'il y en a dans ce dossier
+      const jsonFile = (item.children || []).find(
+        (c) => c.type === "json" || c.name?.endsWith(".json")
+      );
+
+      // On ajoute ce dossier même s’il n’a pas d’image
       result.push({
-        id: chemin.replace(/\//g, "_"),
+        id: [...new Set(chemin.split("/"))].join("_").replace(/\s+/g, "_"),
         titre: item.name,
         dossier: chemin,
         continent: chemin.split("/")[0],
@@ -35,6 +40,7 @@ function flattenTree(tree, cheminBase = "") {
                 },
               ]
             : [],
+        json: jsonFile?.name || null,
       });
 
       result = [...result, ...enfants];

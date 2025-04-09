@@ -1,12 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-// Corrigé : on remonte d'un dossier car __dirname === scripts/
 const baseDir = path.join(__dirname, "..", "public", "images", "albums");
 
 function walk(dir, relativePath = "") {
   const result = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  let folderJson = null;
 
   for (const entry of entries) {
     if (entry.name.startsWith(".")) continue;
@@ -18,11 +19,25 @@ function walk(dir, relativePath = "") {
         type: "folder",
         name: entry.name,
         path: entryRelPath.replace(/\\/g, "/"),
-        children: walk(fullPath, entryRelPath),
+        ...(() => {
+          const children = walk(fullPath, entryRelPath);
+          const jsonFile = children.find((e) => e.type === "json");
+          return {
+            children: children.filter((e) => e.type !== "json"),
+            json: jsonFile ? jsonFile.name : null,
+          };
+        })(),
       });
     } else if (/\.(jpe?g|png)$/i.test(entry.name)) {
       result.push({
         type: "image",
+        name: entry.name,
+        path: entryRelPath.replace(/\\/g, "/"),
+      });
+    } else if (/\.json$/i.test(entry.name)) {
+      // On garde ce fichier pour rattacher à un dossier
+      result.push({
+        type: "json",
         name: entry.name,
         path: entryRelPath.replace(/\\/g, "/"),
       });
