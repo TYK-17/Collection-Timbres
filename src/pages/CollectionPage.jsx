@@ -13,8 +13,11 @@ function findNode(tree, pathParts) {
   let current = tree[0];
   for (const part of pathParts) {
     if (!current.children) return null;
+
+    const decodedPart = decodeURIComponent(part);
+
     current = current.children.find(
-      (child) => child.type === "folder" && child.name === part
+      (child) => child.type === "folder" && child.name === decodedPart
     );
     if (!current) return null;
   }
