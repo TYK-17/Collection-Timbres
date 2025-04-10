@@ -35,7 +35,7 @@ export default function TimbresPage() {
     cote: "",
     oblitération: "",
     notes: "",
-    image: "",
+    data: "",
     ME: false,
   });
   const [search, setSearch] = useState("");
@@ -119,12 +119,12 @@ export default function TimbresPage() {
     }));
   };
 
-  const handleImage = (e) => {
+  const handledata = (e) => {
     const file = e.target.files[0];
     if (!file) return;
     const reader = new FileReader();
     reader.onload = (e) => {
-      setForm((prev) => ({ ...prev, image: e.target.result }));
+      setForm((prev) => ({ ...prev, data: e.target.result }));
     };
     reader.readAsDataURL(file);
   };
@@ -143,7 +143,7 @@ export default function TimbresPage() {
       cote: "",
       oblitération: "",
       notes: "",
-      image: "",
+      data: "",
       ME: false,
     });
   };
@@ -228,7 +228,7 @@ export default function TimbresPage() {
           value={form.notes}
           onChange={handleInput}
         ></textarea>
-        <input type="file" accept="image/*" onChange={handleImage} />
+        <input type="file" accept="data/*" onChange={handledata} />
         <label className="flex items-center gap-2">
           <input
             type="checkbox"
@@ -249,9 +249,9 @@ export default function TimbresPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map((t) => (
           <div key={t.id} className="bg-white border rounded shadow p-4">
-            {t.image && (
+            {t.data && (
               <img
-                src={t.image}
+                src={t.data}
                 alt="timbre"
                 className="w-full h-48 object-cover mb-2"
               />

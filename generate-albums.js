@@ -6,7 +6,7 @@ const path = require("path");
 const BASE_DIR = path.join(__dirname, "public/data /albums");
 const OUTPUT_FILE = path.join(__dirname, "public/albums.json");
 
-function isImage(filename) {
+function isdata(filename) {
   return /\.(jpg|jpeg|png)$/i.test(filename);
 }
 
@@ -24,12 +24,12 @@ function scanAlbums(baseDir) {
     });
   };
 
-  walk(baseDir, (imageDir) => {
-    const data = fs.readdirSync(imageDir).filter(isImage);
+  walk(baseDir, (dataDir) => {
+    const data = fs.readdirSync(dataDir).filter(isdata);
     if (!data.length) return;
 
-    const pageName = path.basename(imageDir);
-    const albumFolder = path.dirname(imageDir);
+    const pageName = path.basename(dataDir);
+    const albumFolder = path.dirname(dataDir);
     const albumName = path.basename(albumFolder);
     const relativeAlbumPath = path.relative(BASE_DIR, albumFolder);
 

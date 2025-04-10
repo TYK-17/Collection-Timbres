@@ -19,7 +19,7 @@ function flattenTree(tree, cheminBase = "") {
 
     if (item.type === "folder") {
       const enfants = flattenTree(item.children || [], chemin);
-      const data = (item.children || []).filter((c) => c.type === "image");
+      const data = (item.children || []).filter((c) => c.type === "data");
 
       // 🔍 Trouve un fichier JSON s'il y en a dans ce dossier
       const jsonFile = (item.children || []).find(
@@ -81,8 +81,8 @@ export default function CollectionPage() {
   const getCover = (album) => {
     try {
       if (album.pages?.[0]?.data?.[0]) {
-        const image = album.pages[0].data[0];
-        return `/data /albums/${album.dossier}/${album.pages[0].nom}/${image}`;
+        const data = album.pages[0].data[0];
+        return `/data /albums/${album.dossier}/${album.pages[0].nom}/${data}`;
       }
     } catch {
       return "/placeholder.jpg";
@@ -119,7 +119,7 @@ export default function CollectionPage() {
       chemin: dossierPath,
       titre: dossierPath.split("/").pop(),
       continent: album?.continent || dossierPath.split("/")[0],
-      image: album ? getCover(album) : "/placeholder.jpg",
+      data: album ? getCover(album) : "/placeholder.jpg",
       estFeuille: !!album, // vrai album avec data
       contientSousAlbums: contientAlbums,
     };
@@ -188,7 +188,7 @@ export default function CollectionPage() {
             className="cursor-pointer bg-white shadow rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition duration-300"
           >
             <img
-              src={item.image}
+              src={item.data}
               alt={item.titre}
               className="w-full h-48 object-cover"
             />
