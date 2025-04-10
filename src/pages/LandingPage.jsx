@@ -78,7 +78,7 @@ export default function LandingPage() {
               exclus si le pays n’a pas participé officiellement.
             </p>
             <p>
-              Certains pays produisent des timbres comme des images (appelés
+              Certains pays produisent des timbres comme des data (appelés
               Cinderellas). Ce type est exclu sauf intérêt philatélique réel.
             </p>
             <p>Le but : une collection sérieuse, historique, et authentique.</p>

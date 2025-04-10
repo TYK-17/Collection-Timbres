@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # ignore specific folder
-/public/images/
+/public/data/
 /public/data/albums/ 

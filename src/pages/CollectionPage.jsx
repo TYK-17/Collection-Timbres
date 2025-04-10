@@ -120,7 +120,7 @@ export default function CollectionPage() {
       titre: dossierPath.split("/").pop(),
       continent: album?.continent || dossierPath.split("/")[0],
       image: album ? getCover(album) : "/placeholder.jpg",
-      estFeuille: !!album, // vrai album avec images
+      estFeuille: !!album, // vrai album avec data
       contientSousAlbums: contientAlbums,
     };
   });

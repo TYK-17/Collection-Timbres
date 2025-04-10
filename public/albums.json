@@ -8,7 +8,7 @@
     "pages": [
       {
         "nom": "Af_P.Outre-Mer",
-        "images": [
+        "data": [
           "Album Af-OM_origines à indépendance.jpg",
           "Classeur Af_OM_2000 à 20xx.JPG",
           "Clr_Af-OM_1960 à 1999_A à M_(1).JPG",
@@ -17,10 +17,7 @@
       },
       {
         "nom": "Af_PEF_indépendants",
-        "images": [
-          "var_Algérie_YT 70-528.jpg",
-          "var_Algérie_YT 70-529.jpg"
-        ]
+        "data": ["var_Algérie_YT 70-528.jpg", "var_Algérie_YT 70-529.jpg"]
       }
     ]
   },
@@ -33,7 +30,7 @@
     "pages": [
       {
         "nom": "scan var clsr Afrique_OM",
-        "images": [
+        "data": [
           "Var Af_Cape of Good Hope_YT 1872-42.jpg",
           "Var Af_Rwanda_YT 370.jpg",
           "Var Af_Rwanda_YT 780.jpg"
@@ -50,13 +47,11 @@
     "pages": [
       {
         "nom": "Af_PEF _Algérie_indépendance 1962 à 20xx",
-        "images": [
-          "Classeur Af_PEF_Algérie_1962 à 20xx.jpg"
-        ]
+        "data": ["Classeur Af_PEF_Algérie_1962 à 20xx.jpg"]
       },
       {
         "nom": "Af_PEF_I_1980 à 1999",
-        "images": [
+        "data": [
           "Album Af-PEF_indépendants_1980 à 1999 -A à H.jpg",
           "Album Af-PEF_indépendants_1980 à 1999 -I à Z.jpg",
           "Maroc _1191A_1191B avec_millésime 1995.jpg",
@@ -68,7 +63,7 @@
       },
       {
         "nom": "Af_PEF_I_19xx à 1979",
-        "images": [
+        "data": [
           "Clr Af_PEF indépendance à 1979_Algérie à Comores.jpg",
           "Clr Af_PEF indépendance à 1979_Congo à Gabon.JPG",
           "Clr Af_PEF indépendance à 1979_Guinée à Mali.JPG",
@@ -128,7 +123,7 @@
       },
       {
         "nom": "Af_PEF_I_2000 à 20xx",
-        "images": [
+        "data": [
           "clsr Af_PEF indépendants_A à Z_ 2000 à 20xx.JPG",
           "var_Maroc_YT 2002-1318C.jpg",
           "var_Maroc_YT 2007-1462.jpg",
@@ -153,20 +148,18 @@
     "pages": [
       {
         "nom": "Canada",
-        "images": [
+        "data": [
           "Classeur Canada_USA après (200x).JPG",
           "var Canada 78,-1,-2,-3.jpg"
         ]
       },
       {
         "nom": "Etats Unis_PO",
-        "images": [
-          "Clsr USA_PO.jpg"
-        ]
+        "data": ["Clsr USA_PO.jpg"]
       },
       {
         "nom": "Etats Unis_Terre Neuve_New Brunswick",
-        "images": [
+        "data": [
           "Classeur Canada      _ USA 2000 à 201x.JPG",
           "Classeur _Am_origines à 1999_ USA __ Nvau-Brunswick_Nvelle Ecosse_Terre Neuve.JPG",
           "USA 1987_YT 1718 à 1767.png",
@@ -194,7 +187,7 @@
     "pages": [
       {
         "nom": "A.S. 18xx à 1959",
-        "images": [
+        "data": [
           "Clsr Amérique_origines à 1959.JPG",
           "Cuba YT 76 et 82.jpg",
           "Var Argentine YT 550-1.jpg",
@@ -218,27 +211,21 @@
       },
       {
         "nom": "Am. C_Cuba_1959_20xx",
-        "images": [
-          "100_5274.jpg"
-        ]
+        "data": ["100_5274.jpg"]
       },
       {
         "nom": "Am. C_Mer des Antilles_1960-1979",
-        "images": [
+        "data": [
           "Clsr_Amérique Centrale_Mer des Antilles_AS_AN_ 1960 à 1979.JPG"
         ]
       },
       {
         "nom": "Am. du Sud 1960 à 1999",
-        "images": [
-          "Clsr_Amérique AS_1960 à 1999.JPG"
-        ]
+        "data": ["Clsr_Amérique AS_1960 à 1999.JPG"]
       },
       {
         "nom": "Amérique Sud Centrale Nord_1980 à 20xx",
-        "images": [
-          "Classeur Am S et C.JPG"
-        ]
+        "data": ["Classeur Am S et C.JPG"]
       }
     ]
   },
@@ -251,7 +238,7 @@
     "pages": [
       {
         "nom": "PEF_indp_Asie_Cambodge_Laos",
-        "images": [
+        "data": [
           "Clsr PEF Indpt_Asie.JPG",
           "PEF_As_page 1.JPG",
           "PEF_As_page 10.JPG",
@@ -272,7 +259,7 @@
       },
       {
         "nom": "PEF_indp_Asie_Vietnam",
-        "images": [
+        "data": [
           "Clsr_PEF indpt Asie_Vietnam.JPG",
           "var_Vietnam_Emp_YT 1 à 13.jpg",
           "var_Vietnam_Emp_YT 51- 8_nuances.jpg"
@@ -289,13 +276,11 @@
     "pages": [
       {
         "nom": "Asie_A à Z_1960-20xx",
-        "images": [
-          "Classeur Asie_A à Z_1960-20xx.JPG"
-        ]
+        "data": ["Classeur Asie_A à Z_1960-20xx.JPG"]
       },
       {
         "nom": "Asie_Chine_18xx-20xx",
-        "images": [
+        "data": [
           "Capture_Taïwan_1996_BF dessins d'enfant.PNG",
           "Chine Orientale_ 1949_ type de Chine du 716a.jpg",
           "Classeur Monde_Asie_ Chine_ Formose_Hong-kong_Macao.jpg",
@@ -318,13 +303,11 @@
       },
       {
         "nom": "Asie_Corée du Nord_1970-20xx",
-        "images": [
-          "Clr _Asie_Corée du Nord.JPG"
-        ]
+        "data": ["Clr _Asie_Corée du Nord.JPG"]
       },
       {
         "nom": "Asie_Empire des Indes_1867-1947",
-        "images": [
+        "data": [
           "Album_Asie_Empire des Indes_1867-1947.jpg",
           "Ceylan_YT N° 240 perforé.jpg",
           "EPI_Travancore_YT 2 et 7.jpg"
@@ -332,13 +315,13 @@
       },
       {
         "nom": "Asie_Ex Empire. des Indes_Pays indépendants_1960-20xx",
-        "images": [
+        "data": [
           "Classeur Asie_Pays indépendants de l'Ex Empire des Indes_1960 à 20xx.jpg"
         ]
       },
       {
         "nom": "Asie_Japon_1960-20xx",
-        "images": [
+        "data": [
           "Album Japon (1).jpg",
           "Album Japon (2).jpg",
           "JPN_YT 837a.JPG"
@@ -346,15 +329,11 @@
       },
       {
         "nom": "Asie_Moyen-Orient_1960-20xx",
-        "images": [
-          "Clr_Asie_Moyen-Orient_1960 à 20xx.JPG"
-        ]
+        "data": ["Clr_Asie_Moyen-Orient_1960 à 20xx.JPG"]
       },
       {
         "nom": "Asie_origines à 1959",
-        "images": [
-          "Album As-OM_origines à 1959-indépendance.JPG"
-        ]
+        "data": ["Album As-OM_origines à 1959-indépendance.JPG"]
       }
     ]
   },
@@ -367,7 +346,7 @@
     "pages": [
       {
         "nom": "scan var clsr Asie_A-Z",
-        "images": [
+        "data": [
           "var Ned Indië_YT  31.jpg",
           "var_Ned Indië_YT 104.jpg",
           "var_Ned Indië_YT 109.jpg",
@@ -399,7 +378,7 @@
     "pages": [
       {
         "nom": "scan var clsr Asie_MO",
-        "images": [
+        "data": [
           "var_EAU_YT 77-87_couleur décalée.jpg",
           "var_EAU_YT 77-87_oeil cassé.jpg",
           "var_Yemen 1968-192.jpg"
@@ -416,7 +395,7 @@
     "pages": [
       {
         "nom": "EUROPE Blocs-Feuillets",
-        "images": [
+        "data": [
           "Albanie_BF.jpg",
           "Allemagne_RDA_BF_ (1a).jpg",
           "Allemagne_RDA_BF_ (1b).jpg",
@@ -510,10 +489,7 @@
       },
       {
         "nom": "France",
-        "images": [
-          "2019-08-30 003 001.jpg",
-          "F_YT 810, 810a.jpg"
-        ]
+        "data": ["2019-08-30 003 001.jpg", "F_YT 810, 810a.jpg"]
       }
     ]
   },
@@ -526,20 +502,18 @@
     "pages": [
       {
         "nom": "Europe_Est_187x à 1959",
-        "images": [
+        "data": [
           "Clr_Europe de L'Est_Origines à 1959.JPG",
           "H_YT 1090_1200dpi.jpg"
         ]
       },
       {
         "nom": "Europe_Est_1960 à 1969",
-        "images": [
-          "Clr EE_1960 à  1969.JPG"
-        ]
+        "data": ["Clr EE_1960 à  1969.JPG"]
       },
       {
         "nom": "Europe_Est_1960 à 1999_PA_et autres rubriques",
-        "images": [
+        "data": [
           "Album_Europe-Est_PA-TX_1960 à 1999.jpg",
           "EE_1960-99_PA_TX_TS_ page  (6-1).jpg",
           "POL_YT A 58.jpg"
@@ -547,20 +521,18 @@
       },
       {
         "nom": "Europe_Est_1970 à 1979",
-        "images": [
-          "Clr EE_1970 à  1979.JPG"
-        ]
+        "data": ["Clr EE_1970 à  1979.JPG"]
       },
       {
         "nom": "Europe_Est_Origines à 1959_PA_et autres rubriques",
-        "images": [
+        "data": [
           "Clr EE_Autres rubriques_origines à 1959.JPG",
           "Clr EE_PA avant 1960_F17,5x24,5.jpg"
         ]
       },
       {
         "nom": "Europe_Est_URSS_1865 à 1959",
-        "images": [
+        "data": [
           "Clr_EE_URSS_1865 à 1959.jpg",
           "Russie_YT 435.jpg",
           "URSS_YT 43B.jpg",
@@ -592,7 +564,7 @@
       },
       {
         "nom": "Europe_Est_URSS_1960 à 1980",
-        "images": [
+        "data": [
           "Clr EE_URSS_1960 à  1980.JPG",
           "var_URSS YT 77-4412-1.jpg",
           "var_URSS YT 77-4412-2.jpg"
@@ -600,9 +572,7 @@
       },
       {
         "nom": "Europe_Est_URSS_1981 à 20xx",
-        "images": [
-          "Clr EE_URSS_1981 à  201x.JPG"
-        ]
+        "data": ["Clr EE_URSS_1981 à  201x.JPG"]
       }
     ]
   },
@@ -615,40 +585,29 @@
     "pages": [
       {
         "nom": "Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu",
-        "images": [
+        "data": [
           "Clr EE_1970-20xx_Al_EE_LV_LT_SK_CZ_UK_moldavie_Crimée_Bielrussie.jpg"
         ]
       },
       {
         "nom": "Bulgarie",
-        "images": [
-          "Classeur Bulgarie.JPG"
-        ]
+        "data": ["Classeur Bulgarie.JPG"]
       },
       {
         "nom": "Hongrie",
-        "images": [
-          "Classeur Hongrie.jpg"
-        ]
+        "data": ["Classeur Hongrie.jpg"]
       },
       {
         "nom": "Pologne",
-        "images": [
-          "Clr Pologne.JPG",
-          "PL_var YT 82-2644.jpg"
-        ]
+        "data": ["Clr Pologne.JPG", "PL_var YT 82-2644.jpg"]
       },
       {
         "nom": "Roumanie",
-        "images": [
-          "Clr CPR_Roumanie_1970_201x.jpg"
-        ]
+        "data": ["Clr CPR_Roumanie_1970_201x.jpg"]
       },
       {
         "nom": "Tchécoslovaquie",
-        "images": [
-          "Classeur Tchécoslovaquie.JPG"
-        ]
+        "data": ["Classeur Tchécoslovaquie.JPG"]
       }
     ]
   },
@@ -661,7 +620,7 @@
     "pages": [
       {
         "nom": "Europe_Ouest_184x à 1918",
-        "images": [
+        "data": [
           "Classeur Europe de l'Ouest_Origines à 1918.jpg",
           "Var  CH_YT 160-1.jpg",
           "var Grece_YT 197B-1.jpg",
@@ -670,7 +629,7 @@
       },
       {
         "nom": "Europe_Ouest_1919 à 1959",
-        "images": [
+        "data": [
           "Clsr_E-O_1919-59.JPG",
           "Portugal_253-290.jpg",
           "TR_YT 41-964.jpg",
@@ -683,40 +642,33 @@
       },
       {
         "nom": "Europe_Ouest_1960 à 1979",
-        "images": [
+        "data": [
           "Clsr_E-O_1960-79.JPG",
           "Ecosse_Ile de Pabay_Crustacés 1965 europa.png"
         ]
       },
       {
         "nom": "Europe_Ouest_1980 à 1999",
-        "images": [
-          "Clsr_E-O_1980-99.JPG"
-        ]
+        "data": ["Clsr_E-O_1980-99.JPG"]
       },
       {
         "nom": "Europe_Ouest_2000 à 2009",
-        "images": [
-          "Clr Europe Ouest _2000 à 2009.JPG",
-          "Norvège_YT 1-1329.jpg"
-        ]
+        "data": ["Clr Europe Ouest _2000 à 2009.JPG", "Norvège_YT 1-1329.jpg"]
       },
       {
         "nom": "Europe_Ouest_2010 à 20xx",
-        "images": [
-          "Clr Europe Ouest _2010 à 20xx.JPG"
-        ]
+        "data": ["Clr Europe Ouest _2010 à 20xx.JPG"]
       },
       {
         "nom": "Europe_Ouest_Allemagne DDR_1950 à 1990",
-        "images": [
+        "data": [
           "Allemagne_RDA_ YT 80-2201.jpg",
           "Clsr_E-O_DDR_1950 à 1990.JPG"
         ]
       },
       {
         "nom": "Europe_Ouest_Allemagne_18xx à 201x",
-        "images": [
+        "data": [
           "Clsr_Allemagne_RFA.JPG",
           "D_Brunswick_1866-17.jpg",
           "D_emp_YT 50, 50a.jpg",
@@ -728,25 +680,19 @@
       },
       {
         "nom": "Europe_Ouest_Allemagne_ZSO_Sarre_RFA-Berlin",
-        "images": [
-          "Album Allemagne ZSO_Sarre_RFA Berlin.jpg"
-        ]
+        "data": ["Album Allemagne ZSO_Sarre_RFA Berlin.jpg"]
       },
       {
         "nom": "Europe_Ouest_And_St Marin_Nations Unies_19xx à 20xx_",
-        "images": [
-          "Classeur P 50_Europe Ouest_And à Nations Unies.JPG"
-        ]
+        "data": ["Classeur P 50_Europe Ouest_And à Nations Unies.JPG"]
       },
       {
         "nom": "Europe_Ouest_Andorre_1931 à 20xx",
-        "images": [
-          "Clsr_Andorre F.JPG"
-        ]
+        "data": ["Clsr_Andorre F.JPG"]
       },
       {
         "nom": "Europe_Ouest_Belgique_1919 à 1999",
-        "images": [
+        "data": [
           "B_comparer YT N°35-415 et 35-415-1.jpg",
           "B_var YT 139.jpg",
           "B_var YT 401.jpg",
@@ -759,7 +705,7 @@
       },
       {
         "nom": "Europe_Ouest_Espagne_1850 à 1922",
-        "images": [
+        "data": [
           "Clr vert F 16,5x22,5_12p N_6b.jpg",
           "E_YT 172b_ dentelé.jpg",
           "E_YT N° 172.jpg"
@@ -767,7 +713,7 @@
       },
       {
         "nom": "Europe_Ouest_Espagne_1922 à 1999",
-        "images": [
+        "data": [
           "Classeur Espagne 1922 à 1999.jpg",
           "var E_YT 63-1207.jpg",
           "var E_YT 64-1211.jpg",
@@ -783,21 +729,15 @@
       },
       {
         "nom": "Europe_Ouest_Espagne_2000 à 202x",
-        "images": [
-          "Clr Espagne_2000 à 202x.jpg"
-        ]
+        "data": ["Clr Espagne_2000 à 202x.jpg"]
       },
       {
         "nom": "Europe_Ouest_Grande Bretagne - type aq_1967 à 1999",
-        "images": [
-          "Clr bleu _coq-globe.jpg",
-          "lien 1.jpg",
-          "lien 2.jpg"
-        ]
+        "data": ["Clr bleu _coq-globe.jpg", "lien 1.jpg", "lien 2.jpg"]
       },
       {
         "nom": "Europe_Ouest_Grande Bretagne - type aq_2000 à 20xx",
-        "images": [
+        "data": [
           "Clr_Europe Ouest GB_type aq_2000 à 20xx.jpg",
           "lien 1.jpg",
           "lien 2.jpg"
@@ -805,7 +745,7 @@
       },
       {
         "nom": "Europe_Ouest_Grande Bretagne_1840 à 201x",
-        "images": [
+        "data": [
           "GB_1912-22_YT 153 et 153a.jpg",
           "GB_1988_YT 1340 à 1343.jpg",
           "GB_1992_YT 1615 à 1618.jpg",
@@ -815,7 +755,7 @@
       },
       {
         "nom": "Europe_Ouest_Guernsey_Jersey_Alderney_Man",
-        "images": [
+        "data": [
           "Album_Eu-Ouest_1960 à 1999_GB_.jpg",
           "Classeur_Guernsey_Alderney_ Jersey Man_GB RI.JPG",
           "liste des types GB ar, as, at, au.jpg"
@@ -823,7 +763,7 @@
       },
       {
         "nom": "Europe_Ouest_Italie_1852 à 201x",
-        "images": [
+        "data": [
           "Clsr_E-O_Italie_1858-1999.JPG",
           "I_YT 50-573.jpg",
           "I_YT 50-578.jpg",
@@ -835,13 +775,11 @@
       },
       {
         "nom": "Europe_Ouest_Luxembourg_1882 à 20xx",
-        "images": [
-          "Clsr_Luxembourg.JPG"
-        ]
+        "data": ["Clsr_Luxembourg.JPG"]
       },
       {
         "nom": "Europe_Ouest_Monaco_18xx à 201x",
-        "images": [
+        "data": [
           "Album Monaco 1885 à 1960.jpg",
           "Album Monaco 18xx à 201x.jpg",
           "Album Monaco 1974 à 1999.jpg",
@@ -856,7 +794,7 @@
       },
       {
         "nom": "Europe_Ouest_Origines à 20xx_PA_TS_TX_TG_CPx_Jnx_Tgf_Fisc_Bfe",
-        "images": [
+        "data": [
           "Classeur Europe Ouest_PA & autres rubriques_Origines à 20xxx.JPG",
           "Espagne_Tfisc logrono 10cts.png",
           "Espagne_pro sevilla 5cts bleu.png",
@@ -866,22 +804,15 @@
       },
       {
         "nom": "Europe_Ouest_Scandinavie_1960 à 1999",
-        "images": [
-          "Classeur Europe Ouest_Scandinavie_1960 à 1999.JPG"
-        ]
+        "data": ["Classeur Europe Ouest_Scandinavie_1960 à 1999.JPG"]
       },
       {
         "nom": "Europe_Ouest_Suisse 1919 à 202x",
-        "images": [
-          "Classeur Suisse.JPG",
-          "var CH_YT 482.jpg"
-        ]
+        "data": ["Classeur Suisse.JPG", "var CH_YT 482.jpg"]
       },
       {
         "nom": "Europe_Ouest_Vatican_1958 à 1999",
-        "images": [
-          "classeur Vatican_1929-1999.jpg"
-        ]
+        "data": ["classeur Vatican_1929-1999.jpg"]
       }
     ]
   },
@@ -894,7 +825,7 @@
     "pages": [
       {
         "nom": "France _Oblitérés_1849-1899",
-        "images": [
+        "data": [
           "F_C1.jpg",
           "F_C2.jpg",
           "F_YT 14 Ag - Copie.jpg",
@@ -908,7 +839,7 @@
       },
       {
         "nom": "France_Oblitérés_1900-1959",
-        "images": [
+        "data": [
           "Clsr_Fr_oblitérés_ 1900-1959.jpg",
           "F_YT 1011B_1011Bc.jpg",
           "F_YT 145.jpg",
@@ -922,7 +853,7 @@
       },
       {
         "nom": "France_Oblitérés_1960-1999",
-        "images": [
+        "data": [
           "Album France_1960 à 1999.JPG",
           "F_EPJ_1964_YT 1422.jpg",
           "F_EPJ_1994_YT 2888.jpg",
@@ -933,10 +864,7 @@
       },
       {
         "nom": "France_Oblitérés_2000-20xx",
-        "images": [
-          "Clsr F_2000 à 20xx.jpg",
-          "Clsr F_2023 à 20xx.jpg"
-        ]
+        "data": ["Clsr F_2000 à 20xx.jpg", "Clsr F_2023 à 20xx.jpg"]
       }
     ]
   },
@@ -949,14 +877,14 @@
     "pages": [
       {
         "nom": "France_Variétés (1) 1900-1999",
-        "images": [
+        "data": [
           "Classeur France Variétés (1).JPG",
           "Céres France variétés.jpg"
         ]
       },
       {
         "nom": "France_Variétés (2) 2000-20xx",
-        "images": [
+        "data": [
           "Classeur France Variétés (2).jpg",
           "F 2019-AA 1748.jpg",
           "F_2007-4055.jpg",
@@ -988,9 +916,7 @@
       },
       {
         "nom": "larme à l'oeil_mêches liées",
-        "images": [
-          "2019-08-30 002 001.jpg"
-        ]
+        "data": ["2019-08-30 002 001.jpg"]
       }
     ]
   },
@@ -1003,7 +929,7 @@
     "pages": [
       {
         "nom": "page 1",
-        "images": [
+        "data": [
           "img 01-01-001.jpg",
           "img 01-01-002.jpg",
           "img 01-01-003.jpg",
@@ -1083,7 +1009,7 @@
       },
       {
         "nom": "page 10",
-        "images": [
+        "data": [
           "img 10-01 (06).jpg",
           "img 10-01 (1).jpg",
           "img 10-01 (2).jpg",
@@ -1135,7 +1061,7 @@
       },
       {
         "nom": "page 11",
-        "images": [
+        "data": [
           "img 11-01-001.jpg",
           "img 11-01-002.jpg",
           "img 11-01-003.jpg",
@@ -1181,7 +1107,7 @@
       },
       {
         "nom": "page 12",
-        "images": [
+        "data": [
           "F_YT 971.jpg",
           "img 12-01-001.jpg",
           "img 12-01-002.jpg",
@@ -1219,7 +1145,7 @@
       },
       {
         "nom": "page 13",
-        "images": [
+        "data": [
           "img 13-01-001.jpg",
           "img 13-01-002.jpg",
           "img 13-01-003.jpg",
@@ -1249,7 +1175,7 @@
       },
       {
         "nom": "page 14",
-        "images": [
+        "data": [
           "img 14-01-001.jpg",
           "img 14-01-002.jpg",
           "img 14-01-003.jpg",
@@ -1285,7 +1211,7 @@
       },
       {
         "nom": "page 15",
-        "images": [
+        "data": [
           "img  15-05-002.jpg",
           "img 15-01-001.jpg",
           "img 15-01-002.jpg",
@@ -1314,7 +1240,7 @@
       },
       {
         "nom": "page 16",
-        "images": [
+        "data": [
           "img 16-01-01.jpg",
           "img 16-01-02.jpg",
           "img 16-02-001.jpg",
@@ -1336,7 +1262,7 @@
       },
       {
         "nom": "page 17",
-        "images": [
+        "data": [
           "img 17-01-001.jpg",
           "img 17-01-002.jpg",
           "img 17-03-001.jpg",
@@ -1361,7 +1287,7 @@
       },
       {
         "nom": "page 18",
-        "images": [
+        "data": [
           "img 18-01-001.jpg",
           "img 18-01-002.jpg",
           "img 18-02-001.jpg",
@@ -1397,7 +1323,7 @@
       },
       {
         "nom": "page 19",
-        "images": [
+        "data": [
           "img 19-02-001.jpg",
           "img 19-03-001.jpg",
           "img 19-04-001.jpg",
@@ -1423,7 +1349,7 @@
       },
       {
         "nom": "page 2",
-        "images": [
+        "data": [
           "img 2-01-(1).jpg",
           "img 2-01-(2).jpg",
           "img 2-01-(3).jpg",
@@ -1478,7 +1404,7 @@
       },
       {
         "nom": "page 21",
-        "images": [
+        "data": [
           "img 21-01-001.jpg",
           "img 21-01-002.jpg",
           "img 21-02-001.jpg",
@@ -1506,7 +1432,7 @@
       },
       {
         "nom": "page 22",
-        "images": [
+        "data": [
           "img 22-01-001.jpg",
           "img 22-01-002.jpg",
           "img 22-02-001.jpg",
@@ -1529,7 +1455,7 @@
       },
       {
         "nom": "page 23",
-        "images": [
+        "data": [
           "img 23-01-001.jpg",
           "img 23-01-002.jpg",
           "img 23-01-003.jpg",
@@ -1546,7 +1472,7 @@
       },
       {
         "nom": "page 24",
-        "images": [
+        "data": [
           "img 24-01-001.jpg",
           "img 24-01-002.jpg",
           "img 24-01-003.jpg",
@@ -1573,13 +1499,11 @@
       },
       {
         "nom": "page 28",
-        "images": [
-          "img 21-10-365.jpg"
-        ]
+        "data": ["img 21-10-365.jpg"]
       },
       {
         "nom": "page 3",
-        "images": [
+        "data": [
           "img 3-1-001.jpg",
           "img 3-1-002.jpg",
           "img 3-1-003.jpg",
@@ -1627,25 +1551,19 @@
       },
       {
         "nom": "page 36",
-        "images": [
-          "img 36-08-002.jpg"
-        ]
+        "data": ["img 36-08-002.jpg"]
       },
       {
         "nom": "page 37",
-        "images": [
-          "img006.jpg"
-        ]
+        "data": ["img006.jpg"]
       },
       {
         "nom": "page 38",
-        "images": [
-          "img 38-06-001.jpg"
-        ]
+        "data": ["img 38-06-001.jpg"]
       },
       {
         "nom": "page 4",
-        "images": [
+        "data": [
           "img 4-01-001.jpg",
           "img 4-01-002.jpg",
           "img 4-01-003.jpg",
@@ -1713,7 +1631,7 @@
       },
       {
         "nom": "page 47",
-        "images": [
+        "data": [
           "img 45-02-04.jpg",
           "img 46-10-001.jpg",
           "img 47-01-001.jpg",
@@ -1731,7 +1649,7 @@
       },
       {
         "nom": "page 48",
-        "images": [
+        "data": [
           "img 48-01-01 (1).jpg",
           "img 48-03-01.jpg",
           "img 48-03-02.jpg",
@@ -1748,7 +1666,7 @@
       },
       {
         "nom": "page 5",
-        "images": [
+        "data": [
           "img 5-01 (1).jpg",
           "img 5-01 (2).jpg",
           "img 5-01(3).jpg",
@@ -1803,7 +1721,7 @@
       },
       {
         "nom": "page 6",
-        "images": [
+        "data": [
           "img 6-01-001.jpg",
           "img 6-01-002.jpg",
           "img 6-01-003.jpg",
@@ -1867,7 +1785,7 @@
       },
       {
         "nom": "page 7",
-        "images": [
+        "data": [
           "img 7-01-001.jpg",
           "img 7-01-002.jpg",
           "img 7-01-003.jpg",
@@ -1922,7 +1840,7 @@
       },
       {
         "nom": "page 8",
-        "images": [
+        "data": [
           "img 8-01-001.jpg",
           "img 8-01-002.jpg",
           "img 8-01-003.jpg",
@@ -1988,7 +1906,7 @@
       },
       {
         "nom": "page 9",
-        "images": [
+        "data": [
           "img 9-01- (1).jpg",
           "img 9-01- (2).jpg",
           "img 9-01- (3).jpg",
@@ -2054,7 +1972,7 @@
     "pages": [
       {
         "nom": "page 20",
-        "images": [
+        "data": [
           "img 20-01-001.jpg",
           "img 20-01-002.jpg",
           "img 20-02-001.jpg",
@@ -2092,7 +2010,7 @@
     "pages": [
       {
         "nom": "France_autres rubriques",
-        "images": [
+        "data": [
           "page 006.jpg",
           "page 007.jpg",
           "page 008.jpg",
@@ -2117,14 +2035,14 @@
     "pages": [
       {
         "nom": "F_AA",
-        "images": [
+        "data": [
           "Clsr F_AA_2000 à  20xx.jpg",
           "F_2018-11_carnet_flocons de neige.PNG"
         ]
       },
       {
         "nom": "F_Blocs et Feuillets",
-        "images": [
+        "data": [
           "F_1999_BF 23  (1a).jpg",
           "F_1999_BF 23  (1b).jpg",
           "F_1999_BF 23  (1c).jpg"
@@ -2132,7 +2050,7 @@
       },
       {
         "nom": "F_PA",
-        "images": [
+        "data": [
           "Classeur F_ PA & autres rubriques.jpg",
           "F_1944-47_Cpx 6.jpg",
           "F_PA_page 001.jpg",
@@ -2145,9 +2063,7 @@
       },
       {
         "nom": "F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
-        "images": [
-          "Clr F_PO & autres rubriques.jpg"
-        ]
+        "data": ["Clr F_PO & autres rubriques.jpg"]
       }
     ]
   },
@@ -2160,7 +2076,7 @@
     "pages": [
       {
         "nom": "photos var PA",
-        "images": [
+        "data": [
           "var F_C A 38n.jpg",
           "var F_C A24a.jpg",
           "var F_C A24h (1).jpg",
@@ -2197,7 +2113,7 @@
     "pages": [
       {
         "nom": "photos var _PO et autres rubriques",
-        "images": [
+        "data": [
           "F_Lib 1 et 1b_Nord Lille_.jpg",
           "F_Lib 1_Marne-Châlons-Reims.jpg",
           "var F_C FM 12b.jpg",
@@ -2252,7 +2168,7 @@
     "pages": [
       {
         "nom": "Afrique _ Asie _ PA & autres rubriques",
-        "images": [
+        "data": [
           "Afrique _ Asie  _ PA & autres rubriques.JPG",
           "Maroc Espagnol_télégraphe_surcharges Ceuta_Melilla.jpg",
           "page 00.JPG"
@@ -2260,15 +2176,11 @@
       },
       {
         "nom": "Monde A à Z_Blocs et Feuillets (BF)",
-        "images": [
-          "Clsr (1).JPG",
-          "Clsr (2).JPG",
-          "var_Yemen_YT 68-192.jpg"
-        ]
+        "data": ["Clsr (1).JPG", "Clsr (2).JPG", "var_Yemen_YT 68-192.jpg"]
       },
       {
         "nom": "Océanie_Amérique _ PA & autres rubriques",
-        "images": [
+        "data": [
           "100_6870.jpg",
           "Album Am-OM_PA_origines à indépendance.jpg",
           "Chili_A 26.jpg",
@@ -2283,7 +2195,7 @@
       },
       {
         "nom": "PEF_PA_TX_TS & autres",
-        "images": [
+        "data": [
           "Clr PEF_PA_TX_ indépendance à aujourdhui1.jpg",
           "Tchad_1971-A 88.jpg",
           "Tchad_1971-A 97.jpg",
@@ -2306,7 +2218,7 @@
     "pages": [
       {
         "nom": "Col Fr 1",
-        "images": [
+        "data": [
           "AEF_YT 47-226.jpg",
           "AOF_YT 33.jpg",
           "Côte Fr des Somalis YT 47-279.jpg",
@@ -2318,7 +2230,7 @@
       },
       {
         "nom": "Col Fr 2",
-        "images": [
+        "data": [
           "Algérie_YT 26-54c.jpg",
           "Clr PEF_Colonies Françaises (2).jpg",
           "Clr_PEF_Colonies Françaises_Algérie_Maroc_Tunisie_.jpg",
@@ -2327,7 +2239,7 @@
       },
       {
         "nom": "Col Fr 3",
-        "images": [
+        "data": [
           "Clr PEF_Colonies Françaises (3)_PO_PA_TX_TS_CPx.jpg",
           "Var AOF_YT 1947 A 11.jpg",
           "Var Cameroun YT 1946 A 31.jpg",
@@ -2336,9 +2248,7 @@
       },
       {
         "nom": "TAAF",
-        "images": [
-          "Clsr_TOM_TAAF.jpg"
-        ]
+        "data": ["Clsr_TOM_TAAF.jpg"]
       }
     ]
   },
@@ -2351,7 +2261,7 @@
     "pages": [
       {
         "nom": "Ets de l'Océanie_Polynésie Française",
-        "images": [
+        "data": [
           "Clr PEF_DOM-TOM_Ets Océanie_Polynésie Française.JPG",
           "var_PF_74-94.jpg",
           "var_PF_79-135.jpg",
@@ -2362,7 +2272,7 @@
       },
       {
         "nom": "Nvelle Calédonie_Wallis et Futuna",
-        "images": [
+        "data": [
           "Clr PEF_DOM-TOM Nouvelle Calédonie _Wallis et Futuna - PA_TS_TX_CPx.jpg",
           "Clr PEF_Nouvelle Calèdonie_origines à 20xx.jpg",
           "Clr PEF_Wallis et Futuna_origines à 20xx.jpg",
@@ -2384,14 +2294,14 @@
     "pages": [
       {
         "nom": "Australie",
-        "images": [
+        "data": [
           "Clsr_Océanie _OM 1_Australie.jpg",
           "Clsr_Océanie _OM 1_Australie_2000 à 202x.jpg"
         ]
       },
       {
         "nom": "Nouvelle Zélande et Terre de Ross_1960 à 2xxx",
-        "images": [
+        "data": [
           "Clsr_Océanie _OM 2_Nouvelle Zélande1.jpg",
           "NZ_YT 539 et 539a.jpg",
           "var NZ_ YT 546.jpg"
@@ -2399,27 +2309,19 @@
       },
       {
         "nom": "Océanie_OM_1960 à 1999",
-        "images": [
-          "Clsr Océanie_OM_1960 à 1999.jpg"
-        ]
+        "data": ["Clsr Océanie_OM_1960 à 1999.jpg"]
       },
       {
         "nom": "Océanie_OM_1960 à 20xx_PA & autres rubriques",
-        "images": [
-          "Clsr_Océanie_OM PA-TS-TX_1960 à 20xx.jpg"
-        ]
+        "data": ["Clsr_Océanie_OM PA-TS-TX_1960 à 20xx.jpg"]
       },
       {
         "nom": "Océanie_OM_2000 à 20xx",
-        "images": [
-          "Océanie-OM_2000 à 20xx.jpg"
-        ]
+        "data": ["Océanie-OM_2000 à 20xx.jpg"]
       },
       {
         "nom": "Océanie_OM_origines à 1959",
-        "images": [
-          "Clsr_Océanie_OM_avant 1960.jpg"
-        ]
+        "data": ["Clsr_Océanie_OM_avant 1960.jpg"]
       }
     ]
   }
