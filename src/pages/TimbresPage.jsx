@@ -34,8 +34,10 @@ export default function TimbresPage() {
   const [excelPages, setExcelPages] = useState([]);
   const [pageCourante, setPageCourante] = useState(0);
   const [search, setSearch] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(true); // Start loading
     fetch("/albums-tree.json")
       .then((res) => res.json())
       .then((tree) => {
@@ -54,6 +56,11 @@ export default function TimbresPage() {
               timbres: data[key],
             }));
             setExcelPages(pagesArray);
+            setIsLoading(false); // Stop loading
+          })
+          .catch(() => {
+            setIsLoading(false); // Stop loading on error
+            alert("Erreur lors du chargement des données.");
           });
       });
   }, [decodedPath]);
@@ -64,6 +71,8 @@ export default function TimbresPage() {
         val?.toString().toLowerCase().includes(search.toLowerCase())
       )
     ) || [];
+
+  const totalPages = excelPages.length; // Nombre total de pages
 
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans">
@@ -84,55 +93,59 @@ export default function TimbresPage() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {excelPages.length > 0 && (
-        <div className="overflow-x-auto mt-8">
-          <div className="flex justify-between items-center mb-4">
-            <button
-              onClick={() => setPageCourante((p) => Math.max(p - 1, 0))}
-              disabled={pageCourante === 0}
-              className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50"
-            >
-              ⬅ Précédent
-            </button>
-            <span className="text-lg font-semibold">
-              📄 Timbres depuis Excel (page {pageCourante + 1})
-            </span>
-            <button
-              onClick={() =>
-                setPageCourante((p) => Math.min(p + 1, excelPages.length - 1))
-              }
-              disabled={pageCourante === excelPages.length - 1}
-              className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50"
-            >
-              Suivant ➡
-            </button>
-          </div>
+      {isLoading ? (
+        <div className="text-center">Chargement des données...</div>
+      ) : (
+        excelPages.length > 0 && (
+          <div className="overflow-x-auto mt-8">
+            <div className="flex justify-between items-center mb-4">
+              <button
+                onClick={() => setPageCourante((p) => Math.max(p - 1, 0))}
+                disabled={pageCourante === 0}
+                className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50"
+              >
+                ⬅ Précédent
+              </button>
+              <span className="text-lg font-semibold">
+                page {pageCourante + 1}/{totalPages}
+              </span>
+              <button
+                onClick={() =>
+                  setPageCourante((p) => Math.min(p + 1, totalPages - 1))
+                }
+                disabled={pageCourante === totalPages - 1}
+                className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50"
+              >
+                Suivant ➡
+              </button>
+            </div>
 
-          <table className="min-w-full bg-white border border-gray-200 text-sm">
-            <thead className="bg-gray-100 text-left">
-              <tr>
-                {Object.keys(excelPages[pageCourante].timbres[0] || {}).map(
-                  (col) => (
-                    <th key={col} className="border px-4 py-2">
-                      {col}
-                    </th>
-                  )
-                )}
-              </tr>
-            </thead>
-            <tbody>
-              {filteredRows.map((row, i) => (
-                <tr key={i} className="hover:bg-gray-50">
-                  {Object.values(row).map((val, j) => (
-                    <td key={j} className="border px-4 py-2">
-                      {typeof val === "boolean" ? (val ? "✅" : "") : val}
-                    </td>
-                  ))}
+            <table className="min-w-full bg-white border border-gray-200 text-sm">
+              <thead className="bg-gray-100 text-left">
+                <tr>
+                  {Object.keys(excelPages[pageCourante].timbres[0] || {}).map(
+                    (col) => (
+                      <th key={col} className="border px-4 py-2">
+                        {col}
+                      </th>
+                    )
+                  )}
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredRows.map((row, i) => (
+                  <tr key={i} className="hover:bg-gray-50">
+                    {Object.values(row).map((val, j) => (
+                      <td key={j} className="border px-4 py-2">
+                        {typeof val === "boolean" ? (val ? "✅" : "") : val}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )
       )}
 
       <div className="flex justify-between items-center mt-4">
@@ -143,11 +156,14 @@ export default function TimbresPage() {
         >
           ⬅ Précédent
         </button>
+        <span className="text-lg font-semibold">
+          page {pageCourante + 1}/{totalPages}
+        </span>
         <button
           onClick={() =>
-            setPageCourante((p) => Math.min(p + 1, excelPages.length - 1))
+            setPageCourante((p) => Math.min(p + 1, totalPages - 1))
           }
-          disabled={pageCourante === excelPages.length - 1}
+          disabled={pageCourante === totalPages - 1}
           className="bg-gray-200 px-4 py-1 rounded hover:bg-gray-300 disabled:opacity-50"
         >
           Suivant ➡
