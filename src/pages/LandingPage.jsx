@@ -27,7 +27,7 @@ export default function LandingPage() {
             </li>
             <li>
               <img
-                src="/datas/instagram.png"
+                src="/images/instagram.png"
                 alt="Instagram"
                 className="w-5 h-5"
               />
@@ -43,7 +43,7 @@ export default function LandingPage() {
         >
           <figure className="w-full md:w-1/2">
             <img
-              src="/datas/patrick-you.png"
+              src="/images/patrick-you.png"
               alt="Collection de timbres"
               className="w-full rounded shadow object-cover"
             />
