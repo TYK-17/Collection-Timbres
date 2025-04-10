@@ -48,7 +48,6 @@ export default function TimbresPage() {
   }, [albumId]);
 
   // ✅ Charger albums-tree pour trouver le bon fichier JSON
-  // ✅ Charger albums-tree pour trouver le bon fichier JSON
   useEffect(() => {
     fetch("/albums-tree.json")
       .then((res) => res.json())
@@ -70,7 +69,7 @@ export default function TimbresPage() {
         const filename = album.json;
 
         // ✅ Génération de l'URL pour charger le fichier JSON
-        const basePath = "/data /"; // Chemin de base
+        const basePath = "/data"; // Chemin de base
 
         // Vérifiez si 'album.dossier' commence déjà par 'albums' pour éviter la duplication
         const urlPath = album.dossier.startsWith("albums/")

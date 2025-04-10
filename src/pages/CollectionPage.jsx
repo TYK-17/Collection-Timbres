@@ -82,7 +82,7 @@ export default function CollectionPage() {
     try {
       if (album.pages?.[0]?.data?.[0]) {
         const data = album.pages[0].data[0];
-        return `/data /albums/${album.dossier}/${album.pages[0].nom}/${data}`;
+        return `/data/albums/${album.dossier}/${album.pages[0].nom}/${data}`;
       }
     } catch {
       return "/placeholder.jpg";
@@ -91,7 +91,13 @@ export default function CollectionPage() {
   };
 
   const cheminsDisponibles = albums
-    .filter((a) => filtre === "Tous" || a.continent?.toUpperCase() === filtre)
+    .filter((a) => {
+      // Si le filtre est "Tous", on affiche tous les albums
+      if (filtre === "Tous") return true;
+
+      // Si le filtre est un continent, on vérifie que l'album correspond à ce continent
+      return a.continent && a.continent.toUpperCase() === filtre.toUpperCase();
+    })
     .map((a) => a.dossier);
 
   const niveauActuel = chemin ? chemin.split("/").length : 0;
@@ -120,7 +126,7 @@ export default function CollectionPage() {
       titre: dossierPath.split("/").pop(),
       continent: album?.continent || dossierPath.split("/")[0],
       data: album ? getCover(album) : "/placeholder.jpg",
-      estFeuille: !!album, // vrai album avec data
+      estFeuille: !!album, // album avec des images
       contientSousAlbums: contientAlbums,
     };
   });
@@ -151,7 +157,7 @@ export default function CollectionPage() {
             key={cat}
             onClick={() => {
               setFiltre(cat);
-              setChemin("");
+              setChemin(""); // Réinitialiser le chemin lorsque le filtre change
             }}
             className={`px-4 py-1 rounded-full border text-sm font-medium transition duration-200 ${
               filtre === cat

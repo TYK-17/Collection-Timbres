@@ -39,11 +39,15 @@ function walk(dir, relativePath = "") {
     }
   }
 
+  // On extrait le continent en prenant le premier dossier du chemin, et en le nettoyant des doubles barres obliques inverses
+  const continent = relativePath.split("/")[0];
+
   // On retourne les informations du dossier actuel
   return {
     type: "folder",
     name: path.basename(dir),
-    path: relativePath.replace(/\\/g, "/"),
+    path: relativePath.replace(/\\/g, "/"), // Conversion des barres obliques inverses en barres obliques
+    continent: continent, // Le continent est le premier dossier après 'albums'
     children: children.flat(),
     json: findJsonFile(dir), // Trouver un fichier JSON associé à ce dossier
   };

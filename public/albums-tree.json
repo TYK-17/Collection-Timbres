@@ -3,21 +3,45 @@
     "type": "folder",
     "name": "albums",
     "path": "",
+    "continent": "",
     "children": [
       {
         "type": "folder",
         "name": "AFRIQUE",
         "path": "AFRIQUE",
+        "continent": "AFRIQUE",
         "children": [
           {
             "type": "folder",
             "name": "Af_P.Outre-Mer",
             "path": "AFRIQUE/Af_P.Outre-Mer",
+            "continent": "AFRIQUE",
             "children": [
+              {
+                "type": "json",
+                "name": "Afrique_OM_ 1960 à 1999 - A à M (1).json",
+                "path": "AFRIQUE/Af_P.Outre-Mer/Afrique_OM_ 1960 à 1999 - A à M (1).json"
+              },
+              {
+                "type": "json",
+                "name": "Afrique_OM_ 1960 à 1999 -M à Z (2).json",
+                "path": "AFRIQUE/Af_P.Outre-Mer/Afrique_OM_ 1960 à 1999 -M à Z (2).json"
+              },
+              {
+                "type": "json",
+                "name": "Afrique_OM_ Colonies_origines à indépendance_18xx-19xx.json",
+                "path": "AFRIQUE/Af_P.Outre-Mer/Afrique_OM_ Colonies_origines à indépendance_18xx-19xx.json"
+              },
+              {
+                "type": "json",
+                "name": "Afrique_OM_2000 à 20xx.json",
+                "path": "AFRIQUE/Af_P.Outre-Mer/Afrique_OM_2000 à 20xx.json"
+              },
               {
                 "type": "folder",
                 "name": "photos pages clsr Afrique_OM",
                 "path": "AFRIQUE/Af_P.Outre-Mer/photos pages clsr Afrique_OM",
+                "continent": "AFRIQUE\\Af_P.Outre-Mer\\photos pages clsr Afrique_OM",
                 "children": [],
                 "json": null
               },
@@ -25,21 +49,24 @@
                 "type": "folder",
                 "name": "scan var clsr Afrique_OM",
                 "path": "AFRIQUE/Af_P.Outre-Mer/scan var clsr Afrique_OM",
+                "continent": "AFRIQUE\\Af_P.Outre-Mer\\scan var clsr Afrique_OM",
                 "children": [],
                 "json": null
               }
             ],
-            "json": null
+            "json": "Afrique_OM_ 1960 à 1999 - A à M (1).json"
           },
           {
             "type": "folder",
             "name": "Af_PEF_indépendants",
             "path": "AFRIQUE/Af_PEF_indépendants",
+            "continent": "AFRIQUE\\Af_PEF_indépendants",
             "children": [
               {
                 "type": "folder",
                 "name": "Af_PEF _Algérie_indépendance 1962 à 20xx",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF _Algérie_indépendance 1962 à 20xx",
+                "continent": "AFRIQUE\\Af_PEF_indépendants\\Af_PEF _Algérie_indépendance 1962 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -53,6 +80,7 @@
                 "type": "folder",
                 "name": "Af_PEF_I_1980 à 1999",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_1980 à 1999",
+                "continent": "AFRIQUE\\Af_PEF_indépendants\\Af_PEF_I_1980 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -71,6 +99,7 @@
                 "type": "folder",
                 "name": "Af_PEF_I_19xx à 1979",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_19xx à 1979",
+                "continent": "AFRIQUE\\Af_PEF_indépendants\\Af_PEF_I_19xx à 1979",
                 "children": [
                   {
                     "type": "json",
@@ -104,6 +133,7 @@
                 "type": "folder",
                 "name": "Af_PEF_I_2000 à 20xx",
                 "path": "AFRIQUE/Af_PEF_indépendants/Af_PEF_I_2000 à 20xx",
+                "continent": "AFRIQUE\\Af_PEF_indépendants\\Af_PEF_I_2000 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -123,16 +153,19 @@
         "type": "folder",
         "name": "AMERIQUE",
         "path": "AMERIQUE",
+        "continent": "AMERIQUE",
         "children": [
           {
             "type": "folder",
             "name": "AMERIQUE NORD",
             "path": "AMERIQUE/AMERIQUE NORD",
+            "continent": "AMERIQUE\\AMERIQUE NORD",
             "children": [
               {
                 "type": "folder",
                 "name": "Canada",
                 "path": "AMERIQUE/AMERIQUE NORD/Canada",
+                "continent": "AMERIQUE\\AMERIQUE NORD\\Canada",
                 "children": [
                   {
                     "type": "json",
@@ -151,6 +184,7 @@
                 "type": "folder",
                 "name": "Etats Unis_PO",
                 "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_PO",
+                "continent": "AMERIQUE\\AMERIQUE NORD\\Etats Unis_PO",
                 "children": [
                   {
                     "type": "json",
@@ -164,6 +198,7 @@
                 "type": "folder",
                 "name": "Etats Unis_Terre Neuve_New Brunswick",
                 "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_Terre Neuve_New Brunswick",
+                "continent": "AMERIQUE\\AMERIQUE NORD\\Etats Unis_Terre Neuve_New Brunswick",
                 "children": [
                   {
                     "type": "json",
@@ -185,41 +220,77 @@
             "type": "folder",
             "name": "AMERIQUE _Sud_Centrale_Nord",
             "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord",
+            "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord",
             "children": [
               {
                 "type": "folder",
                 "name": "A.S. 18xx à 1959",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/A.S. 18xx à 1959",
-                "children": [],
-                "json": null
+                "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord\\A.S. 18xx à 1959",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Amérique du Sud et Centrale - 18xx à 1959 _ antilles britanniques.json",
+                    "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/A.S. 18xx à 1959/Amérique du Sud et Centrale - 18xx à 1959 _ antilles britanniques.json"
+                  }
+                ],
+                "json": "Amérique du Sud et Centrale - 18xx à 1959 _ antilles britanniques.json"
               },
               {
                 "type": "folder",
                 "name": "Am. C_Cuba_1959_20xx",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Cuba_1959_20xx",
-                "children": [],
-                "json": null
+                "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord\\Am. C_Cuba_1959_20xx",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "A.C. _CUBA _ 1960 à 20xx.json",
+                    "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Cuba_1959_20xx/A.C. _CUBA _ 1960 à 20xx.json"
+                  }
+                ],
+                "json": "A.C. _CUBA _ 1960 à 20xx.json"
               },
               {
                 "type": "folder",
                 "name": "Am. C_Mer des Antilles_1960-1979",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Mer des Antilles_1960-1979",
-                "children": [],
-                "json": null
+                "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord\\Am. C_Mer des Antilles_1960-1979",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Amérique Centrale _ Mer des Antilles_1960 à 1979.json",
+                    "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. C_Mer des Antilles_1960-1979/Amérique Centrale _ Mer des Antilles_1960 à 1979.json"
+                  }
+                ],
+                "json": "Amérique Centrale _ Mer des Antilles_1960 à 1979.json"
               },
               {
                 "type": "folder",
                 "name": "Am. du Sud 1960 à 1999",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. du Sud 1960 à 1999",
-                "children": [],
-                "json": null
+                "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord\\Am. du Sud 1960 à 1999",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Amérique du sud AS_1960 à 1999.json",
+                    "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Am. du Sud 1960 à 1999/Amérique du sud AS_1960 à 1999.json"
+                  }
+                ],
+                "json": "Amérique du sud AS_1960 à 1999.json"
               },
               {
                 "type": "folder",
                 "name": "Amérique Sud Centrale Nord_1980 à 20xx",
                 "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Amérique Sud Centrale Nord_1980 à 20xx",
-                "children": [],
-                "json": null
+                "continent": "AMERIQUE\\AMERIQUE _Sud_Centrale_Nord\\Amérique Sud Centrale Nord_1980 à 20xx",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Amérique du Sud Centrale Nord_1980 à 20xx.json",
+                    "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord/Amérique Sud Centrale Nord_1980 à 20xx/Amérique du Sud Centrale Nord_1980 à 20xx.json"
+                  }
+                ],
+                "json": "Amérique du Sud Centrale Nord_1980 à 20xx.json"
               }
             ],
             "json": null
@@ -231,26 +302,35 @@
         "type": "folder",
         "name": "ASIE",
         "path": "ASIE",
+        "continent": "ASIE",
         "children": [
           {
             "type": "folder",
             "name": "Asie_A à Z_1960-20xx",
             "path": "ASIE/Asie_A à Z_1960-20xx",
+            "continent": "ASIE\\Asie_A à Z_1960-20xx",
             "children": [
+              {
+                "type": "json",
+                "name": "Asie_A à Z_1960-20xx.json",
+                "path": "ASIE/Asie_A à Z_1960-20xx/Asie_A à Z_1960-20xx.json"
+              },
               {
                 "type": "folder",
                 "name": "scan var clsr Asie_A-Z",
                 "path": "ASIE/Asie_A à Z_1960-20xx/scan var clsr Asie_A-Z",
+                "continent": "ASIE\\Asie_A à Z_1960-20xx\\scan var clsr Asie_A-Z",
                 "children": [],
                 "json": null
               }
             ],
-            "json": null
+            "json": "Asie_A à Z_1960-20xx.json"
           },
           {
             "type": "folder",
             "name": "Asie_Chine_18xx-20xx",
             "path": "ASIE/Asie_Chine_18xx-20xx",
+            "continent": "ASIE\\Asie_Chine_18xx-20xx",
             "children": [
               {
                 "type": "json",
@@ -264,20 +344,35 @@
             "type": "folder",
             "name": "Asie_Corée du Nord_1970-20xx",
             "path": "ASIE/Asie_Corée du Nord_1970-20xx",
-            "children": [],
-            "json": null
+            "continent": "ASIE\\Asie_Corée du Nord_1970-20xx",
+            "children": [
+              {
+                "type": "json",
+                "name": "Asie_Corée du Nord _1970_20xx.json",
+                "path": "ASIE/Asie_Corée du Nord_1970-20xx/Asie_Corée du Nord _1970_20xx.json"
+              }
+            ],
+            "json": "Asie_Corée du Nord _1970_20xx.json"
           },
           {
             "type": "folder",
             "name": "Asie_Empire des Indes_1867-1947",
             "path": "ASIE/Asie_Empire des Indes_1867-1947",
-            "children": [],
-            "json": null
+            "continent": "ASIE\\Asie_Empire des Indes_1867-1947",
+            "children": [
+              {
+                "type": "json",
+                "name": "Asie_Empire des Indes_1867-1947.json",
+                "path": "ASIE/Asie_Empire des Indes_1867-1947/Asie_Empire des Indes_1867-1947.json"
+              }
+            ],
+            "json": "Asie_Empire des Indes_1867-1947.json"
           },
           {
             "type": "folder",
             "name": "Asie_Ex Empire. des Indes_Pays indépendants_1960-20xx",
             "path": "ASIE/Asie_Ex Empire. des Indes_Pays indépendants_1960-20xx",
+            "continent": "ASIE\\Asie_Ex Empire. des Indes_Pays indépendants_1960-20xx",
             "children": [
               {
                 "type": "json",
@@ -291,6 +386,7 @@
             "type": "folder",
             "name": "Asie_Japon_1960-20xx",
             "path": "ASIE/Asie_Japon_1960-20xx",
+            "continent": "ASIE\\Asie_Japon_1960-20xx",
             "children": [
               {
                 "type": "json",
@@ -309,33 +405,49 @@
             "type": "folder",
             "name": "Asie_Moyen-Orient_1960-20xx",
             "path": "ASIE/Asie_Moyen-Orient_1960-20xx",
+            "continent": "ASIE\\Asie_Moyen-Orient_1960-20xx",
             "children": [
+              {
+                "type": "json",
+                "name": "Asie_Moyen-Orient_1960-20xx.json",
+                "path": "ASIE/Asie_Moyen-Orient_1960-20xx/Asie_Moyen-Orient_1960-20xx.json"
+              },
               {
                 "type": "folder",
                 "name": "scan var clsr Asie_MO",
                 "path": "ASIE/Asie_Moyen-Orient_1960-20xx/scan var clsr Asie_MO",
+                "continent": "ASIE\\Asie_Moyen-Orient_1960-20xx\\scan var clsr Asie_MO",
                 "children": [],
                 "json": null
               }
             ],
-            "json": null
+            "json": "Asie_Moyen-Orient_1960-20xx.json"
           },
           {
             "type": "folder",
             "name": "Asie_origines à 1959",
             "path": "ASIE/Asie_origines à 1959",
-            "children": [],
-            "json": null
+            "continent": "ASIE\\Asie_origines à 1959",
+            "children": [
+              {
+                "type": "json",
+                "name": "Asie_18xx-1959 en cours.json",
+                "path": "ASIE/Asie_origines à 1959/Asie_18xx-1959 en cours.json"
+              }
+            ],
+            "json": "Asie_18xx-1959 en cours.json"
           },
           {
             "type": "folder",
             "name": "As_PEF_Indépendants",
             "path": "ASIE/As_PEF_Indépendants",
+            "continent": "ASIE\\As_PEF_Indépendants",
             "children": [
               {
                 "type": "folder",
                 "name": "PEF_indp_Asie_Cambodge_Laos",
                 "path": "ASIE/As_PEF_Indépendants/PEF_indp_Asie_Cambodge_Laos",
+                "continent": "ASIE\\As_PEF_Indépendants\\PEF_indp_Asie_Cambodge_Laos",
                 "children": [
                   {
                     "type": "json",
@@ -349,6 +461,7 @@
                 "type": "folder",
                 "name": "PEF_indp_Asie_Vietnam",
                 "path": "ASIE/As_PEF_Indépendants/PEF_indp_Asie_Vietnam",
+                "continent": "ASIE\\As_PEF_Indépendants\\PEF_indp_Asie_Vietnam",
                 "children": [
                   {
                     "type": "json",
@@ -368,11 +481,13 @@
         "type": "folder",
         "name": "EUROPE",
         "path": "EUROPE",
+        "continent": "EUROPE",
         "children": [
           {
             "type": "folder",
             "name": "EUROPE Blocs-Feuillets",
             "path": "EUROPE/EUROPE Blocs-Feuillets",
+            "continent": "EUROPE\\EUROPE Blocs-Feuillets",
             "children": [
               {
                 "type": "json",
@@ -386,11 +501,13 @@
             "type": "folder",
             "name": "EUROPE EST",
             "path": "EUROPE/EUROPE EST",
+            "continent": "EUROPE\\EUROPE EST",
             "children": [
               {
                 "type": "folder",
                 "name": "Europe_Est_187x à 1959",
                 "path": "EUROPE/EUROPE EST/Europe_Est_187x à 1959",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_187x à 1959",
                 "children": [
                   {
                     "type": "json",
@@ -404,48 +521,91 @@
                 "type": "folder",
                 "name": "Europe_Est_1960 à 1969",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1969",
-                "children": [],
-                "json": null
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_1960 à 1969",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Europe de l'Est  1960 à 1969.json",
+                    "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1969/Europe de l'Est  1960 à 1969.json"
+                  }
+                ],
+                "json": "Europe de l'Est  1960 à 1969.json"
               },
               {
                 "type": "folder",
                 "name": "Europe_Est_1960 à 1999_PA_et autres rubriques",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1999_PA_et autres rubriques",
-                "children": [],
-                "json": null
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_1960 à 1999_PA_et autres rubriques",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Europe de l'Est  1960 à 1999_PA_TX.json",
+                    "path": "EUROPE/EUROPE EST/Europe_Est_1960 à 1999_PA_et autres rubriques/Europe de l'Est  1960 à 1999_PA_TX.json"
+                  }
+                ],
+                "json": "Europe de l'Est  1960 à 1999_PA_TX.json"
               },
               {
                 "type": "folder",
                 "name": "Europe_Est_1970 à 1979",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979",
                 "children": [
                   {
                     "type": "folder",
                     "name": "Bulgarie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Bulgarie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979\\Bulgarie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est_1970  à  1979_Bulgarie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Bulgarie/Europe Est_1970  à  1979_Bulgarie.json"
+                      }
+                    ],
+                    "json": "Europe Est_1970  à  1979_Bulgarie.json"
                   },
                   {
                     "type": "folder",
                     "name": "Hongrie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Hongrie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979\\Hongrie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est_1970 à 1979_Hongrie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Hongrie/Europe Est_1970 à 1979_Hongrie.json"
+                      }
+                    ],
+                    "json": "Europe Est_1970 à 1979_Hongrie.json"
                   },
                   {
                     "type": "folder",
                     "name": "Pologne",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Pologne",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979\\Pologne",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est  1970 à 1979_Pologne.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Pologne/Europe Est  1970 à 1979_Pologne.json"
+                      }
+                    ],
+                    "json": "Europe Est  1970 à 1979_Pologne.json"
                   },
                   {
                     "type": "folder",
                     "name": "Roumanie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Roumanie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979\\Roumanie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est        1970 à 1979_ Roumanie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Roumanie/Europe Est        1970 à 1979_ Roumanie.json"
+                      }
+                    ],
+                    "json": "Europe Est        1970 à 1979_ Roumanie.json"
                   },
                   {
                     "type": "json",
@@ -456,8 +616,15 @@
                     "type": "folder",
                     "name": "Tchécoslovaquie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Tchécoslovaquie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1970 à 1979\\Tchécoslovaquie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est  1970 à 1979_Tchécoslovaquie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1970 à 1979/Tchécoslovaquie/Europe Est  1970 à 1979_Tchécoslovaquie.json"
+                      }
+                    ],
+                    "json": "Europe Est  1970 à 1979_Tchécoslovaquie.json"
                   }
                 ],
                 "json": "Récap Europe Est 1970-1979.json"
@@ -466,41 +633,77 @@
                 "type": "folder",
                 "name": "Europe_Est_1980 à 201x",
                 "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x",
                 "children": [
                   {
                     "type": "folder",
                     "name": "Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est  1970 à 20xx_Al_EE_LV_LT_SK_CZ.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Albanie_R Baltes_Slovaquie_R Tchèque_URSS ex R Eu/Europe Est  1970 à 20xx_Al_EE_LV_LT_SK_CZ.json"
+                      }
+                    ],
+                    "json": "Europe Est  1970 à 20xx_Al_EE_LV_LT_SK_CZ.json"
                   },
                   {
                     "type": "folder",
                     "name": "Bulgarie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Bulgarie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Bulgarie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est        1980 à  20xx  _Bulgarie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Bulgarie/Europe Est        1980 à  20xx  _Bulgarie.json"
+                      }
+                    ],
+                    "json": "Europe Est        1980 à  20xx  _Bulgarie.json"
                   },
                   {
                     "type": "folder",
                     "name": "Hongrie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Hongrie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Hongrie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "E_Est_1980 à 20xx_ Hongrie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Hongrie/E_Est_1980 à 20xx_ Hongrie.json"
+                      }
+                    ],
+                    "json": "E_Est_1980 à 20xx_ Hongrie.json"
                   },
                   {
                     "type": "folder",
                     "name": "Pologne",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Pologne",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Pologne",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est  1980 à 20xx_Pologne.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Pologne/Europe Est  1980 à 20xx_Pologne.json"
+                      }
+                    ],
+                    "json": "Europe Est  1980 à 20xx_Pologne.json"
                   },
                   {
                     "type": "folder",
                     "name": "Roumanie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Roumanie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Roumanie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est        1980 à 201x_ Roumanie.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Roumanie/Europe Est        1980 à 201x_ Roumanie.json"
+                      }
+                    ],
+                    "json": "Europe Est        1980 à 201x_ Roumanie.json"
                   },
                   {
                     "type": "json",
@@ -511,8 +714,15 @@
                     "type": "folder",
                     "name": "Tchécoslovaquie",
                     "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Tchécoslovaquie",
-                    "children": [],
-                    "json": null
+                    "continent": "EUROPE\\EUROPE EST\\Europe_Est_1980 à 201x\\Tchécoslovaquie",
+                    "children": [
+                      {
+                        "type": "json",
+                        "name": "Europe Est  1980 à 1992_Tchécoslovaquie_Classeur gris.json",
+                        "path": "EUROPE/EUROPE EST/Europe_Est_1980 à 201x/Tchécoslovaquie/Europe Est  1980 à 1992_Tchécoslovaquie_Classeur gris.json"
+                      }
+                    ],
+                    "json": "Europe Est  1980 à 1992_Tchécoslovaquie_Classeur gris.json"
                   }
                 ],
                 "json": "Récap Europe Est 1980-201x.json"
@@ -521,6 +731,7 @@
                 "type": "folder",
                 "name": "Europe_Est_Origines à 1959_PA_et autres rubriques",
                 "path": "EUROPE/EUROPE EST/Europe_Est_Origines à 1959_PA_et autres rubriques",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_Origines à 1959_PA_et autres rubriques",
                 "children": [
                   {
                     "type": "json",
@@ -544,6 +755,7 @@
                 "type": "folder",
                 "name": "Europe_Est_URSS_1865 à 1959",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1865 à 1959",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_URSS_1865 à 1959",
                 "children": [
                   {
                     "type": "json",
@@ -557,6 +769,7 @@
                 "type": "folder",
                 "name": "Europe_Est_URSS_1960 à 1980",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1960 à 1980",
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_URSS_1960 à 1980",
                 "children": [
                   {
                     "type": "json",
@@ -570,8 +783,15 @@
                 "type": "folder",
                 "name": "Europe_Est_URSS_1981 à 20xx",
                 "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1981 à 20xx",
-                "children": [],
-                "json": null
+                "continent": "EUROPE\\EUROPE EST\\Europe_Est_URSS_1981 à 20xx",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Europe Est_URSS_ 1981 à 20xx.json",
+                    "path": "EUROPE/EUROPE EST/Europe_Est_URSS_1981 à 20xx/Europe Est_URSS_ 1981 à 20xx.json"
+                  }
+                ],
+                "json": "Europe Est_URSS_ 1981 à 20xx.json"
               }
             ],
             "json": null
@@ -580,11 +800,13 @@
             "type": "folder",
             "name": "EUROPE OUEST",
             "path": "EUROPE/EUROPE OUEST",
+            "continent": "EUROPE\\EUROPE OUEST",
             "children": [
               {
                 "type": "folder",
                 "name": "Europe_Ouest_184x à 1918",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_184x à 1918",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_184x à 1918",
                 "children": [
                   {
                     "type": "json",
@@ -598,6 +820,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_1919 à 1959",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1919 à 1959",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_1919 à 1959",
                 "children": [
                   {
                     "type": "json",
@@ -611,6 +834,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_1960 à 1979",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1960 à 1979",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_1960 à 1979",
                 "children": [
                   {
                     "type": "json",
@@ -624,6 +848,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_1980 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_1980 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_1980 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -637,6 +862,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_2000 à 2009",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_2000 à 2009",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_2000 à 2009",
                 "children": [
                   {
                     "type": "json",
@@ -650,6 +876,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_2010 à 20xx",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_2010 à 20xx",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_2010 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -663,6 +890,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Allemagne DDR_1950 à 1990",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne DDR_1950 à 1990",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Allemagne DDR_1950 à 1990",
                 "children": [
                   {
                     "type": "json",
@@ -676,6 +904,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Allemagne_18xx à 201x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne_18xx à 201x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Allemagne_18xx à 201x",
                 "children": [
                   {
                     "type": "json",
@@ -689,6 +918,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Allemagne_ZSO_Sarre_RFA-Berlin",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Allemagne_ZSO_Sarre_RFA-Berlin",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Allemagne_ZSO_Sarre_RFA-Berlin",
                 "children": [
                   {
                     "type": "json",
@@ -702,6 +932,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Andorre_1931 à 20xx",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Andorre_1931 à 20xx",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Andorre_1931 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -715,6 +946,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_And_St Marin_Nations Unies_19xx à 20xx_",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_And_St Marin_Nations Unies_19xx à 20xx_",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_And_St Marin_Nations Unies_19xx à 20xx_",
                 "children": [
                   {
                     "type": "json",
@@ -728,6 +960,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Belgique_1919 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Belgique_1919 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Belgique_1919 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -741,6 +974,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Espagne_1850 à 1922",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_1850 à 1922",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Espagne_1850 à 1922",
                 "children": [
                   {
                     "type": "json",
@@ -754,6 +988,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Espagne_1922 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_1922 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Espagne_1922 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -767,6 +1002,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Espagne_2000 à 202x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Espagne_2000 à 202x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Espagne_2000 à 202x",
                 "children": [
                   {
                     "type": "json",
@@ -780,6 +1016,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Grande Bretagne - type aq_1967 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne - type aq_1967 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Grande Bretagne - type aq_1967 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -793,6 +1030,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Grande Bretagne - type aq_2000 à 20xx",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne - type aq_2000 à 20xx",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Grande Bretagne - type aq_2000 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -806,6 +1044,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Grande Bretagne_1840 à 201x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Grande Bretagne_1840 à 201x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Grande Bretagne_1840 à 201x",
                 "children": [
                   {
                     "type": "json",
@@ -824,6 +1063,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Guernsey_Jersey_Alderney_Man",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Guernsey_Jersey_Alderney_Man",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Guernsey_Jersey_Alderney_Man",
                 "children": [
                   {
                     "type": "json",
@@ -837,6 +1077,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Italie_1852 à 201x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Italie_1852 à 201x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Italie_1852 à 201x",
                 "children": [
                   {
                     "type": "json",
@@ -850,6 +1091,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Luxembourg_1882 à 20xx",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Luxembourg_1882 à 20xx",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Luxembourg_1882 à 20xx",
                 "children": [
                   {
                     "type": "json",
@@ -863,6 +1105,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Monaco_18xx à 201x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Monaco_18xx à 201x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Monaco_18xx à 201x",
                 "children": [
                   {
                     "type": "json",
@@ -886,6 +1129,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Origines à 20xx_PA_TS_TX_TG_CPx_Jnx_Tgf_Fisc_Bfe",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Origines à 20xx_PA_TS_TX_TG_CPx_Jnx_Tgf_Fisc_Bfe",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Origines à 20xx_PA_TS_TX_TG_CPx_Jnx_Tgf_Fisc_Bfe",
                 "children": [
                   {
                     "type": "json",
@@ -899,6 +1143,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Scandinavie_1960 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Scandinavie_1960 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Scandinavie_1960 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -912,6 +1157,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Suisse 1919 à 202x",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Suisse 1919 à 202x",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Suisse 1919 à 202x",
                 "children": [
                   {
                     "type": "json",
@@ -925,6 +1171,7 @@
                 "type": "folder",
                 "name": "Europe_Ouest_Vatican_1958 à 1999",
                 "path": "EUROPE/EUROPE OUEST/Europe_Ouest_Vatican_1958 à 1999",
+                "continent": "EUROPE\\EUROPE OUEST\\Europe_Ouest_Vatican_1958 à 1999",
                 "children": [
                   {
                     "type": "json",
@@ -941,16 +1188,19 @@
             "type": "folder",
             "name": "France",
             "path": "EUROPE/France",
+            "continent": "EUROPE\\France",
             "children": [
               {
                 "type": "folder",
                 "name": "France_autres rubriques",
                 "path": "EUROPE/France/France_autres rubriques",
+                "continent": "EUROPE\\France\\France_autres rubriques",
                 "children": [
                   {
                     "type": "folder",
                     "name": "F_AA",
                     "path": "EUROPE/France/France_autres rubriques/F_AA",
+                    "continent": "EUROPE\\France\\France_autres rubriques\\F_AA",
                     "children": [
                       {
                         "type": "json",
@@ -961,6 +1211,7 @@
                         "type": "folder",
                         "name": "F_AA_carnets 2023",
                         "path": "EUROPE/France/France_autres rubriques/F_AA/F_AA_carnets 2023",
+                        "continent": "EUROPE\\France\\France_autres rubriques\\F_AA\\F_AA_carnets 2023",
                         "children": [],
                         "json": null
                       }
@@ -971,6 +1222,7 @@
                     "type": "folder",
                     "name": "F_Blocs et Feuillets",
                     "path": "EUROPE/France/France_autres rubriques/F_Blocs et Feuillets",
+                    "continent": "EUROPE\\France\\France_autres rubriques\\F_Blocs et Feuillets",
                     "children": [
                       {
                         "type": "json",
@@ -984,6 +1236,7 @@
                     "type": "folder",
                     "name": "F_PA",
                     "path": "EUROPE/France/France_autres rubriques/F_PA",
+                    "continent": "EUROPE\\France\\France_autres rubriques\\F_PA",
                     "children": [
                       {
                         "type": "json",
@@ -994,6 +1247,7 @@
                         "type": "folder",
                         "name": "photos var PA",
                         "path": "EUROPE/France/France_autres rubriques/F_PA/photos var PA",
+                        "continent": "EUROPE\\France\\France_autres rubriques\\F_PA\\photos var PA",
                         "children": [],
                         "json": null
                       }
@@ -1004,6 +1258,7 @@
                     "type": "folder",
                     "name": "F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
                     "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
+                    "continent": "EUROPE\\France\\France_autres rubriques\\F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
                     "children": [
                       {
                         "type": "json",
@@ -1014,6 +1269,7 @@
                         "type": "folder",
                         "name": "photos var _PO et autres rubriques",
                         "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/photos var _PO et autres rubriques",
+                        "continent": "EUROPE\\France\\France_autres rubriques\\F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf\\photos var _PO et autres rubriques",
                         "children": [],
                         "json": null
                       }
@@ -1027,11 +1283,13 @@
                 "type": "folder",
                 "name": "France_Neufs",
                 "path": "EUROPE/France/France_Neufs",
+                "continent": "EUROPE\\France\\France_Neufs",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France_Neufs_1900-1959",
                     "path": "EUROPE/France/France_Neufs/France_Neufs_1900-1959",
+                    "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
@@ -1045,6 +1303,7 @@
                     "type": "folder",
                     "name": "France_Neufs_1960 à 1999",
                     "path": "EUROPE/France/France_Neufs/France_Neufs_1960 à 1999",
+                    "continent": "EUROPE\\France\\France_Neufs\\France_Neufs_1960 à 1999",
                     "children": [
                       {
                         "type": "json",
@@ -1061,11 +1320,13 @@
                 "type": "folder",
                 "name": "France_Oblitérés",
                 "path": "EUROPE/France/France_Oblitérés",
+                "continent": "EUROPE\\France\\France_Oblitérés",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France _Oblitérés_1849-1899",
                     "path": "EUROPE/France/France_Oblitérés/France _Oblitérés_1849-1899",
+                    "continent": "EUROPE\\France\\France_Oblitérés\\France _Oblitérés_1849-1899",
                     "children": [
                       {
                         "type": "json",
@@ -1079,6 +1340,7 @@
                     "type": "folder",
                     "name": "France_Oblitérés_1900-1959",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1900-1959",
+                    "continent": "EUROPE\\France\\France_Oblitérés\\France_Oblitérés_1900-1959",
                     "children": [
                       {
                         "type": "json",
@@ -1092,6 +1354,7 @@
                     "type": "folder",
                     "name": "France_Oblitérés_1960-1999",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1960-1999",
+                    "continent": "EUROPE\\France\\France_Oblitérés\\France_Oblitérés_1960-1999",
                     "children": [
                       {
                         "type": "json",
@@ -1105,6 +1368,7 @@
                     "type": "folder",
                     "name": "France_Oblitérés_2000-20xx",
                     "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_2000-20xx",
+                    "continent": "EUROPE\\France\\France_Oblitérés\\France_Oblitérés_2000-20xx",
                     "children": [
                       {
                         "type": "json",
@@ -1121,11 +1385,13 @@
                 "type": "folder",
                 "name": "France_Variétés",
                 "path": "EUROPE/France/France_Variétés",
+                "continent": "EUROPE\\France\\France_Variétés",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France_Variétés (1) 1900-1999",
                     "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999",
+                    "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999",
                     "children": [
                       {
                         "type": "json",
@@ -1136,6 +1402,7 @@
                         "type": "folder",
                         "name": "page 1",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 1",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 1",
                         "children": [],
                         "json": null
                       },
@@ -1143,6 +1410,7 @@
                         "type": "folder",
                         "name": "page 10",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 10",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 10",
                         "children": [],
                         "json": null
                       },
@@ -1150,6 +1418,7 @@
                         "type": "folder",
                         "name": "page 11",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 11",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 11",
                         "children": [],
                         "json": null
                       },
@@ -1157,6 +1426,7 @@
                         "type": "folder",
                         "name": "page 12",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 12",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 12",
                         "children": [],
                         "json": null
                       },
@@ -1164,6 +1434,7 @@
                         "type": "folder",
                         "name": "page 13",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 13",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 13",
                         "children": [],
                         "json": null
                       },
@@ -1171,6 +1442,7 @@
                         "type": "folder",
                         "name": "page 14",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 14",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 14",
                         "children": [],
                         "json": null
                       },
@@ -1178,6 +1450,7 @@
                         "type": "folder",
                         "name": "page 15",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 15",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 15",
                         "children": [],
                         "json": null
                       },
@@ -1185,6 +1458,7 @@
                         "type": "folder",
                         "name": "page 16",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 16",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 16",
                         "children": [],
                         "json": null
                       },
@@ -1192,6 +1466,7 @@
                         "type": "folder",
                         "name": "page 17",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 17",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 17",
                         "children": [],
                         "json": null
                       },
@@ -1199,6 +1474,7 @@
                         "type": "folder",
                         "name": "page 18",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 18",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 18",
                         "children": [],
                         "json": null
                       },
@@ -1206,6 +1482,7 @@
                         "type": "folder",
                         "name": "page 19",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 19",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 19",
                         "children": [],
                         "json": null
                       },
@@ -1213,6 +1490,7 @@
                         "type": "folder",
                         "name": "page 2",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 2",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 2",
                         "children": [],
                         "json": null
                       },
@@ -1220,6 +1498,7 @@
                         "type": "folder",
                         "name": "page 21",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 21",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 21",
                         "children": [],
                         "json": null
                       },
@@ -1227,6 +1506,7 @@
                         "type": "folder",
                         "name": "page 22",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 22",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 22",
                         "children": [],
                         "json": null
                       },
@@ -1234,6 +1514,7 @@
                         "type": "folder",
                         "name": "page 23",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 23",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 23",
                         "children": [],
                         "json": null
                       },
@@ -1241,11 +1522,13 @@
                         "type": "folder",
                         "name": "page 24",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 24",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 24",
                         "children": [
                           {
                             "type": "folder",
                             "name": "page 20",
                             "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 24/page 20",
+                            "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 24\\page 20",
                             "children": [],
                             "json": null
                           }
@@ -1256,6 +1539,7 @@
                         "type": "folder",
                         "name": "page 25",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 25",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 25",
                         "children": [],
                         "json": null
                       },
@@ -1263,6 +1547,7 @@
                         "type": "folder",
                         "name": "page 27",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 27",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 27",
                         "children": [],
                         "json": null
                       },
@@ -1270,6 +1555,7 @@
                         "type": "folder",
                         "name": "page 28",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 28",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 28",
                         "children": [],
                         "json": null
                       },
@@ -1277,6 +1563,7 @@
                         "type": "folder",
                         "name": "page 3",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 3",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 3",
                         "children": [],
                         "json": null
                       },
@@ -1284,6 +1571,7 @@
                         "type": "folder",
                         "name": "page 36",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 36",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 36",
                         "children": [],
                         "json": null
                       },
@@ -1291,6 +1579,7 @@
                         "type": "folder",
                         "name": "page 37",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 37",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 37",
                         "children": [],
                         "json": null
                       },
@@ -1298,6 +1587,7 @@
                         "type": "folder",
                         "name": "page 38",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 38",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 38",
                         "children": [],
                         "json": null
                       },
@@ -1305,6 +1595,7 @@
                         "type": "folder",
                         "name": "page 4",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 4",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 4",
                         "children": [],
                         "json": null
                       },
@@ -1312,6 +1603,7 @@
                         "type": "folder",
                         "name": "page 47",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 47",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 47",
                         "children": [],
                         "json": null
                       },
@@ -1319,6 +1611,7 @@
                         "type": "folder",
                         "name": "page 48",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 48",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 48",
                         "children": [],
                         "json": null
                       },
@@ -1326,6 +1619,7 @@
                         "type": "folder",
                         "name": "page 5",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 5",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 5",
                         "children": [],
                         "json": null
                       },
@@ -1333,6 +1627,7 @@
                         "type": "folder",
                         "name": "page 6",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 6",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 6",
                         "children": [],
                         "json": null
                       },
@@ -1340,6 +1635,7 @@
                         "type": "folder",
                         "name": "page 7",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 7",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 7",
                         "children": [],
                         "json": null
                       },
@@ -1347,6 +1643,7 @@
                         "type": "folder",
                         "name": "page 8",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 8",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 8",
                         "children": [],
                         "json": null
                       },
@@ -1354,6 +1651,7 @@
                         "type": "folder",
                         "name": "page 9",
                         "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 9",
+                        "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (1) 1900-1999\\page 9",
                         "children": [],
                         "json": null
                       }
@@ -1364,6 +1662,7 @@
                     "type": "folder",
                     "name": "France_Variétés (2) 2000-20xx",
                     "path": "EUROPE/France/France_Variétés/France_Variétés (2) 2000-20xx",
+                    "continent": "EUROPE\\France\\France_Variétés\\France_Variétés (2) 2000-20xx",
                     "children": [
                       {
                         "type": "json",
@@ -1377,6 +1676,7 @@
                     "type": "folder",
                     "name": "larme à l'oeil_mêches liées",
                     "path": "EUROPE/France/France_Variétés/larme à l'oeil_mêches liées",
+                    "continent": "EUROPE\\France\\France_Variétés\\larme à l'oeil_mêches liées",
                     "children": [],
                     "json": null
                   }
@@ -1398,37 +1698,66 @@
         "type": "folder",
         "name": "Monde",
         "path": "Monde",
+        "continent": "Monde",
         "children": [
           {
             "type": "folder",
             "name": "Afrique _ Asie _ PA & autres rubriques",
             "path": "Monde/Afrique _ Asie _ PA & autres rubriques",
-            "children": [],
-            "json": null
+            "continent": "Monde\\Afrique _ Asie _ PA & autres rubriques",
+            "children": [
+              {
+                "type": "json",
+                "name": "Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json",
+                "path": "Monde/Afrique _ Asie _ PA & autres rubriques/Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json"
+              }
+            ],
+            "json": "Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json"
           },
           {
             "type": "folder",
             "name": "Monde A à Z_Blocs et Feuillets (BF)",
             "path": "Monde/Monde A à Z_Blocs et Feuillets (BF)",
-            "children": [],
-            "json": null
+            "continent": "Monde\\Monde A à Z_Blocs et Feuillets (BF)",
+            "children": [
+              {
+                "type": "json",
+                "name": "Monde_A-Z_BF_18xx-20xx.json",
+                "path": "Monde/Monde A à Z_Blocs et Feuillets (BF)/Monde_A-Z_BF_18xx-20xx.json"
+              }
+            ],
+            "json": "Monde_A-Z_BF_18xx-20xx.json"
           },
           {
             "type": "folder",
             "name": "Océanie_Amérique _ PA & autres rubriques",
             "path": "Monde/Océanie_Amérique _ PA & autres rubriques",
-            "children": [],
-            "json": null
+            "continent": "Monde\\Océanie_Amérique _ PA & autres rubriques",
+            "children": [
+              {
+                "type": "json",
+                "name": "Amérique _ PA & autres rubriques 1960-20xx_.json",
+                "path": "Monde/Océanie_Amérique _ PA & autres rubriques/Amérique _ PA & autres rubriques 1960-20xx_.json"
+              },
+              {
+                "type": "json",
+                "name": "Océanie _ Amérique _ PA & autres rubriques 18xx-1959.json",
+                "path": "Monde/Océanie_Amérique _ PA & autres rubriques/Océanie _ Amérique _ PA & autres rubriques 18xx-1959.json"
+              }
+            ],
+            "json": "Amérique _ PA & autres rubriques 1960-20xx_.json"
           },
           {
             "type": "folder",
             "name": "PEF_Colonies Françaises",
             "path": "Monde/PEF_Colonies Françaises",
+            "continent": "Monde\\PEF_Colonies Françaises",
             "children": [
               {
                 "type": "folder",
                 "name": "Col Fr 1",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 1",
+                "continent": "Monde\\PEF_Colonies Françaises\\Col Fr 1",
                 "children": [
                   {
                     "type": "json",
@@ -1447,6 +1776,7 @@
                 "type": "folder",
                 "name": "Col Fr 2",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 2",
+                "continent": "Monde\\PEF_Colonies Françaises\\Col Fr 2",
                 "children": [
                   {
                     "type": "json",
@@ -1470,6 +1800,7 @@
                 "type": "folder",
                 "name": "Col Fr 3",
                 "path": "Monde/PEF_Colonies Françaises/Col Fr 3",
+                "continent": "Monde\\PEF_Colonies Françaises\\Col Fr 3",
                 "children": [
                   {
                     "type": "json",
@@ -1483,6 +1814,7 @@
                 "type": "folder",
                 "name": "SPM",
                 "path": "Monde/PEF_Colonies Françaises/SPM",
+                "continent": "Monde\\PEF_Colonies Françaises\\SPM",
                 "children": [
                   {
                     "type": "json",
@@ -1496,6 +1828,7 @@
                 "type": "folder",
                 "name": "TAAF",
                 "path": "Monde/PEF_Colonies Françaises/TAAF",
+                "continent": "Monde\\PEF_Colonies Françaises\\TAAF",
                 "children": [
                   {
                     "type": "json",
@@ -1512,6 +1845,7 @@
             "type": "folder",
             "name": "PEF_PA_TX_TS & autres",
             "path": "Monde/PEF_PA_TX_TS & autres",
+            "continent": "Monde\\PEF_PA_TX_TS & autres",
             "children": [
               {
                 "type": "json",
@@ -1528,11 +1862,13 @@
         "type": "folder",
         "name": "OCEANIE",
         "path": "OCEANIE",
+        "continent": "OCEANIE",
         "children": [
           {
             "type": "folder",
             "name": "Ets de l'Océanie_Polynésie Française",
             "path": "OCEANIE/Ets de l'Océanie_Polynésie Française",
+            "continent": "OCEANIE\\Ets de l'Océanie_Polynésie Française",
             "children": [
               {
                 "type": "json",
@@ -1546,6 +1882,7 @@
             "type": "folder",
             "name": "Nvelle Calédonie_Wallis et Futuna",
             "path": "OCEANIE/Nvelle Calédonie_Wallis et Futuna",
+            "continent": "OCEANIE\\Nvelle Calédonie_Wallis et Futuna",
             "children": [
               {
                 "type": "json",
@@ -1569,51 +1906,109 @@
             "type": "folder",
             "name": "Océanie Outre-Mer",
             "path": "OCEANIE/Océanie Outre-Mer",
+            "continent": "OCEANIE\\Océanie Outre-Mer",
             "children": [
               {
                 "type": "folder",
                 "name": "Australie",
                 "path": "OCEANIE/Océanie Outre-Mer/Australie",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Australie",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM 1 - Australie - 2000 à 202x.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Australie/Océanie_OM 1 - Australie - 2000 à 202x.json"
+                  },
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM 1 - Australie_1912 à 1999.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Australie/Océanie_OM 1 - Australie_1912 à 1999.json"
+                  }
+                ],
+                "json": "Océanie_OM 1 - Australie - 2000 à 202x.json"
               },
               {
                 "type": "folder",
                 "name": "Nouvelle Zélande et Terre de Ross_1960 à 2xxx",
                 "path": "OCEANIE/Océanie Outre-Mer/Nouvelle Zélande et Terre de Ross_1960 à 2xxx",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Nouvelle Zélande et Terre de Ross_1960 à 2xxx",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM 2 - Nouvelle Zélande.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Nouvelle Zélande et Terre de Ross_1960 à 2xxx/Océanie_OM 2 - Nouvelle Zélande.json"
+                  }
+                ],
+                "json": "Océanie_OM 2 - Nouvelle Zélande.json"
+              },
+              {
+                "type": "json",
+                "name": "Océanie-OM_1960-20xx_.json",
+                "path": "OCEANIE/Océanie Outre-Mer/Océanie-OM_1960-20xx_.json"
+              },
+              {
+                "type": "json",
+                "name": "Océanie_OM_ localisation.json",
+                "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_ localisation.json"
               },
               {
                 "type": "folder",
                 "name": "Océanie_OM_1960 à 1999",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 1999",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Océanie_OM_1960 à 1999",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM_1960 à 1999.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 1999/Océanie_OM_1960 à 1999.json"
+                  }
+                ],
+                "json": "Océanie_OM_1960 à 1999.json"
               },
               {
                 "type": "folder",
                 "name": "Océanie_OM_1960 à 20xx_PA & autres rubriques",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 20xx_PA & autres rubriques",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Océanie_OM_1960 à 20xx_PA & autres rubriques",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie OM _ PA-TS-TX-TD_1960-20xx_.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_1960 à 20xx_PA & autres rubriques/Océanie OM _ PA-TS-TX-TD_1960-20xx_.json"
+                  }
+                ],
+                "json": "Océanie OM _ PA-TS-TX-TD_1960-20xx_.json"
               },
               {
                 "type": "folder",
                 "name": "Océanie_OM_2000 à 20xx",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_2000 à 20xx",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Océanie_OM_2000 à 20xx",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM_2000 à 20xx.json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_2000 à 20xx/Océanie_OM_2000 à 20xx.json"
+                  }
+                ],
+                "json": "Océanie_OM_2000 à 20xx.json"
               },
               {
                 "type": "folder",
                 "name": "Océanie_OM_origines à 1959",
                 "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_origines à 1959",
-                "children": [],
-                "json": null
+                "continent": "OCEANIE\\Océanie Outre-Mer\\Océanie_OM_origines à 1959",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Océanie_OM avant 1960_(5).json",
+                    "path": "OCEANIE/Océanie Outre-Mer/Océanie_OM_origines à 1959/Océanie_OM avant 1960_(5).json"
+                  }
+                ],
+                "json": "Océanie_OM avant 1960_(5).json"
               }
             ],
-            "json": null
+            "json": "Océanie-OM_1960-20xx_.json"
           }
         ],
         "json": null
