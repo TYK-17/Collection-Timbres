@@ -61,7 +61,10 @@ export default function CollectionPage() {
       </div>
 
       <h1 className="text-2xl font-bold mb-4">
-        📁 {currentPath || "Tous les continents"}
+        📁{" "}
+        {currentPath
+          ? decodeURIComponent(currentPath).replace(/_/g, " / ")
+          : "Tous les continents"}
       </h1>
 
       {/* Bouton retour */}
@@ -92,7 +95,7 @@ export default function CollectionPage() {
                 to={`/collection/${subPath}`}
                 className="text-blue-600 underline"
               >
-                {part}
+                {decodeURIComponent(part).replace(/_/g, " ")}
               </Link>
             </span>
           );

@@ -23,7 +23,12 @@ function flattenTree(tree, cheminBase = "") {
 
 export default function TimbresPage() {
   const { albumId } = useParams();
-  const decodedPath = decodeURIComponent(albumId); // ✅
+  const decodedPath = decodeURIComponent(albumId);
+
+  const cheminLisible = decodedPath
+    .split("/")
+    .map((segment) => segment.replace(/_/g, " "))
+    .join(" / ");
 
   const [timbres, setTimbres] = useState([]);
   const [excelPages, setExcelPages] = useState([]);
@@ -53,7 +58,14 @@ export default function TimbresPage() {
       .then((res) => res.json())
       .then((tree) => {
         const flat = flattenTree(tree);
-        const album = flat.find((a) => a.dossier === decodedPath); // ✅
+
+        // 👇 Debug pour afficher les dossiers dispos
+        console.log("📦 Tous les dossiers disponibles :");
+        flat.forEach((a) => console.log(a.dossier));
+
+        const fullPath = `albums/${decodedPath}`;
+        const album = flat.find((a) => a.dossier === fullPath);
+
         console.log("📁 albumId =", decodedPath);
         console.log("🔍 Album trouvé :", album);
 
@@ -63,8 +75,7 @@ export default function TimbresPage() {
         }
 
         const filename = album.json;
-        const url = `/data/albums/${album.dossier}/${filename}`;
-
+        const url = `/data/${album.dossier}/${filename}`;
         console.log("🔽 Chargement JSON :", url);
 
         fetch(url)
@@ -141,8 +152,6 @@ export default function TimbresPage() {
       t.nom.toLowerCase().includes(search.toLowerCase()) ||
       t.notes?.toLowerCase().includes(search.toLowerCase())
   );
-
-  const cheminLisible = decodedPath.split("/").join(" / ");
 
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans">
