@@ -1,97 +1,134 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 
-const continents = [
-  "TOUS",
-  "AFRIQUE",
-  "AMERIQUE",
-  "ASIE",
-  "EUROPE",
-  "MONDE",
-  "OCEANIE",
-];
+function parsePath(pathname) {
+  const parts = pathname
+    .replace(/^\/collection\/?/, "")
+    .split("/")
+    .filter(Boolean);
+  return parts;
+}
 
-function flattenTree(tree, cheminBase = "") {
-  let result = [];
-
-  for (const item of tree) {
-    const chemin = cheminBase ? `${cheminBase}/${item.name}` : item.name;
-
-    if (item.type === "folder") {
-      const enfants = flattenTree(item.children || [], chemin);
-      result.push({
-        ...item,
-        dossier: chemin,
-      });
-      result = [...result, ...enfants];
-    }
+function findNode(tree, pathParts) {
+  let current = tree[0];
+  for (const part of pathParts) {
+    if (!current.children) return null;
+    current = current.children.find(
+      (child) => child.type === "folder" && child.name === part
+    );
+    if (!current) return null;
   }
-
-  return result;
+  return current;
 }
 
 export default function CollectionPage() {
-  const [albums, setAlbums] = useState([]);
-  const [selectedContinent, setSelectedContinent] = useState("TOUS");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const pathParts = parsePath(location.pathname);
+
+  const [tree, setTree] = useState([]);
+  const [currentNode, setCurrentNode] = useState(null);
 
   useEffect(() => {
     fetch("/albums-tree.json")
       .then((res) => res.json())
-      .then((tree) => {
-        const flat = flattenTree(tree);
-        const albumsAvecJson = flat.filter((item) => item.json);
-        setAlbums(albumsAvecJson);
+      .then((data) => {
+        setTree(data);
       });
   }, []);
 
-  const albumsFiltres =
-    selectedContinent === "TOUS"
-      ? albums
-      : albums.filter((a) => a.continent === selectedContinent);
+  useEffect(() => {
+    if (tree.length === 0) return;
+    const node = findNode(tree, pathParts);
+    setCurrentNode(node);
+  }, [tree, location.pathname]);
+
+  const subFolders =
+    currentNode?.children?.filter((child) => child.type === "folder") || [];
+  const currentPath = pathParts.join("/");
+  const parentPath = pathParts.slice(0, -1).join("/");
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">📚 Collection de Timbres</h1>
-
-      {/* Filtres */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {continents.map((c) => (
-          <button
-            key={c}
-            onClick={() => setSelectedContinent(c)}
-            className={`px-4 py-2 rounded ${
-              selectedContinent === c
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 text-gray-700"
-            }`}
-          >
-            {c}
-          </button>
-        ))}
+      {/* Bouton vers la LandingPage */}
+      <div className="mb-4">
+        <Link
+          to="/"
+          className="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+        >
+          🏠 Retour à l'accueil
+        </Link>
       </div>
 
-      {/* Albums */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {albumsFiltres.map((album, idx) => {
-          const cheminLisible = album.dossier
-            .split("/")
-            .slice(1)
-            .join(" / ")
-            .replace(/_/g, " ");
-          const urlId = album.dossier.replace(/\//g, "_");
+      <h1 className="text-2xl font-bold mb-4">
+        📁 {currentPath || "Tous les continents"}
+      </h1>
 
+      {/* Bouton retour */}
+      {pathParts.length > 0 && (
+        <div className="mb-4">
+          <button
+            onClick={() => navigate(`/collection/${parentPath}`)}
+            className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+          >
+            ⬅ Retour
+          </button>
+        </div>
+      )}
+
+      {/* Fil d’Ariane */}
+      <div className="mb-4 text-sm text-gray-600">
+        {pathParts.length > 0 && (
+          <Link to="/collection" className="text-blue-600 underline">
+            Racine
+          </Link>
+        )}
+        {pathParts.map((part, idx) => {
+          const subPath = pathParts.slice(0, idx + 1).join("/");
+          return (
+            <span key={idx}>
+              {" / "}
+              <Link
+                to={`/collection/${subPath}`}
+                className="text-blue-600 underline"
+              >
+                {part}
+              </Link>
+            </span>
+          );
+        })}
+      </div>
+
+      {/* Sous-dossiers */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {subFolders.map((child, idx) => {
+          const childPath = [...pathParts, child.name].join("/");
           return (
             <Link
               key={idx}
-              to={`/album/${urlId}`}
+              to={`/collection/${childPath}`}
               className="border rounded-lg p-4 bg-white hover:shadow-md transition"
             >
-              <h2 className="text-lg font-semibold">{cheminLisible}</h2>
-              <p className="text-sm text-gray-600">🌍 {album.continent}</p>
+              <h2 className="text-lg font-semibold">
+                {child.name.replace(/_/g, " ")}
+              </h2>
             </Link>
           );
         })}
       </div>
+
+      {/* Fichier JSON s'il existe */}
+      {currentNode?.json && (
+        <div className="mt-10 p-4 border bg-yellow-50 rounded">
+          <h3 className="font-semibold">📄 Données JSON disponibles</h3>
+          <Link
+            to={`/album/${encodeURIComponent(currentPath)}`}
+            className="text-blue-700 underline"
+          >
+            👉 Voir les timbres de cet album
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/collection" element={<CollectionPage />} />
+          <Route path="/collection/*" element={<CollectionPage />} />
           <Route path="/album/:albumId" element={<TimbresPage />} />
         </Routes>
       </Router>

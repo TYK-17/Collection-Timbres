@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 function flattenTree(tree, cheminBase = "") {
@@ -23,6 +23,8 @@ function flattenTree(tree, cheminBase = "") {
 
 export default function TimbresPage() {
   const { albumId } = useParams();
+  const decodedPath = decodeURIComponent(albumId); // ✅
+
   const [timbres, setTimbres] = useState([]);
   const [excelPages, setExcelPages] = useState([]);
   const [pageCourante, setPageCourante] = useState(0);
@@ -40,25 +42,19 @@ export default function TimbresPage() {
   });
   const [search, setSearch] = useState("");
 
-  // 🔄 Charger les timbres locaux
   useEffect(() => {
     const all = JSON.parse(localStorage.getItem("collection-timbres")) || [];
-    const filtered = all.filter((t) => t.album === albumId);
+    const filtered = all.filter((t) => t.album === decodedPath);
     setTimbres(filtered);
-  }, [albumId]);
+  }, [decodedPath]);
 
-  // ✅ Charger albums-tree pour trouver le bon fichier JSON
   useEffect(() => {
     fetch("/albums-tree.json")
       .then((res) => res.json())
       .then((tree) => {
         const flat = flattenTree(tree);
-
-        // Trouver l'album avec son chemin
-        const album = flat.find(
-          (a) => a.dossier.replace(/\//g, "_") === albumId
-        );
-        console.log("📁 albumId =", albumId);
+        const album = flat.find((a) => a.dossier === decodedPath); // ✅
+        console.log("📁 albumId =", decodedPath);
         console.log("🔍 Album trouvé :", album);
 
         if (!album || !album.json) {
@@ -67,27 +63,14 @@ export default function TimbresPage() {
         }
 
         const filename = album.json;
+        const url = `/data/albums/${album.dossier}/${filename}`;
 
-        // ✅ Génération de l'URL pour charger le fichier JSON
-        const basePath = "/data"; // Chemin de base
+        console.log("🔽 Chargement JSON :", url);
 
-        // Vérifiez si 'album.dossier' commence déjà par 'albums' pour éviter la duplication
-        const urlPath = album.dossier.startsWith("albums/")
-          ? album.dossier // Si "albums/" est déjà inclus, ne pas le rajouter
-          : `albums/${album.dossier}`; // Sinon, ajoutez "albums/"
-
-        const url = `${basePath}/${urlPath}/${filename}`; // Construisez l'URL finale
-        console.log("Chargement du fichier JSON depuis : ", url);
-
-        // Charger le fichier JSON depuis l'URL générée
         fetch(url)
           .then((res) => {
-            if (!res.ok) {
-              throw new Error(
-                `Erreur de chargement du fichier JSON: ${res.statusText}`
-              );
-            }
-            return res.json(); // Assurez-vous que la réponse est bien du JSON
+            if (!res.ok) throw new Error(`Erreur: ${res.statusText}`);
+            return res.json();
           })
           .then((data) => {
             const pagesArray = Object.keys(data).map((key) => ({
@@ -97,15 +80,15 @@ export default function TimbresPage() {
             setExcelPages(pagesArray);
           })
           .catch((err) => {
-            console.error("❌ Erreur de chargement du fichier JSON :", err);
-            setExcelPages([]); // Gestion propre de l'erreur
+            console.error("❌ Erreur de chargement :", err);
+            setExcelPages([]);
           });
       });
-  }, [albumId]);
+  }, [decodedPath]);
 
   const saveToLocal = (newList) => {
     const all = JSON.parse(localStorage.getItem("collection-timbres")) || [];
-    const others = all.filter((t) => t.album !== albumId);
+    const others = all.filter((t) => t.album !== decodedPath);
     const updated = [...others, ...newList];
     localStorage.setItem("collection-timbres", JSON.stringify(updated));
   };
@@ -129,7 +112,7 @@ export default function TimbresPage() {
   };
 
   const addTimbre = () => {
-    const newTimbre = { ...form, id: uuidv4(), album: albumId };
+    const newTimbre = { ...form, id: uuidv4(), album: decodedPath };
     const updated = [...timbres, newTimbre];
     setTimbres(updated);
     saveToLocal(updated);
@@ -159,16 +142,23 @@ export default function TimbresPage() {
       t.notes?.toLowerCase().includes(search.toLowerCase())
   );
 
-  // ✅ On place cette déclaration AVANT le return
-  const cheminLisible = albumId
-    .split("/")
-    .map((segment) => decodeURIComponent(segment).replace(/_/g, " "))
-    .join(" / ");
+  const cheminLisible = decodedPath.split("/").join(" / ");
 
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans">
+      {/* Bouton retour */}
+      <div className="mb-4">
+        <Link
+          to="/collection"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
+          ⬅ Retour à la collection
+        </Link>
+      </div>
+
       <h1 className="text-2xl font-bold mb-4">📘 Album : {cheminLisible}</h1>
 
+      {/* Barre de recherche */}
       <input
         className="border px-3 py-2 mb-4 w-full"
         placeholder="🔍 Rechercher un timbre..."
