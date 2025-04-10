@@ -157,67 +157,6 @@
         "children": [
           {
             "type": "folder",
-            "name": "AMERIQUE NORD",
-            "path": "AMERIQUE/AMERIQUE NORD",
-            "continent": "AMERIQUE",
-            "children": [
-              {
-                "type": "folder",
-                "name": "Canada",
-                "path": "AMERIQUE/AMERIQUE NORD/Canada",
-                "continent": "AMERIQUE",
-                "children": [
-                  {
-                    "type": "json",
-                    "name": "Canada_origines à 20xx 1.json",
-                    "path": "AMERIQUE/AMERIQUE NORD/Canada/Canada_origines à 20xx 1.json"
-                  },
-                  {
-                    "type": "json",
-                    "name": "~$Canada_origines à 20xx 1.json",
-                    "path": "AMERIQUE/AMERIQUE NORD/Canada/~$Canada_origines à 20xx 1.json"
-                  }
-                ],
-                "json": "Canada_origines à 20xx 1.json"
-              },
-              {
-                "type": "folder",
-                "name": "Etats Unis_PO",
-                "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_PO",
-                "continent": "AMERIQUE",
-                "children": [
-                  {
-                    "type": "json",
-                    "name": "Etats-Unis _Préoblitérés.json",
-                    "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_PO/Etats-Unis _Préoblitérés.json"
-                  }
-                ],
-                "json": "Etats-Unis _Préoblitérés.json"
-              },
-              {
-                "type": "folder",
-                "name": "Etats Unis_Terre Neuve_New Brunswick",
-                "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_Terre Neuve_New Brunswick",
-                "continent": "AMERIQUE",
-                "children": [
-                  {
-                    "type": "json",
-                    "name": "Etats-Unis _2000 à 20xx.json",
-                    "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_Terre Neuve_New Brunswick/Etats-Unis _2000 à 20xx.json"
-                  },
-                  {
-                    "type": "json",
-                    "name": "Etats-Unis _Terre-Neuve origines à 1999.json",
-                    "path": "AMERIQUE/AMERIQUE NORD/Etats Unis_Terre Neuve_New Brunswick/Etats-Unis _Terre-Neuve origines à 1999.json"
-                  }
-                ],
-                "json": "Etats-Unis _2000 à 20xx.json"
-              }
-            ],
-            "json": null
-          },
-          {
-            "type": "folder",
             "name": "AMERIQUE _Sud_Centrale_Nord",
             "path": "AMERIQUE/AMERIQUE _Sud_Centrale_Nord",
             "continent": "AMERIQUE",
@@ -291,6 +230,67 @@
                   }
                 ],
                 "json": "Amérique du Sud Centrale Nord_1980 à 20xx.json"
+              }
+            ],
+            "json": null
+          },
+          {
+            "type": "folder",
+            "name": "AMERIQUE_NORD",
+            "path": "AMERIQUE/AMERIQUE_NORD",
+            "continent": "AMERIQUE",
+            "children": [
+              {
+                "type": "folder",
+                "name": "Canada",
+                "path": "AMERIQUE/AMERIQUE_NORD/Canada",
+                "continent": "AMERIQUE",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Canada_origines à 20xx 1.json",
+                    "path": "AMERIQUE/AMERIQUE_NORD/Canada/Canada_origines à 20xx 1.json"
+                  },
+                  {
+                    "type": "json",
+                    "name": "~$Canada_origines à 20xx 1.json",
+                    "path": "AMERIQUE/AMERIQUE_NORD/Canada/~$Canada_origines à 20xx 1.json"
+                  }
+                ],
+                "json": "Canada_origines à 20xx 1.json"
+              },
+              {
+                "type": "folder",
+                "name": "Etats Unis_PO",
+                "path": "AMERIQUE/AMERIQUE_NORD/Etats Unis_PO",
+                "continent": "AMERIQUE",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Etats-Unis _Préoblitérés.json",
+                    "path": "AMERIQUE/AMERIQUE_NORD/Etats Unis_PO/Etats-Unis _Préoblitérés.json"
+                  }
+                ],
+                "json": "Etats-Unis _Préoblitérés.json"
+              },
+              {
+                "type": "folder",
+                "name": "Etats Unis_Terre Neuve_New Brunswick",
+                "path": "AMERIQUE/AMERIQUE_NORD/Etats Unis_Terre Neuve_New Brunswick",
+                "continent": "AMERIQUE",
+                "children": [
+                  {
+                    "type": "json",
+                    "name": "Etats-Unis _2000 à 20xx.json",
+                    "path": "AMERIQUE/AMERIQUE_NORD/Etats Unis_Terre Neuve_New Brunswick/Etats-Unis _2000 à 20xx.json"
+                  },
+                  {
+                    "type": "json",
+                    "name": "Etats-Unis _Terre-Neuve origines à 1999.json",
+                    "path": "AMERIQUE/AMERIQUE_NORD/Etats Unis_Terre Neuve_New Brunswick/Etats-Unis _Terre-Neuve origines à 1999.json"
+                  }
+                ],
+                "json": "Etats-Unis _2000 à 20xx.json"
               }
             ],
             "json": null
@@ -1186,31 +1186,31 @@
           },
           {
             "type": "folder",
-            "name": "France",
-            "path": "EUROPE/France",
+            "name": "FRANCE",
+            "path": "EUROPE/FRANCE",
             "continent": "EUROPE",
             "children": [
               {
                 "type": "folder",
                 "name": "France_autres rubriques",
-                "path": "EUROPE/France/France_autres rubriques",
+                "path": "EUROPE/FRANCE/France_autres rubriques",
                 "continent": "EUROPE",
                 "children": [
                   {
                     "type": "folder",
                     "name": "F_AA",
-                    "path": "EUROPE/France/France_autres rubriques/F_AA",
+                    "path": "EUROPE/FRANCE/France_autres rubriques/F_AA",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France _ Auto Adhésifs.json",
-                        "path": "EUROPE/France/France_autres rubriques/F_AA/France _ Auto Adhésifs.json"
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_AA/France _ Auto Adhésifs.json"
                       },
                       {
                         "type": "folder",
                         "name": "F_AA_carnets 2023",
-                        "path": "EUROPE/France/France_autres rubriques/F_AA/F_AA_carnets 2023",
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_AA/F_AA_carnets 2023",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1221,13 +1221,13 @@
                   {
                     "type": "folder",
                     "name": "F_Blocs et Feuillets",
-                    "path": "EUROPE/France/France_autres rubriques/F_Blocs et Feuillets",
+                    "path": "EUROPE/FRANCE/France_autres rubriques/F_Blocs et Feuillets",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Blocs et Feuillets_ 1964 à 20xx.json",
-                        "path": "EUROPE/France/France_autres rubriques/F_Blocs et Feuillets/France_Blocs et Feuillets_ 1964 à 20xx.json"
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_Blocs et Feuillets/France_Blocs et Feuillets_ 1964 à 20xx.json"
                       }
                     ],
                     "json": "France_Blocs et Feuillets_ 1964 à 20xx.json"
@@ -1235,18 +1235,18 @@
                   {
                     "type": "folder",
                     "name": "F_PA",
-                    "path": "EUROPE/France/France_autres rubriques/F_PA",
+                    "path": "EUROPE/FRANCE/France_autres rubriques/F_PA",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France PA et autres rubriques.json",
-                        "path": "EUROPE/France/France_autres rubriques/F_PA/France PA et autres rubriques.json"
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_PA/France PA et autres rubriques.json"
                       },
                       {
                         "type": "folder",
                         "name": "photos var PA",
-                        "path": "EUROPE/France/France_autres rubriques/F_PA/photos var PA",
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_PA/photos var PA",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1257,18 +1257,18 @@
                   {
                     "type": "folder",
                     "name": "F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
-                    "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
+                    "path": "EUROPE/FRANCE/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France PO et autres rubriques.json",
-                        "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/France PO et autres rubriques.json"
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/France PO et autres rubriques.json"
                       },
                       {
                         "type": "folder",
                         "name": "photos var _PO et autres rubriques",
-                        "path": "EUROPE/France/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/photos var _PO et autres rubriques",
+                        "path": "EUROPE/FRANCE/France_autres rubriques/F_PO_TS_TX_G_FM_Lib_Rdf_Tph_Tgf/photos var _PO et autres rubriques",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1282,19 +1282,19 @@
               {
                 "type": "folder",
                 "name": "France_Neufs",
-                "path": "EUROPE/France/France_Neufs",
+                "path": "EUROPE/FRANCE/France_Neufs",
                 "continent": "EUROPE",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France_Neufs_1900-1959",
-                    "path": "EUROPE/France/France_Neufs/France_Neufs_1900-1959",
+                    "path": "EUROPE/FRANCE/France_Neufs/France_Neufs_1900-1959",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Neufs_1900 à 1959.json",
-                        "path": "EUROPE/France/France_Neufs/France_Neufs_1900-1959/France_Neufs_1900 à 1959.json"
+                        "path": "EUROPE/FRANCE/France_Neufs/France_Neufs_1900-1959/France_Neufs_1900 à 1959.json"
                       }
                     ],
                     "json": "France_Neufs_1900 à 1959.json"
@@ -1302,13 +1302,13 @@
                   {
                     "type": "folder",
                     "name": "France_Neufs_1960 à 1999",
-                    "path": "EUROPE/France/France_Neufs/France_Neufs_1960 à 1999",
+                    "path": "EUROPE/FRANCE/France_Neufs/France_Neufs_1960 à 1999",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Neufs_1960 à 1979.json",
-                        "path": "EUROPE/France/France_Neufs/France_Neufs_1960 à 1999/France_Neufs_1960 à 1979.json"
+                        "path": "EUROPE/FRANCE/France_Neufs/France_Neufs_1960 à 1999/France_Neufs_1960 à 1979.json"
                       }
                     ],
                     "json": "France_Neufs_1960 à 1979.json"
@@ -1319,19 +1319,19 @@
               {
                 "type": "folder",
                 "name": "France_Oblitérés",
-                "path": "EUROPE/France/France_Oblitérés",
+                "path": "EUROPE/FRANCE/France_Oblitérés",
                 "continent": "EUROPE",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France _Oblitérés_1849-1899",
-                    "path": "EUROPE/France/France_Oblitérés/France _Oblitérés_1849-1899",
+                    "path": "EUROPE/FRANCE/France_Oblitérés/France _Oblitérés_1849-1899",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Oblitérés_ 1849 à 1899.json",
-                        "path": "EUROPE/France/France_Oblitérés/France _Oblitérés_1849-1899/France_Oblitérés_ 1849 à 1899.json"
+                        "path": "EUROPE/FRANCE/France_Oblitérés/France _Oblitérés_1849-1899/France_Oblitérés_ 1849 à 1899.json"
                       }
                     ],
                     "json": "France_Oblitérés_ 1849 à 1899.json"
@@ -1339,13 +1339,13 @@
                   {
                     "type": "folder",
                     "name": "France_Oblitérés_1900-1959",
-                    "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1900-1959",
+                    "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_1900-1959",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Oblitérés_ 1900 à 1959.json",
-                        "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1900-1959/France_Oblitérés_ 1900 à 1959.json"
+                        "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_1900-1959/France_Oblitérés_ 1900 à 1959.json"
                       }
                     ],
                     "json": "France_Oblitérés_ 1900 à 1959.json"
@@ -1353,13 +1353,13 @@
                   {
                     "type": "folder",
                     "name": "France_Oblitérés_1960-1999",
-                    "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1960-1999",
+                    "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_1960-1999",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Oblitérés_ 1960 à 1999.json",
-                        "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_1960-1999/France_Oblitérés_ 1960 à 1999.json"
+                        "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_1960-1999/France_Oblitérés_ 1960 à 1999.json"
                       }
                     ],
                     "json": "France_Oblitérés_ 1960 à 1999.json"
@@ -1367,13 +1367,13 @@
                   {
                     "type": "folder",
                     "name": "France_Oblitérés_2000-20xx",
-                    "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_2000-20xx",
+                    "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_2000-20xx",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France_Oblitérés_ 2000 à 202x.json",
-                        "path": "EUROPE/France/France_Oblitérés/France_Oblitérés_2000-20xx/France_Oblitérés_ 2000 à 202x.json"
+                        "path": "EUROPE/FRANCE/France_Oblitérés/France_Oblitérés_2000-20xx/France_Oblitérés_ 2000 à 202x.json"
                       }
                     ],
                     "json": "France_Oblitérés_ 2000 à 202x.json"
@@ -1384,24 +1384,24 @@
               {
                 "type": "folder",
                 "name": "France_Variétés",
-                "path": "EUROPE/France/France_Variétés",
+                "path": "EUROPE/FRANCE/France_Variétés",
                 "continent": "EUROPE",
                 "children": [
                   {
                     "type": "folder",
                     "name": "France_Variétés (1) 1900-1999",
-                    "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999",
+                    "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France _ Variétés curiosités _ 1900 à 1999 _ (1).json",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/France _ Variétés curiosités _ 1900 à 1999 _ (1).json"
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/France _ Variétés curiosités _ 1900 à 1999 _ (1).json"
                       },
                       {
                         "type": "folder",
                         "name": "page 1",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 1",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 1",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1409,7 +1409,7 @@
                       {
                         "type": "folder",
                         "name": "page 10",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 10",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 10",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1417,7 +1417,7 @@
                       {
                         "type": "folder",
                         "name": "page 11",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 11",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 11",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1425,7 +1425,7 @@
                       {
                         "type": "folder",
                         "name": "page 12",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 12",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 12",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1433,7 +1433,7 @@
                       {
                         "type": "folder",
                         "name": "page 13",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 13",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 13",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1441,7 +1441,7 @@
                       {
                         "type": "folder",
                         "name": "page 14",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 14",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 14",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1449,7 +1449,7 @@
                       {
                         "type": "folder",
                         "name": "page 15",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 15",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 15",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1457,7 +1457,7 @@
                       {
                         "type": "folder",
                         "name": "page 16",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 16",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 16",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1465,7 +1465,7 @@
                       {
                         "type": "folder",
                         "name": "page 17",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 17",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 17",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1473,7 +1473,7 @@
                       {
                         "type": "folder",
                         "name": "page 18",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 18",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 18",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1481,7 +1481,7 @@
                       {
                         "type": "folder",
                         "name": "page 19",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 19",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 19",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1489,7 +1489,7 @@
                       {
                         "type": "folder",
                         "name": "page 2",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 2",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 2",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1497,7 +1497,7 @@
                       {
                         "type": "folder",
                         "name": "page 21",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 21",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 21",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1505,7 +1505,7 @@
                       {
                         "type": "folder",
                         "name": "page 22",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 22",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 22",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1513,7 +1513,7 @@
                       {
                         "type": "folder",
                         "name": "page 23",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 23",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 23",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1521,13 +1521,13 @@
                       {
                         "type": "folder",
                         "name": "page 24",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 24",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 24",
                         "continent": "EUROPE",
                         "children": [
                           {
                             "type": "folder",
                             "name": "page 20",
-                            "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 24/page 20",
+                            "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 24/page 20",
                             "continent": "EUROPE",
                             "children": [],
                             "json": null
@@ -1538,7 +1538,7 @@
                       {
                         "type": "folder",
                         "name": "page 25",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 25",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 25",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1546,7 +1546,7 @@
                       {
                         "type": "folder",
                         "name": "page 27",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 27",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 27",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1554,7 +1554,7 @@
                       {
                         "type": "folder",
                         "name": "page 28",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 28",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 28",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1562,7 +1562,7 @@
                       {
                         "type": "folder",
                         "name": "page 3",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 3",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 3",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1570,7 +1570,7 @@
                       {
                         "type": "folder",
                         "name": "page 36",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 36",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 36",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1578,7 +1578,7 @@
                       {
                         "type": "folder",
                         "name": "page 37",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 37",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 37",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1586,7 +1586,7 @@
                       {
                         "type": "folder",
                         "name": "page 38",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 38",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 38",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1594,7 +1594,7 @@
                       {
                         "type": "folder",
                         "name": "page 4",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 4",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 4",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1602,7 +1602,7 @@
                       {
                         "type": "folder",
                         "name": "page 47",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 47",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 47",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1610,7 +1610,7 @@
                       {
                         "type": "folder",
                         "name": "page 48",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 48",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 48",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1618,7 +1618,7 @@
                       {
                         "type": "folder",
                         "name": "page 5",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 5",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 5",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1626,7 +1626,7 @@
                       {
                         "type": "folder",
                         "name": "page 6",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 6",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 6",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1634,7 +1634,7 @@
                       {
                         "type": "folder",
                         "name": "page 7",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 7",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 7",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1642,7 +1642,7 @@
                       {
                         "type": "folder",
                         "name": "page 8",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 8",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 8",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1650,7 +1650,7 @@
                       {
                         "type": "folder",
                         "name": "page 9",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (1) 1900-1999/page 9",
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (1) 1900-1999/page 9",
                         "continent": "EUROPE",
                         "children": [],
                         "json": null
@@ -1661,13 +1661,13 @@
                   {
                     "type": "folder",
                     "name": "France_Variétés (2) 2000-20xx",
-                    "path": "EUROPE/France/France_Variétés/France_Variétés (2) 2000-20xx",
+                    "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (2) 2000-20xx",
                     "continent": "EUROPE",
                     "children": [
                       {
                         "type": "json",
                         "name": "France _ Variétés curiosités _ 2000 à 20xx (2).json",
-                        "path": "EUROPE/France/France_Variétés/France_Variétés (2) 2000-20xx/France _ Variétés curiosités _ 2000 à 20xx (2).json"
+                        "path": "EUROPE/FRANCE/France_Variétés/France_Variétés (2) 2000-20xx/France _ Variétés curiosités _ 2000 à 20xx (2).json"
                       }
                     ],
                     "json": "France _ Variétés curiosités _ 2000 à 20xx (2).json"
@@ -1675,7 +1675,7 @@
                   {
                     "type": "folder",
                     "name": "larme à l'oeil_mêches liées",
-                    "path": "EUROPE/France/France_Variétés/larme à l'oeil_mêches liées",
+                    "path": "EUROPE/FRANCE/France_Variétés/larme à l'oeil_mêches liées",
                     "continent": "EUROPE",
                     "children": [],
                     "json": null
@@ -1696,20 +1696,20 @@
       },
       {
         "type": "folder",
-        "name": "Monde",
-        "path": "Monde",
-        "continent": "Monde",
+        "name": "MONDE",
+        "path": "MONDE",
+        "continent": "MONDE",
         "children": [
           {
             "type": "folder",
             "name": "Afrique _ Asie _ PA & autres rubriques",
-            "path": "Monde/Afrique _ Asie _ PA & autres rubriques",
-            "continent": "Monde",
+            "path": "MONDE/Afrique _ Asie _ PA & autres rubriques",
+            "continent": "MONDE",
             "children": [
               {
                 "type": "json",
                 "name": "Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json",
-                "path": "Monde/Afrique _ Asie _ PA & autres rubriques/Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json"
+                "path": "MONDE/Afrique _ Asie _ PA & autres rubriques/Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json"
               }
             ],
             "json": "Afrique _ Asie _ PA & autres rubriques 18xx-20xx.json"
@@ -1717,13 +1717,13 @@
           {
             "type": "folder",
             "name": "Monde A à Z_Blocs et Feuillets (BF)",
-            "path": "Monde/Monde A à Z_Blocs et Feuillets (BF)",
-            "continent": "Monde",
+            "path": "MONDE/Monde A à Z_Blocs et Feuillets (BF)",
+            "continent": "MONDE",
             "children": [
               {
                 "type": "json",
                 "name": "Monde_A-Z_BF_18xx-20xx.json",
-                "path": "Monde/Monde A à Z_Blocs et Feuillets (BF)/Monde_A-Z_BF_18xx-20xx.json"
+                "path": "MONDE/Monde A à Z_Blocs et Feuillets (BF)/Monde_A-Z_BF_18xx-20xx.json"
               }
             ],
             "json": "Monde_A-Z_BF_18xx-20xx.json"
@@ -1731,18 +1731,18 @@
           {
             "type": "folder",
             "name": "Océanie_Amérique _ PA & autres rubriques",
-            "path": "Monde/Océanie_Amérique _ PA & autres rubriques",
-            "continent": "Monde",
+            "path": "MONDE/Océanie_Amérique _ PA & autres rubriques",
+            "continent": "MONDE",
             "children": [
               {
                 "type": "json",
                 "name": "Amérique _ PA & autres rubriques 1960-20xx_.json",
-                "path": "Monde/Océanie_Amérique _ PA & autres rubriques/Amérique _ PA & autres rubriques 1960-20xx_.json"
+                "path": "MONDE/Océanie_Amérique _ PA & autres rubriques/Amérique _ PA & autres rubriques 1960-20xx_.json"
               },
               {
                 "type": "json",
                 "name": "Océanie _ Amérique _ PA & autres rubriques 18xx-1959.json",
-                "path": "Monde/Océanie_Amérique _ PA & autres rubriques/Océanie _ Amérique _ PA & autres rubriques 18xx-1959.json"
+                "path": "MONDE/Océanie_Amérique _ PA & autres rubriques/Océanie _ Amérique _ PA & autres rubriques 18xx-1959.json"
               }
             ],
             "json": "Amérique _ PA & autres rubriques 1960-20xx_.json"
@@ -1750,24 +1750,24 @@
           {
             "type": "folder",
             "name": "PEF_Colonies Françaises",
-            "path": "Monde/PEF_Colonies Françaises",
-            "continent": "Monde",
+            "path": "MONDE/PEF_Colonies Françaises",
+            "continent": "MONDE",
             "children": [
               {
                 "type": "folder",
                 "name": "Col Fr 1",
-                "path": "Monde/PEF_Colonies Françaises/Col Fr 1",
-                "continent": "Monde",
+                "path": "MONDE/PEF_Colonies Françaises/Col Fr 1",
+                "continent": "MONDE",
                 "children": [
                   {
                     "type": "json",
                     "name": "PEF_Colonies Françaises avant indépendance (1).json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 1/PEF_Colonies Françaises avant indépendance (1).json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 1/PEF_Colonies Françaises avant indépendance (1).json"
                   },
                   {
                     "type": "json",
                     "name": "~$PEF_Colonies Françaises avant indépendance (1).json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 1/~$PEF_Colonies Françaises avant indépendance (1).json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 1/~$PEF_Colonies Françaises avant indépendance (1).json"
                   }
                 ],
                 "json": "PEF_Colonies Françaises avant indépendance (1).json"
@@ -1775,23 +1775,23 @@
               {
                 "type": "folder",
                 "name": "Col Fr 2",
-                "path": "Monde/PEF_Colonies Françaises/Col Fr 2",
-                "continent": "Monde",
+                "path": "MONDE/PEF_Colonies Françaises/Col Fr 2",
+                "continent": "MONDE",
                 "children": [
                   {
                     "type": "json",
                     "name": "PEF_Colonies Françaises_Algérie_Maroc_Tunisie.json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 2/PEF_Colonies Françaises_Algérie_Maroc_Tunisie.json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 2/PEF_Colonies Françaises_Algérie_Maroc_Tunisie.json"
                   },
                   {
                     "type": "json",
                     "name": "PEF_Colonies Françaises_DOM-TOM (2).json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 2/PEF_Colonies Françaises_DOM-TOM (2).json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 2/PEF_Colonies Françaises_DOM-TOM (2).json"
                   },
                   {
                     "type": "json",
                     "name": "~$PEF_TOM_TAAF.json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 2/~$PEF_TOM_TAAF.json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 2/~$PEF_TOM_TAAF.json"
                   }
                 ],
                 "json": "PEF_Colonies Françaises_Algérie_Maroc_Tunisie.json"
@@ -1799,13 +1799,13 @@
               {
                 "type": "folder",
                 "name": "Col Fr 3",
-                "path": "Monde/PEF_Colonies Françaises/Col Fr 3",
-                "continent": "Monde",
+                "path": "MONDE/PEF_Colonies Françaises/Col Fr 3",
+                "continent": "MONDE",
                 "children": [
                   {
                     "type": "json",
                     "name": "PEF_Col Fr_PO_PA_TX_TS_CPx (3).json",
-                    "path": "Monde/PEF_Colonies Françaises/Col Fr 3/PEF_Col Fr_PO_PA_TX_TS_CPx (3).json"
+                    "path": "MONDE/PEF_Colonies Françaises/Col Fr 3/PEF_Col Fr_PO_PA_TX_TS_CPx (3).json"
                   }
                 ],
                 "json": "PEF_Col Fr_PO_PA_TX_TS_CPx (3).json"
@@ -1813,13 +1813,13 @@
               {
                 "type": "folder",
                 "name": "SPM",
-                "path": "Monde/PEF_Colonies Françaises/SPM",
-                "continent": "Monde",
+                "path": "MONDE/PEF_Colonies Françaises/SPM",
+                "continent": "MONDE",
                 "children": [
                   {
                     "type": "json",
                     "name": "PEF_Colonies Françaises_DOM-TOM - SPM.json",
-                    "path": "Monde/PEF_Colonies Françaises/SPM/PEF_Colonies Françaises_DOM-TOM - SPM.json"
+                    "path": "MONDE/PEF_Colonies Françaises/SPM/PEF_Colonies Françaises_DOM-TOM - SPM.json"
                   }
                 ],
                 "json": "PEF_Colonies Françaises_DOM-TOM - SPM.json"
@@ -1827,13 +1827,13 @@
               {
                 "type": "folder",
                 "name": "TAAF",
-                "path": "Monde/PEF_Colonies Françaises/TAAF",
-                "continent": "Monde",
+                "path": "MONDE/PEF_Colonies Françaises/TAAF",
+                "continent": "MONDE",
                 "children": [
                   {
                     "type": "json",
                     "name": "PEF_TOM_TAAF.json",
-                    "path": "Monde/PEF_Colonies Françaises/TAAF/PEF_TOM_TAAF.json"
+                    "path": "MONDE/PEF_Colonies Françaises/TAAF/PEF_TOM_TAAF.json"
                   }
                 ],
                 "json": "PEF_TOM_TAAF.json"
@@ -1844,13 +1844,13 @@
           {
             "type": "folder",
             "name": "PEF_PA_TX_TS & autres",
-            "path": "Monde/PEF_PA_TX_TS & autres",
-            "continent": "Monde",
+            "path": "MONDE/PEF_PA_TX_TS & autres",
+            "continent": "MONDE",
             "children": [
               {
                 "type": "json",
                 "name": "PEF_indépendant_PA_TX_TS_FM_ autres rubriques.json",
-                "path": "Monde/PEF_PA_TX_TS & autres/PEF_indépendant_PA_TX_TS_FM_ autres rubriques.json"
+                "path": "MONDE/PEF_PA_TX_TS & autres/PEF_indépendant_PA_TX_TS_FM_ autres rubriques.json"
               }
             ],
             "json": "PEF_indépendant_PA_TX_TS_FM_ autres rubriques.json"
