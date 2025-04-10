@@ -10,6 +10,7 @@ const categories = [
   "MONDE",
   "OCEANIE",
 ];
+
 function flattenTree(tree, cheminBase = "") {
   let result = [];
 
@@ -18,29 +19,29 @@ function flattenTree(tree, cheminBase = "") {
 
     if (item.type === "folder") {
       const enfants = flattenTree(item.children || [], chemin);
-      const images = (item.children || []).filter((c) => c.type === "image");
+      const data = (item.children || []).filter((c) => c.type === "image");
 
       // 🔍 Trouve un fichier JSON s'il y en a dans ce dossier
       const jsonFile = (item.children || []).find(
         (c) => c.type === "json" || c.name?.endsWith(".json")
       );
 
-      // On ajoute ce dossier même s’il n’a pas d’image
+      // On ajoute ce dossier même s’il n’a pas de data
       result.push({
         id: [...new Set(chemin.split("/"))].join("_").replace(/\s+/g, "_"),
         titre: item.name,
         dossier: chemin,
         continent: chemin.split("/")[0],
         pages:
-          images.length > 0
+          data.length > 0
             ? [
                 {
                   nom: "page 1",
-                  images: images.map((img) => img.name),
+                  data: data.map((img) => img.name),
                 },
               ]
             : [],
-        json: jsonFile?.name || null,
+        json: jsonFile?.name || null, // Récupère le fichier JSON associé, s'il existe
       });
 
       result = [...result, ...enfants];
@@ -79,9 +80,9 @@ export default function CollectionPage() {
 
   const getCover = (album) => {
     try {
-      if (album.pages?.[0]?.images?.[0]) {
-        const image = album.pages[0].images[0];
-        return `/images/albums/${album.dossier}/${album.pages[0].nom}/${image}`;
+      if (album.pages?.[0]?.data?.[0]) {
+        const image = album.pages[0].data[0];
+        return `/data /albums/${album.dossier}/${album.pages[0].nom}/${image}`;
       }
     } catch {
       return "/placeholder.jpg";
@@ -91,7 +92,6 @@ export default function CollectionPage() {
 
   const cheminsDisponibles = albums
     .filter((a) => filtre === "Tous" || a.continent?.toUpperCase() === filtre)
-
     .map((a) => a.dossier);
 
   const niveauActuel = chemin ? chemin.split("/").length : 0;

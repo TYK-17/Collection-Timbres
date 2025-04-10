@@ -2,9 +2,9 @@ const xlsx = require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
-const albumsDir = path.join(__dirname, "../public/images/albums");
-const outputDir = path.join(__dirname, "../public/data");
+const albumsDir = path.join(__dirname, "../public/data/albums");
 
+// Fonction pour parcourir les dossiers
 function walkDir(dir, callback) {
   fs.readdirSync(dir).forEach((file) => {
     const fullPath = path.join(dir, file);
@@ -16,6 +16,7 @@ function walkDir(dir, callback) {
   });
 }
 
+// Fonction pour analyser un fichier Excel
 function parseExcelFile(filePath) {
   const workbook = xlsx.readFile(filePath);
   const pages = {};
@@ -30,18 +31,22 @@ function parseExcelFile(filePath) {
   return pages;
 }
 
+// Fonction principale pour générer les fichiers JSON
 function generateJsonFromExcels() {
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-
+  // Parcourir tous les fichiers Excel dans les albums
   walkDir(albumsDir, (file) => {
     if (file.endsWith(".xlsx")) {
       const json = parseExcelFile(file);
-      const baseName = path.basename(file, path.extname(file));
-      const jsonPath = path.join(outputDir, `${baseName}.json`);
+
+      // Générer le chemin du fichier JSON dans le même dossier que le fichier Excel
+      const jsonPath = file.replace(/\.xlsx$/i, ".json");
+
+      // Enregistrer le fichier JSON à côté du fichier Excel
       fs.writeFileSync(jsonPath, JSON.stringify(json, null, 2), "utf-8");
       console.log(`✅ ${jsonPath} généré`);
     }
   });
 }
 
+// Appel de la fonction
 generateJsonFromExcels();

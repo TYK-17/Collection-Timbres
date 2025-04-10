@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Racine où sont stockés tous les albums
-const BASE_DIR = path.join(__dirname, "public/images/albums");
+const BASE_DIR = path.join(__dirname, "public/data /albums");
 const OUTPUT_FILE = path.join(__dirname, "public/albums.json");
 
 function isImage(filename) {
@@ -25,8 +25,8 @@ function scanAlbums(baseDir) {
   };
 
   walk(baseDir, (imageDir) => {
-    const images = fs.readdirSync(imageDir).filter(isImage);
-    if (!images.length) return;
+    const data = fs.readdirSync(imageDir).filter(isImage);
+    if (!data.length) return;
 
     const pageName = path.basename(imageDir);
     const albumFolder = path.dirname(imageDir);
@@ -49,7 +49,7 @@ function scanAlbums(baseDir) {
 
     albumMap.get(relativeAlbumPath).pages.push({
       nom: pageName,
-      images: images.sort(),
+      data: data.sort(),
     });
   });
 

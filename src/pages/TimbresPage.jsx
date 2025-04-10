@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+
 function flattenTree(tree, cheminBase = "") {
   let result = [];
 
@@ -47,12 +48,14 @@ export default function TimbresPage() {
   }, [albumId]);
 
   // ✅ Charger albums-tree pour trouver le bon fichier JSON
+  // ✅ Charger albums-tree pour trouver le bon fichier JSON
   useEffect(() => {
     fetch("/albums-tree.json")
       .then((res) => res.json())
       .then((tree) => {
         const flat = flattenTree(tree);
 
+        // Trouver l'album avec son chemin
         const album = flat.find(
           (a) => a.dossier.replace(/\//g, "_") === albumId
         );
@@ -65,14 +68,38 @@ export default function TimbresPage() {
         }
 
         const filename = album.json;
-        fetch(`/data/${filename}`)
-          .then((res) => res.json())
+
+        // ✅ Génération de l'URL pour charger le fichier JSON
+        const basePath = "/data /"; // Chemin de base
+
+        // Vérifiez si 'album.dossier' commence déjà par 'albums' pour éviter la duplication
+        const urlPath = album.dossier.startsWith("albums/")
+          ? album.dossier // Si "albums/" est déjà inclus, ne pas le rajouter
+          : `albums/${album.dossier}`; // Sinon, ajoutez "albums/"
+
+        const url = `${basePath}/${urlPath}/${filename}`; // Construisez l'URL finale
+        console.log("Chargement du fichier JSON depuis : ", url);
+
+        // Charger le fichier JSON depuis l'URL générée
+        fetch(url)
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error(
+                `Erreur de chargement du fichier JSON: ${res.statusText}`
+              );
+            }
+            return res.json(); // Assurez-vous que la réponse est bien du JSON
+          })
           .then((data) => {
             const pagesArray = Object.keys(data).map((key) => ({
               nom: key,
               timbres: data[key],
             }));
             setExcelPages(pagesArray);
+          })
+          .catch((err) => {
+            console.error("❌ Erreur de chargement du fichier JSON :", err);
+            setExcelPages([]); // Gestion propre de l'erreur
           });
       });
   }, [albumId]);

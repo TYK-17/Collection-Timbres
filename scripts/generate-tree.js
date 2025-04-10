@@ -1,54 +1,60 @@
 const fs = require("fs");
 const path = require("path");
 
-const baseDir = path.join(__dirname, "..", "public", "images", "albums");
+// Dossier de base des albums
+const albumsDir = path.join(__dirname, "..", "public", "data", "albums");
 
+// Dossier de sortie pour albums-tree.json
+const outputDir = path.join(__dirname, "..", "public", "albums-tree.json");
+
+// Fonction pour trouver le fichier JSON dans un dossier donné
+function findJsonFile(folderPath) {
+  const candidates = fs
+    .readdirSync(folderPath)
+    .filter((f) => f.endsWith(".json"));
+  return candidates.length > 0 ? candidates[0] : null; // Retourne le premier fichier JSON trouvé
+}
+
+// Fonction récursive pour parcourir les dossiers et sous-dossiers
 function walk(dir, relativePath = "") {
-  const result = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
-
-  let folderJson = null;
+  const children = [];
 
   for (const entry of entries) {
-    if (entry.name.startsWith(".")) continue;
+    if (entry.name.startsWith(".")) continue; // Ignorer les fichiers/dossiers cachés
+
     const fullPath = path.join(dir, entry.name);
     const entryRelPath = path.join(relativePath, entry.name);
 
     if (entry.isDirectory()) {
-      result.push({
-        type: "folder",
-        name: entry.name,
-        path: entryRelPath.replace(/\\/g, "/"),
-        ...(() => {
-          const children = walk(fullPath, entryRelPath);
-          const jsonFile = children.find((e) => e.type === "json");
-          return {
-            children: children.filter((e) => e.type !== "json"),
-            json: jsonFile ? jsonFile.name : null,
-          };
-        })(),
-      });
-    } else if (/\.(jpe?g|png)$/i.test(entry.name)) {
-      result.push({
-        type: "image",
-        name: entry.name,
-        path: entryRelPath.replace(/\\/g, "/"),
-      });
-    } else if (/\.json$/i.test(entry.name)) {
-      // On garde ce fichier pour rattacher à un dossier
-      result.push({
+      // Appel récursif si c'est un dossier
+      children.push(walk(fullPath, entryRelPath));
+    } else if (entry.name.endsWith(".json")) {
+      // Si c'est un fichier JSON, l'ajouter
+      children.push({
         type: "json",
         name: entry.name,
-        path: entryRelPath.replace(/\\/g, "/"),
+        path: entryRelPath.replace(/\\/g, "/"), // Utilisation de '/' au lieu de '\'
       });
     }
   }
 
-  return result;
+  // On retourne les informations du dossier actuel
+  return {
+    type: "folder",
+    name: path.basename(dir),
+    path: relativePath.replace(/\\/g, "/"),
+    children: children.flat(),
+    json: findJsonFile(dir), // Trouver un fichier JSON associé à ce dossier
+  };
 }
 
-const tree = walk(baseDir);
-const outputPath = path.join(__dirname, "..", "public", "albums-tree.json");
+// Fonction principale pour générer l'arbre des albums
+function generateAlbumsTree() {
+  const tree = walk(albumsDir); // On commence à la racine des albums
+  fs.writeFileSync(outputDir, JSON.stringify([tree], null, 2)); // On écrit l'arbre dans albums-tree.json
+  console.log("✅ albums-tree.json généré avec succès !");
+}
 
-fs.writeFileSync(outputPath, JSON.stringify(tree, null, 2));
-console.log("✅ albums-tree.json généré avec succès !");
+// Exécution de la fonction
+generateAlbumsTree();
