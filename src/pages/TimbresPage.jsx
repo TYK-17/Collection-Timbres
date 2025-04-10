@@ -89,6 +89,13 @@ export default function TimbresPage() {
               timbres: data[key],
             }));
             setExcelPages(pagesArray);
+            // 👇 Ajoute ce log ici :
+            console.log("✅ Données Excel brutes :", data);
+            console.log("📄 Pages Excel préparées :", pagesArray);
+            console.log(
+              "🔎 Aperçu d'une ligne Page 1 :",
+              pagesArray[0]?.timbres?.[0]
+            );
           })
           .catch((err) => {
             console.error("❌ Erreur de chargement :", err);
@@ -279,32 +286,27 @@ export default function TimbresPage() {
           <h2 className="text-xl font-bold mb-4">
             📄 Timbres depuis Excel (page {pageCourante + 1})
           </h2>
+
           <table className="min-w-full bg-white border border-gray-200 text-sm">
             <thead className="bg-gray-100 text-left">
               <tr>
-                <th className="border px-4 py-2">Nom</th>
-                <th className="border px-4 py-2">Pays</th>
-                <th className="border px-4 py-2">Année</th>
-                <th className="border px-4 py-2">Statut</th>
-                <th className="border px-4 py-2">Classement</th>
-                <th className="border px-4 py-2">Cote (€)</th>
-                <th className="border px-4 py-2">Oblitération</th>
-                <th className="border px-4 py-2">Notes</th>
-                <th className="border px-4 py-2">M.E.</th>
+                {Object.keys(excelPages[pageCourante].timbres[0] || {}).map(
+                  (col) => (
+                    <th key={col} className="border px-4 py-2">
+                      {col}
+                    </th>
+                  )
+                )}
               </tr>
             </thead>
             <tbody>
-              {excelPages[pageCourante].timbres.map((t, i) => (
+              {excelPages[pageCourante].timbres.map((row, i) => (
                 <tr key={i} className="hover:bg-gray-50">
-                  <td className="border px-4 py-2">{t.nom}</td>
-                  <td className="border px-4 py-2">{t.pays}</td>
-                  <td className="border px-4 py-2">{t.annee}</td>
-                  <td className="border px-4 py-2">{t.statut}</td>
-                  <td className="border px-4 py-2">{t.classement}</td>
-                  <td className="border px-4 py-2">{t.cote}</td>
-                  <td className="border px-4 py-2">{t.oblitération}</td>
-                  <td className="border px-4 py-2">{t.notes}</td>
-                  <td className="border px-4 py-2">{t.ME ? "✅" : ""}</td>
+                  {Object.values(row).map((val, j) => (
+                    <td key={j} className="border px-4 py-2">
+                      {typeof val === "boolean" ? (val ? "✅" : "") : val}
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>
