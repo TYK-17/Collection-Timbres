@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import * as XLSX from "xlsx";
 
 // Fonction pour aplatir l'arborescence des dossiers
 function flattenTree(tree, cheminBase = "") {
@@ -35,6 +36,8 @@ export default function TimbresPage() {
   const [pageCourante, setPageCourante] = useState(0);
   const [search, setSearch] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [nomFichierJson, setNomFichierJson] = useState("");
+  const [dateDerniereMaj, setDateDerniereMaj] = useState(null);
 
   useEffect(() => {
     setIsLoading(true); // Start loading
@@ -48,6 +51,15 @@ export default function TimbresPage() {
         if (!album || !album.json) return;
 
         const url = `/data/${album.dossier}/${album.json}`;
+        setNomFichierJson(album.json);
+        // Récupérer la date de dernière mise à jour du fichier JSON
+        fetch(
+          `http://localhost:5000/file-date?albumPath=${decodedPath}&fileName=${album.json}`
+        )
+          .then((res) => res.json())
+          .then((data) => setDateDerniereMaj(data.lastModified))
+          .catch((err) => console.error("Erreur récupération date:", err));
+
         fetch(url)
           .then((res) => res.json())
           .then((data) => {
@@ -74,6 +86,33 @@ export default function TimbresPage() {
 
   const totalPages = excelPages.length; // Nombre total de pages
 
+  // Fonction pour gérer le téléchargement et la conversion de l'Excel en JSON
+  const handleExcelUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const formData = new FormData();
+    formData.append("excel", file);
+    formData.append("albumPath", decodedPath); // comme "Europe/France"
+
+    try {
+      const response = await fetch("http://localhost:5000/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert("✅ Données mises à jour !");
+        window.location.reload(); // recharge pour re-fetch les données
+      } else {
+        alert("❌ Erreur lors de l'import.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Erreur réseau");
+    }
+  };
+
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans">
       <div className="flex justify-between items-center mb-4">
@@ -93,6 +132,16 @@ export default function TimbresPage() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
+      {/* Ajout du bouton de téléchargement de fichier Excel */}
+      <div className="mb-4">
+        <input
+          type="file"
+          accept=".xlsx, .xls"
+          onChange={handleExcelUpload}
+          className="border px-3 py-2"
+        />
+      </div>
+
       {isLoading ? (
         <div className="text-center">Chargement des données...</div>
       ) : (
@@ -107,8 +156,22 @@ export default function TimbresPage() {
                 ⬅ Précédent
               </button>
               <span className="text-lg font-semibold">
-                page {pageCourante + 1}/{totalPages}
+                📄 Timbres depuis <strong>{nomFichierJson}</strong> (page{" "}
+                {pageCourante + 1}/{totalPages})
               </span>
+              {dateDerniereMaj && (
+                <p className="text-sm text-gray-600">
+                  🕓 Dernière mise à jour :{" "}
+                  {new Date(dateDerniereMaj).toLocaleString("fr-FR", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  })}
+                </p>
+              )}
+
               <button
                 onClick={() =>
                   setPageCourante((p) => Math.min(p + 1, totalPages - 1))
@@ -156,9 +219,6 @@ export default function TimbresPage() {
         >
           ⬅ Précédent
         </button>
-        <span className="text-lg font-semibold">
-          page {pageCourante + 1}/{totalPages}
-        </span>
         <button
           onClick={() =>
             setPageCourante((p) => Math.min(p + 1, totalPages - 1))
