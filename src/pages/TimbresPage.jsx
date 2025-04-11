@@ -113,6 +113,16 @@ export default function TimbresPage() {
     }
   };
 
+  // Trouver l'index de la dernière ligne contenant "TOTAL Côte" dans la colonne 'obs'
+  const lastTotalCoteIndex = [...filteredRows]
+    .map((row, idx) => ({
+      idx,
+      isTotal: row["obs"]?.toString().trim().toLowerCase() === "total côte",
+    }))
+    .filter((row) => row.isTotal)
+    .map((row) => row.idx)
+    .pop(); // On prend la dernière occurrence
+
   return (
     <div className="max-w-6xl mx-auto p-6 font-sans">
       <div className="flex justify-between items-center mb-4">
@@ -198,11 +208,58 @@ export default function TimbresPage() {
               <tbody>
                 {filteredRows.map((row, i) => (
                   <tr key={i} className="hover:bg-gray-50">
-                    {Object.values(row).map((val, j) => (
-                      <td key={j} className="border px-4 py-2">
-                        {typeof val === "boolean" ? (val ? "✅" : "") : val}
-                      </td>
-                    ))}
+                    {Object.entries(row).map(([col, val], j) => {
+                      let style = "";
+
+                      // Mise en forme conditionnelle classique pour valeurs numériques
+                      if (col.includes("Côte") && typeof val === "number") {
+                        if (val > 99.99) {
+                          style = "text-white bg-red-600";
+                        } else if (val > 9.99) {
+                          style = "text-red-600";
+                        } else if (val > 2.99) {
+                          style = "text-blue-800";
+                        } else if (val > 0.99) {
+                          style = "text-black";
+                        }
+                      }
+
+                      // ✅ Cas spécial : uniquement la dernière cellule contenant "TOTAL Côte" dans obs
+                      const isLastTotalCoteCell =
+                        i === lastTotalCoteIndex &&
+                        col === "obs" &&
+                        typeof val === "string" &&
+                        val.trim().toLowerCase() === "total côte";
+
+                      const isTotalGeneralCell =
+                        col === "obs" &&
+                        typeof val === "string" &&
+                        val.trim().toLowerCase() === "total général";
+
+                      const affichage =
+                        typeof val === "boolean"
+                          ? val
+                            ? "✅"
+                            : ""
+                          : typeof val === "number"
+                          ? val.toFixed(2).replace(/\.00$/, "")
+                          : val;
+
+                      return (
+                        <td
+                          key={j}
+                          className={`border px-4 py-2 ${
+                            isLastTotalCoteCell
+                              ? "text-red-600 text-right"
+                              : isTotalGeneralCell
+                              ? "text-red-600 text-center align-middle"
+                              : style
+                          }`}
+                        >
+                          {affichage}
+                        </td>
+                      );
+                    })}
                   </tr>
                 ))}
               </tbody>

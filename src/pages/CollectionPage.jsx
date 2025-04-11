@@ -31,6 +31,7 @@ export default function CollectionPage() {
 
   const [tree, setTree] = useState([]);
   const [currentNode, setCurrentNode] = useState(null);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("/albums-tree.json")
@@ -48,6 +49,10 @@ export default function CollectionPage() {
 
   const subFolders =
     currentNode?.children?.filter((child) => child.type === "folder") || [];
+  const filteredSubFolders = subFolders.filter((child) =>
+    child.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   const currentPath = pathParts.join("/");
   const parentPath = pathParts.slice(0, -1).join("/");
 
@@ -105,9 +110,16 @@ export default function CollectionPage() {
         })}
       </div>
 
+      <input
+        className="border px-3 py-2 mb-4 w-full"
+        placeholder="🔍 Rechercher un classeur..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
       {/* Sous-dossiers */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {subFolders.map((child, idx) => {
+        {filteredSubFolders.map((child, idx) => {
           const childPath = [...pathParts, child.name].join("/");
           return (
             <Link
