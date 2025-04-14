@@ -123,3 +123,86 @@ app.get("/file-date", (req, res) => {
     res.status(500).send("Erreur lors de la récupération de la date");
   }
 });
+app.get("/synthese", (req, res) => {
+  const albumsRoot = path.join(__dirname, "public/data/albums");
+
+  const parContinent = {};
+  let totalTimbres = 0;
+  let totalCote = 0;
+  let totalAlbums = 0;
+
+  function walk(dir, continent = "") {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    const hasJson = entries.some(
+      (entry) => entry.isFile() && entry.name.endsWith(".json")
+    );
+
+    if (hasJson) {
+      // le dossier courant est un album
+      const c = continent || "Inconnu";
+      if (!parContinent[c]) {
+        parContinent[c] = { albums: 0, timbres: 0, cote: 0 };
+      }
+      parContinent[c].albums++;
+      totalAlbums++;
+
+      const jsonFiles = entries.filter(
+        (entry) => entry.isFile() && entry.name.endsWith(".json")
+      );
+
+      for (const file of jsonFiles) {
+        const filePath = path.join(dir, file.name);
+        try {
+          const content = fs.readFileSync(filePath, "utf-8");
+          const json = JSON.parse(content);
+
+          Object.entries(json).forEach(([pageName, page]) => {
+            const nom = pageName.trim().toLowerCase();
+
+            // ❌ On ignore les pages nommées "total" ou "page type"
+            const estIgnoree = ["total", "page type"].some((mot) =>
+              nom.includes(mot)
+            );
+
+            if (estIgnoree) return;
+
+            parContinent[c].timbres += page.length;
+            totalTimbres += page.length;
+
+            page.forEach((timbre) => {
+              const key = Object.keys(timbre).find((k) =>
+                k.toLowerCase().includes("côte")
+              );
+              const val = parseFloat(timbre[key]);
+              if (!isNaN(val)) {
+                parContinent[c].cote += val;
+                totalCote += val;
+              }
+            });
+          });
+        } catch (err) {
+          console.error(`Erreur lecture ${filePath}`, err);
+        }
+      }
+    }
+
+    // Continuer la récursivité sur les sous-dossiers
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        walk(path.join(dir, entry.name), continent || entry.name);
+      }
+    }
+  }
+
+  walk(albumsRoot);
+
+  res.json({
+    continents: parContinent,
+    total: {
+      albums: totalAlbums,
+      timbres: totalTimbres,
+      cote: totalCote.toFixed(2),
+    },
+  });
+});

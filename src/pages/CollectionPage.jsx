@@ -59,12 +59,19 @@ export default function CollectionPage() {
   return (
     <div className="max-w-6xl mx-auto p-6">
       {/* Bouton vers la LandingPage */}
-      <div className="mb-4">
+      <div className="mb-4 flex justify-between items-center">
         <Link
           to="/"
           className="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
         >
           🏠 Retour à l'accueil
+        </Link>
+
+        <Link
+          to="/synthese"
+          className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        >
+          📊 Voir la synthèse
         </Link>
       </div>
 
