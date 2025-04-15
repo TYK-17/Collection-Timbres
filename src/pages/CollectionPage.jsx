@@ -45,7 +45,7 @@ export default function CollectionPage() {
     if (tree.length === 0) return;
     const node = findNode(tree, pathParts);
     setCurrentNode(node);
-  }, [tree, location.pathname]);
+  }, [tree, location.pathname, pathParts]);
 
   const subFolders =
     currentNode?.children?.filter((child) => child.type === "folder") || [];
