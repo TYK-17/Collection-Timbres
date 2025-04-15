@@ -35,6 +35,7 @@ export default function CollectionPage() {
   const [search, setSearch] = useState("");
   const [synthese, setSynthese] = useState(null);
   const [hoveredContinent, setHoveredContinent] = useState(null);
+  const [childStats, setChildStats] = useState({});
 
   useEffect(() => {
     fetch("/albums-tree.json")
@@ -56,12 +57,28 @@ export default function CollectionPage() {
       .then(setSynthese)
       .catch((err) => console.error("Erreur chargement synthèse:", err));
   }, []);
-
   const subFolders =
     currentNode?.children?.filter((child) => child.type === "folder") || [];
   const filteredSubFolders = subFolders.filter((child) =>
     child.name.toLowerCase().includes(search.toLowerCase())
   );
+  useEffect(() => {
+    if (filteredSubFolders.length === 0) return;
+
+    const fetchAllStats = async () => {
+      const results = {};
+      for (const child of filteredSubFolders) {
+        const res = await fetch(
+          `http://localhost:5000/synthese?path=${child.path}`
+        );
+        const json = await res.json();
+        results[child.path] = json;
+      }
+      setChildStats(results);
+    };
+
+    fetchAllStats();
+  }, [filteredSubFolders]);
 
   const currentPath = pathParts.join("/");
   const parentPath = pathParts.slice(0, -1).join("/");
@@ -146,7 +163,10 @@ export default function CollectionPage() {
         {filteredSubFolders.map((child, idx) => {
           const childPath = [...pathParts, child.name].join("/");
           const continent = child.continent;
-          const stats = synthese?.continents?.[continent];
+          const stats =
+            pathParts.length === 0
+              ? synthese?.continents?.[continent] // 🌍 Stats continent si racine
+              : childStats?.[child.path]; // 📁 Stats sous-dossier sinon
 
           return (
             <Link
@@ -161,9 +181,15 @@ export default function CollectionPage() {
               </h2>
               {stats && (
                 <ul className="text-sm text-gray-700 space-y-1">
-                  <li>📁 Albums : {stats.albums}</li>
-                  <li>📬 Timbres : {stats.timbres}</li>
-                  <li>💶 Cote : {stats.cote.toFixed(2)} €</li>
+                  {typeof stats.albums === "number" && (
+                    <li>📁 Albums : {stats.albums}</li>
+                  )}
+                  {typeof stats.timbres === "number" && (
+                    <li>📬 Timbres : {stats.timbres}</li>
+                  )}
+                  {typeof stats.cote === "number" && (
+                    <li>💶 Cote : {stats.cote.toFixed(2)} €</li>
+                  )}
                 </ul>
               )}
             </Link>
