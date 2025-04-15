@@ -165,10 +165,24 @@ app.get("/synthese", (req, res) => {
             );
             if (estIgnoree) return;
 
-            parContinent[c].timbres += page.length;
-            totalTimbres += page.length;
+            const isRealStamp = (row) => {
+              const num = row["N°"];
+              if (typeof num !== "number" || isNaN(num)) return false;
 
-            page.forEach((timbre) => {
+              // Recherche dynamique de la bonne colonne "Neuf"
+              const neufKey = Object.keys(row).find((k) =>
+                k.toLowerCase().includes("neuf")
+              );
+              const val = (row[neufKey] || "").toString().trim().toLowerCase();
+
+              return val !== "np";
+            };
+
+            const vraisTimbres = page.filter(isRealStamp);
+            parContinent[c].timbres += vraisTimbres.length;
+            totalTimbres += vraisTimbres.length;
+
+            vraisTimbres.forEach((timbre) => {
               const key = Object.keys(timbre).find((k) =>
                 k.toLowerCase().includes("côte")
               );
