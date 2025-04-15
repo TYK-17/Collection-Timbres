@@ -124,7 +124,8 @@ app.get("/file-date", (req, res) => {
   }
 });
 app.get("/synthese", (req, res) => {
-  const albumsRoot = path.join(__dirname, "public/data/albums");
+  const relativePath = req.query.path || ""; // ← récupère le path demandé
+  const targetPath = path.join(albumsDir, relativePath);
 
   const parContinent = {};
   let totalTimbres = 0;
@@ -139,11 +140,11 @@ app.get("/synthese", (req, res) => {
     );
 
     if (hasJson) {
-      // le dossier courant est un album
       const c = continent || "Inconnu";
       if (!parContinent[c]) {
         parContinent[c] = { albums: 0, timbres: 0, cote: 0 };
       }
+
       parContinent[c].albums++;
       totalAlbums++;
 
@@ -159,12 +160,9 @@ app.get("/synthese", (req, res) => {
 
           Object.entries(json).forEach(([pageName, page]) => {
             const nom = pageName.trim().toLowerCase();
-
-            // ❌ On ignore les pages nommées "total" ou "page type"
             const estIgnoree = ["total", "page type"].some((mot) =>
               nom.includes(mot)
             );
-
             if (estIgnoree) return;
 
             parContinent[c].timbres += page.length;
@@ -187,18 +185,30 @@ app.get("/synthese", (req, res) => {
       }
     }
 
-    // Continuer la récursivité sur les sous-dossiers
+    // Sous-dossiers
     for (const entry of entries) {
       if (entry.isDirectory()) {
-        walk(path.join(dir, entry.name), continent || entry.name);
+        const subdir = path.join(dir, entry.name);
+        walk(subdir, continent || entry.name);
       }
     }
   }
 
-  walk(albumsRoot);
+  // Lance la collecte sur le chemin demandé
+  walk(targetPath);
+
+  const continents = Object.keys(parContinent).length
+    ? parContinent
+    : {
+        Inconnu: {
+          albums: totalAlbums,
+          timbres: totalTimbres,
+          cote: totalCote,
+        },
+      };
 
   res.json({
-    continents: parContinent,
+    continents,
     total: {
       albums: totalAlbums,
       timbres: totalTimbres,

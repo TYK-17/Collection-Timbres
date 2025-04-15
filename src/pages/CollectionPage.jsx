@@ -63,22 +63,33 @@ export default function CollectionPage() {
     child.name.toLowerCase().includes(search.toLowerCase())
   );
   useEffect(() => {
-    if (filteredSubFolders.length === 0) return;
+    if (!currentNode) return;
+
+    const subFolders =
+      currentNode?.children?.filter((child) => child.type === "folder") || [];
+
+    if (subFolders.length === 0) return;
 
     const fetchAllStats = async () => {
       const results = {};
-      for (const child of filteredSubFolders) {
-        const res = await fetch(
-          `http://localhost:5000/synthese?path=${child.path}`
-        );
-        const json = await res.json();
-        results[child.path] = json;
+      for (const child of subFolders) {
+        console.log("📁 Fetching stats for:", child.path);
+
+        try {
+          const res = await fetch(
+            `http://localhost:5000/synthese?path=${child.path}`
+          );
+          const json = await res.json();
+          results[child.path] = json.total;
+        } catch (err) {
+          console.warn("❌ Erreur stats sous-dossier:", child.path, err);
+        }
       }
       setChildStats(results);
     };
 
     fetchAllStats();
-  }, [filteredSubFolders]);
+  }, [currentNode]);
 
   const currentPath = pathParts.join("/");
   const parentPath = pathParts.slice(0, -1).join("/");
@@ -179,18 +190,22 @@ export default function CollectionPage() {
               <h2 className="text-lg font-semibold mb-2">
                 {child.name.replace(/_/g, " ")}
               </h2>
-              {stats && (
+              {stats ? (
                 <ul className="text-sm text-gray-700 space-y-1">
-                  {typeof stats.albums === "number" && (
-                    <li>📁 Albums : {stats.albums}</li>
-                  )}
-                  {typeof stats.timbres === "number" && (
-                    <li>📬 Timbres : {stats.timbres}</li>
-                  )}
-                  {typeof stats.cote === "number" && (
-                    <li>💶 Cote : {stats.cote.toFixed(2)} €</li>
-                  )}
+                  <li>📁 Albums : {stats.albums}</li>
+                  <li>📬 Timbres : {stats.timbres}</li>
+                  <li>
+                    💶 Cote :{" "}
+                    {typeof stats.cote === "number"
+                      ? stats.cote.toFixed(2)
+                      : Number(stats.cote || 0).toFixed(2)}{" "}
+                    €
+                  </li>
                 </ul>
+              ) : (
+                <p className="text-xs text-gray-400">
+                  ⏳ Statistiques en cours...
+                </p>
               )}
             </Link>
           );
